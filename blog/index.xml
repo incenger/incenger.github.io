@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on InCenger&#39;s Blog</title>
-    <link>/blog/</link>
+    <link>https://incenger.github.io/blog/</link>
     <description>Recent content in Blog on InCenger&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://incenger.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mưa sớm Sài Gòn</title>
-      <link>/blog/mua-som-sai-gon/</link>
+      <link>https://incenger.github.io/blog/mua-som-sai-gon/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/mua-som-sai-gon/</guid>
+      <guid>https://incenger.github.io/blog/mua-som-sai-gon/</guid>
       <description>Tôi viết những dòng này vào một sáng mưa sớm ở Sài Gòn. Tôi luôn có những cảm xúc đặc biệt về những cơn mưa. Dù là những cơn mưa bất chợt ở Sài Gòn náo nhiệt, những sớm mở mắt đã thấy màn mưa xám xịt ở Hội An hay những đợt mưa không ngớt ở quê tôi mùa mưa bão, những cơn mưa đó đều đem lại cho tôi cảm hứng để suy ngẫm, để viết một chút gì đó bâng quơ.</description>
     </item>
     
     <item>
       <title>Mưa của những mùa nhớ</title>
-      <link>/blog/mua-cua-nhung-mua-nho/</link>
+      <link>https://incenger.github.io/blog/mua-cua-nhung-mua-nho/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/mua-cua-nhung-mua-nho/</guid>
+      <guid>https://incenger.github.io/blog/mua-cua-nhung-mua-nho/</guid>
       <description>Nắng chiều nhạt dần. Từng cơn gió nhẹ nhàng lướt qua những chiếc lá làm lao xao cả một góc sân. Quán giờ chiều vắng khách, thỉnh thoảng mới có vài khách ghé qua. Anh ngồi trong góc, một mình. Đó là một chỗ có thể nhìn bao quát không gian của quán và cả mảnh sân nhỏ phía trước. Anh tựa mình vào ghế, thả hồn theo những giai điệu êm đềm trên radio.</description>
     </item>
     
     <item>
       <title>Kí ức ngày mưa</title>
-      <link>/blog/ki-uc-ngay-mua/</link>
+      <link>https://incenger.github.io/blog/ki-uc-ngay-mua/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/ki-uc-ngay-mua/</guid>
+      <guid>https://incenger.github.io/blog/ki-uc-ngay-mua/</guid>
       <description>Trời tối dần, những con phố đã bắt đầu lên đèn. Những con đường rực sáng với những bảng hiệu chớp nháy. Trên đường xe cộ qua lại nườm nượp, tiếng còi xe vang lên inh ỏi. Dường như ai cũng muốn về nhà sớm hơn một chút để tận hưởng những giây phút cuối ngày bên gia đình. Bất chợt, trời đổ mưa, cơn mưa rào như muốn trút hết những ưu tư, bực dọc trong ngày.</description>
     </item>
     

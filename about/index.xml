@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About me on InCenger&#39;s Blog</title>
-    <link>/about/</link>
+    <link>https://incenger.github.io/about/</link>
     <description>Recent content in About me on InCenger&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://incenger.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
