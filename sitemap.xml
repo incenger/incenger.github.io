@@ -34,6 +34,10 @@
   </url>
   
   <url>
+    <loc>/contact/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2017-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
