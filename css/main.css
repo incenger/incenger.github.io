@@ -109,7 +109,7 @@
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
-			transition: none !important;
+			transition:none !important;
 		}
 
 /* Type */
