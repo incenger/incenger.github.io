@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on InCenger&#39;s Blog</title>
+    <title>Categories on InCenger</title>
     <link>https://incenger.github.io/categories/</link>
-    <description>Recent content in Categories on InCenger&#39;s Blog</description>
+    <description>Recent content in Categories on InCenger</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
+    <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
     
 	<atom:link href="https://incenger.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Viết</title>
-      <link>https://incenger.github.io/categories/vi%E1%BA%BFt/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://incenger.github.io/categories/vi%E1%BA%BFt/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

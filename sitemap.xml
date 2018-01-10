@@ -3,43 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://incenger.github.io/blog/nam-moi/</loc>
+    <loc>https://incenger.github.io/post/2018-01-01-nam-moi/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://incenger.github.io/about/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://incenger.github.io/blog/mua-som-sai-gon/</loc>
+    <loc>https://incenger.github.io/post/2017-10-02-mua-som-sai-gon/</loc>
     <lastmod>2017-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://incenger.github.io/blog/mua-cua-nhung-mua-nho/</loc>
+    <loc>https://incenger.github.io/post/2017-08-29-mua-cua-nhung-mua-nho/</loc>
     <lastmod>2017-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://incenger.github.io/blog/ki-uc-ngay-mua/</loc>
+    <loc>https://incenger.github.io/post/2017-08-28-ki-uc-ngay-mua/</loc>
     <lastmod>2017-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://incenger.github.io/blog/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://incenger.github.io/categories/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://incenger.github.io/contact/</loc>
   </url>
   
   <url>
@@ -49,12 +34,28 @@
   </url>
   
   <url>
-    <loc>https://incenger.github.io/tags/</loc>
+    <loc>https://incenger.github.io/page/aboutme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://incenger.github.io/tags/my-story/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://incenger.github.io/categories/vi%E1%BA%BFt/</loc>
+    <loc>https://incenger.github.io/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incenger.github.io/post/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incenger.github.io/tags/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
