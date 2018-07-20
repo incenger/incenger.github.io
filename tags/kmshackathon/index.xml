@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
     <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
-    <lastBuildDate>Tue, 17 Jul 2018 23:40:59 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jul 2018 16:31:50 +0700</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/tags/kmshackathon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>KMS Hackathon Part 2: Trouble comes</title>
+      <link>https://incenger.github.io/post/kmshackathon-p2/</link>
+      <pubDate>Fri, 20 Jul 2018 16:31:50 +0700</pubDate>
+      <author>dangtam.letan@gmail.com (InCenger)</author>
+      <guid>https://incenger.github.io/post/kmshackathon-p2/</guid>
+      <description>Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series Android for Noob của tôi).</description>
+    </item>
     
     <item>
       <title>KMS Hackathon Part 1: The First Hackathon</title>
