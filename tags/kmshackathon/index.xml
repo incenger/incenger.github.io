@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kmshackathon on InCenger</title>
+    <link>https://incenger.github.io/tags/kmshackathon/</link>
+    <description>Recent content in Kmshackathon on InCenger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
+    <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
+    <lastBuildDate>Tue, 17 Jul 2018 23:40:59 +0700</lastBuildDate>
+    
+	<atom:link href="https://incenger.github.io/tags/kmshackathon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>KMS Hackathon Part 1: The First Hackathon</title>
+      <link>https://incenger.github.io/post/kmshackathon-p1/</link>
+      <pubDate>Tue, 17 Jul 2018 23:40:59 +0700</pubDate>
+      <author>dangtam.letan@gmail.com (InCenger)</author>
+      <guid>https://incenger.github.io/post/kmshackathon-p1/</guid>
+      <description>Một trong những mục tiêu cần hoàn thành trong năm 2018 của tôi là tham gia ít nhất một cuộc thi Hackathon. Khi đặt ra mục tiêu đó, tôi cũng chưa biết chính xác mình cần phải chuẩn bị những gì cho một cuộc thi Hackathon. Tôi nghĩ mục đích chính của tôi chỉ là trải nghiệm cảm giác của một cuộc thi Hackathon mà thôi.
+KMS Hackathon là cuộc thi Hackathon trong 30 tiếng với mục tiêu tạo ảnh hưởng đến xã hội do công ty KMS tổ chức.</description>
+    </item>
+    
+  </channel>
+</rss>
