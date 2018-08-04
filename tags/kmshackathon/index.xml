@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
     <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
-    <lastBuildDate>Fri, 20 Jul 2018 16:31:50 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Aug 2018 23:21:30 +0700</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/tags/kmshackathon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>KMS Hackathon Part 3: Curtain Call</title>
+      <link>https://incenger.github.io/post/kmshackathon-p3/</link>
+      <pubDate>Sat, 04 Aug 2018 23:21:30 +0700</pubDate>
+      <author>dangtam.letan@gmail.com (InCenger)</author>
+      <guid>https://incenger.github.io/post/kmshackathon-p3/</guid>
+      <description>Cuộc vui đã tàn, không gian đã bắt đầu yên ắn hơn. Cái hơi lạnh không phải của màn đêm ngoài kia mà của một dàn máy lạnh đang hoạt động hết công suât làm tôi rùng mình. Cả căn phòng rộng lớn chỉ còn nghe những tiếng lốc cốc trên bàn phím. Có người vẫn miệt mài tiếp tục công việc của mình, có người đã ngủ gục trên bàn, trên nền nhà, trên bất cứ đâu có thể ngủ được.</description>
+    </item>
     
     <item>
       <title>KMS Hackathon Part 2: Trouble comes</title>
