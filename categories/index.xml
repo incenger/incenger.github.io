@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on InCenger</title>
+    <title>Categories on Dang-Tam&#39;s Blog</title>
     <link>https://incenger.github.io/categories/</link>
-    <description>Recent content in Categories on InCenger</description>
+    <description>Recent content in Categories on Dang-Tam&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
-    <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
+    <language>en</language>
     
 	<atom:link href="https://incenger.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     

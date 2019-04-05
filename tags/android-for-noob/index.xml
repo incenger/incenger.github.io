@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android for Noob on InCenger</title>
+    <title>Android for Noob on Dang-Tam&#39;s Blog</title>
     <link>https://incenger.github.io/tags/android-for-noob/</link>
-    <description>Recent content in Android for Noob on InCenger</description>
+    <description>Recent content in Android for Noob on Dang-Tam&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
-    <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
+    <language>en</language>
     <lastBuildDate>Tue, 22 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/tags/android-for-noob/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +15,7 @@
       <title>First Course</title>
       <link>https://incenger.github.io/post/first-course/</link>
       <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/first-course/</guid>
       <description>Trong bài viết hôm nay, mình sẽ chia sẻ trải nghiệm của mình về khóa học đầu tiên Android Basics: User Interface. Khóa học được ước tính học trong 2 tuần, nhưng mình nghĩ nếu có thời gian, các bạn có thể hoàn thành nó trong khoảng 1-3 ngày (mình học trong 1 buổi và làm project trong 1 buổi, còn thời gian cụ thể từng buổi thì mình không nhớ chính xác).</description>
     </item>
@@ -25,7 +24,7 @@
       <title>Android Studio and Udacity</title>
       <link>https://incenger.github.io/post/2018-05-15-android-studio-and-udacity/</link>
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/2018-05-15-android-studio-and-udacity/</guid>
       <description>Android Studio Nhìn qua ảnh, có lẽ các bạn cũng biết mình sẽ nói đến vấn đề gì trong phần này. Android Studio là IDE do Google phát triển với nhiều tính năng hỗ trợ tối đa cho việc lập trình và phát triển app trên Android. Sẽ không có vấn đề gì để nói nếu như mình không đang chạy nó trên một con laptop core i3-5005u với 4Gb ram (Các bạn có thể xem thể về System Requirements của Android Studio).</description>
     </item>
@@ -34,7 +33,7 @@
       <title>Android for Noob</title>
       <link>https://incenger.github.io/post/android-for-noob/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/android-for-noob/</guid>
       <description>Đây không phải là một bài viết chuyên sâu về Android. Tuy tiêu đề là “Android for noob”, đây cũng không phải là một bài hướng dẫn Android cho những người bắt đầu. Đây đơn thuần chỉ là những chia sẻ và trải nghiệm của một thằng noob (mình) khi học lập trình Android.
 Tại sao lại là Android? Mình học Android vì … mình thích, vậy thôi. À ngoài ra mình cũng đang xài một con smartphone chạy hệ điều hành Android nên mình tranh thủ tận dụng luôn.</description>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Movies on InCenger</title>
+    <title>Movies on Dang-Tam&#39;s Blog</title>
     <link>https://incenger.github.io/tags/movies/</link>
-    <description>Recent content in Movies on InCenger</description>
+    <description>Recent content in Movies on Dang-Tam&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
-    <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
+    <language>en</language>
     <lastBuildDate>Wed, 15 Aug 2018 16:04:32 +0700</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/tags/movies/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +15,7 @@
       <title>Mia and Sebastian&#39;s Theme Song</title>
       <link>https://incenger.github.io/post/la-la-land-theme-song/</link>
       <pubDate>Wed, 15 Aug 2018 16:04:32 +0700</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/la-la-land-theme-song/</guid>
       <description>Rảnh rỗi viết tí khi đang bị delay =))))
 Có lẽ mình cũng không cần giới thiệu nhiều về La La Land - một bộ phim âm nhạc cực kì thành công với doanh thu phòng vé 446 triệu USD (budget của phim chỉ có 30 triệu USD) và 14 đề cử và 6 giải Oscar cho các hạng mục quan trọng. Đạo diễn Damien Chazelle đã đem lại một làn gió mới cho thể loại phim âm nhạc vốn được xem là đã quá nhàm chán và đi vào lối mòn.</description>
@@ -26,7 +25,7 @@ Có lẽ mình cũng không cần giới thiệu nhiều về La La Land - một
       <title>Mission Impossible 6: Fallout</title>
       <link>https://incenger.github.io/post/mi6-fallout/</link>
       <pubDate>Fri, 10 Aug 2018 21:03:02 +0700</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/mi6-fallout/</guid>
       <description>Dạo gần đây, yếu tố hài hước thường được đưa vào trong phim. Ngoài một số phim lấy sự hài hước làm chủ đạo (như Deadpool 1, 2), có thể dễ thấy điều đó trong các phim anh hùng hay một số phim hành động bom tấn. Những câu đùa, tinh huống gây cười có vai trò quan trọng trong phim nếu như nó được sử dụng một cách hợp lí.</description>
     </item>

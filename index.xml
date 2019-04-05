@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>InCenger</title>
+    <title>Dang-Tam&#39;s Blog</title>
     <link>https://incenger.github.io/</link>
-    <description>Recent content on InCenger</description>
+    <description>Recent content on Dang-Tam&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>dangtam.letan@gmail.com (InCenger)</managingEditor>
-    <webMaster>dangtam.letan@gmail.com (InCenger)</webMaster>
+    <language>en</language>
     <lastBuildDate>Wed, 15 Aug 2018 16:04:32 +0700</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +15,7 @@
       <title>Mia and Sebastian&#39;s Theme Song</title>
       <link>https://incenger.github.io/post/la-la-land-theme-song/</link>
       <pubDate>Wed, 15 Aug 2018 16:04:32 +0700</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/la-la-land-theme-song/</guid>
       <description>Rảnh rỗi viết tí khi đang bị delay =))))
 Có lẽ mình cũng không cần giới thiệu nhiều về La La Land - một bộ phim âm nhạc cực kì thành công với doanh thu phòng vé 446 triệu USD (budget của phim chỉ có 30 triệu USD) và 14 đề cử và 6 giải Oscar cho các hạng mục quan trọng. Đạo diễn Damien Chazelle đã đem lại một làn gió mới cho thể loại phim âm nhạc vốn được xem là đã quá nhàm chán và đi vào lối mòn.</description>
@@ -26,7 +25,7 @@ Có lẽ mình cũng không cần giới thiệu nhiều về La La Land - một
       <title>Mission Impossible 6: Fallout</title>
       <link>https://incenger.github.io/post/mi6-fallout/</link>
       <pubDate>Fri, 10 Aug 2018 21:03:02 +0700</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/mi6-fallout/</guid>
       <description>Dạo gần đây, yếu tố hài hước thường được đưa vào trong phim. Ngoài một số phim lấy sự hài hước làm chủ đạo (như Deadpool 1, 2), có thể dễ thấy điều đó trong các phim anh hùng hay một số phim hành động bom tấn. Những câu đùa, tinh huống gây cười có vai trò quan trọng trong phim nếu như nó được sử dụng một cách hợp lí.</description>
     </item>
@@ -35,7 +34,7 @@ Có lẽ mình cũng không cần giới thiệu nhiều về La La Land - một
       <title>KMS Hackathon Part 3: Curtain Call</title>
       <link>https://incenger.github.io/post/kmshackathon-p3/</link>
       <pubDate>Sat, 04 Aug 2018 23:21:30 +0700</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/kmshackathon-p3/</guid>
       <description>Cuộc vui đã tàn, không gian đã bắt đầu yên ắn hơn. Cái hơi lạnh không phải của màn đêm ngoài kia mà của một dàn máy lạnh đang hoạt động hết công suât làm tôi rùng mình. Cả căn phòng rộng lớn chỉ còn nghe những tiếng lốc cốc trên bàn phím. Có người vẫn miệt mài tiếp tục công việc của mình, có người đã ngủ gục trên bàn, trên nền nhà, trên bất cứ đâu có thể ngủ được.</description>
     </item>
@@ -44,7 +43,7 @@ Có lẽ mình cũng không cần giới thiệu nhiều về La La Land - một
       <title>KMS Hackathon Part 2: Trouble comes</title>
       <link>https://incenger.github.io/post/kmshackathon-p2/</link>
       <pubDate>Fri, 20 Jul 2018 16:31:50 +0700</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/kmshackathon-p2/</guid>
       <description>Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series Android for Noob của tôi).</description>
     </item>
@@ -53,7 +52,7 @@ Có lẽ mình cũng không cần giới thiệu nhiều về La La Land - một
       <title>KMS Hackathon Part 1: The First Hackathon</title>
       <link>https://incenger.github.io/post/kmshackathon-p1/</link>
       <pubDate>Tue, 17 Jul 2018 23:40:59 +0700</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/kmshackathon-p1/</guid>
       <description>Một trong những mục tiêu cần hoàn thành trong năm 2018 của tôi là tham gia ít nhất một cuộc thi Hackathon. Khi đặt ra mục tiêu đó, tôi cũng chưa biết chính xác mình cần phải chuẩn bị những gì cho một cuộc thi Hackathon. Tôi nghĩ mục đích chính của tôi chỉ là trải nghiệm cảm giác của một cuộc thi Hackathon mà thôi.
 KMS Hackathon là cuộc thi Hackathon trong 30 tiếng với mục tiêu tạo ảnh hưởng đến xã hội do công ty KMS tổ chức.</description>
@@ -63,7 +62,7 @@ KMS Hackathon là cuộc thi Hackathon trong 30 tiếng với mục tiêu tạo 
       <title>First Course</title>
       <link>https://incenger.github.io/post/first-course/</link>
       <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/first-course/</guid>
       <description>Trong bài viết hôm nay, mình sẽ chia sẻ trải nghiệm của mình về khóa học đầu tiên Android Basics: User Interface. Khóa học được ước tính học trong 2 tuần, nhưng mình nghĩ nếu có thời gian, các bạn có thể hoàn thành nó trong khoảng 1-3 ngày (mình học trong 1 buổi và làm project trong 1 buổi, còn thời gian cụ thể từng buổi thì mình không nhớ chính xác).</description>
     </item>
@@ -72,7 +71,7 @@ KMS Hackathon là cuộc thi Hackathon trong 30 tiếng với mục tiêu tạo 
       <title>Android Studio and Udacity</title>
       <link>https://incenger.github.io/post/2018-05-15-android-studio-and-udacity/</link>
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/2018-05-15-android-studio-and-udacity/</guid>
       <description>Android Studio Nhìn qua ảnh, có lẽ các bạn cũng biết mình sẽ nói đến vấn đề gì trong phần này. Android Studio là IDE do Google phát triển với nhiều tính năng hỗ trợ tối đa cho việc lập trình và phát triển app trên Android. Sẽ không có vấn đề gì để nói nếu như mình không đang chạy nó trên một con laptop core i3-5005u với 4Gb ram (Các bạn có thể xem thể về System Requirements của Android Studio).</description>
     </item>
@@ -81,7 +80,7 @@ KMS Hackathon là cuộc thi Hackathon trong 30 tiếng với mục tiêu tạo 
       <title>Android for Noob</title>
       <link>https://incenger.github.io/post/android-for-noob/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/android-for-noob/</guid>
       <description>Đây không phải là một bài viết chuyên sâu về Android. Tuy tiêu đề là “Android for noob”, đây cũng không phải là một bài hướng dẫn Android cho những người bắt đầu. Đây đơn thuần chỉ là những chia sẻ và trải nghiệm của một thằng noob (mình) khi học lập trình Android.
 Tại sao lại là Android? Mình học Android vì … mình thích, vậy thôi. À ngoài ra mình cũng đang xài một con smartphone chạy hệ điều hành Android nên mình tranh thủ tận dụng luôn.</description>
@@ -91,7 +90,7 @@ Tại sao lại là Android? Mình học Android vì … mình thích, vậy th�
       <title>Giao thừa lặng lẽ...</title>
       <link>https://incenger.github.io/post/2018-01-01-nam-moi/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/2018-01-01-nam-moi/</guid>
       <description>&amp;ldquo;Bùm&amp;hellip;Bùm!&amp;rdquo; - Tiếng pháo hoa ngoài cửa sổ làm tôi giật mình. Vậy là một năm đã trôi qua. Có điều gì đó làm tôi hụt hẫng. Tôi không thường thức để đón giao thừa dương lịch. Những năm trước, đối với tôi, nó chỉ là một ngày nghỉ bình thường như bao ngày khác. Có chăng, nó chỉ đặc biệt hơn khi là ngày tôi tổng kết những gì đã làm được trong năm qua và đặt ra những mục tiêu cho năm mới.</description>
     </item>
@@ -100,7 +99,7 @@ Tại sao lại là Android? Mình học Android vì … mình thích, vậy th�
       <title>Mưa sớm Sài Gòn</title>
       <link>https://incenger.github.io/post/2017-10-02-mua-som-sai-gon/</link>
       <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/2017-10-02-mua-som-sai-gon/</guid>
       <description>Tôi viết những dòng này vào một sáng mưa sớm ở Sài Gòn. Tôi luôn có những cảm xúc đặc biệt về những cơn mưa. Dù là những cơn mưa bất chợt ở Sài Gòn náo nhiệt, những sớm mở mắt đã thấy màn mưa xám xịt ở Hội An hay những đợt mưa không ngớt ở quê tôi mùa mưa bão, những cơn mưa đó đều đem lại cho tôi cảm hứng để suy ngẫm, để viết một chút gì đó bâng quơ.</description>
     </item>
@@ -109,7 +108,7 @@ Tại sao lại là Android? Mình học Android vì … mình thích, vậy th�
       <title>Mưa của những mùa nhớ</title>
       <link>https://incenger.github.io/post/2017-08-29-mua-cua-nhung-mua-nho/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/2017-08-29-mua-cua-nhung-mua-nho/</guid>
       <description>Nắng chiều nhạt dần. Từng cơn gió nhẹ nhàng lướt qua những chiếc lá làm lao xao cả một góc sân. Quán giờ chiều vắng khách, thỉnh thoảng mới có vài khách ghé qua. Anh ngồi trong góc, một mình. Đó là một chỗ có thể nhìn bao quát không gian của quán và cả mảnh sân nhỏ phía trước. Anh tựa mình vào ghế, thả hồn theo những giai điệu êm đềm trên radio.</description>
     </item>
@@ -118,7 +117,7 @@ Tại sao lại là Android? Mình học Android vì … mình thích, vậy th�
       <title>Kí Ức Ngày Mưa</title>
       <link>https://incenger.github.io/post/2017-08-28-ki-uc-ngay-mua/</link>
       <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/2017-08-28-ki-uc-ngay-mua/</guid>
       <description>Trời tối dần, những con phố đã bắt đầu lên đèn. Những con đường rực sáng với những bảng hiệu chớp nháy. Trên đường xe cộ qua lại nườm nượp, tiếng còi xe vang lên inh ỏi. Dường như ai cũng muốn về nhà sớm hơn một chút để tận hưởng những giây phút cuối ngày bên gia đình. Bất chợt, trời đổ mưa, cơn mưa rào như muốn trút hết những ưu tư, bực dọc trong ngày.</description>
     </item>
@@ -127,7 +126,7 @@ Tại sao lại là Android? Mình học Android vì … mình thích, vậy th�
       <title>Massp - Có những ngày như thế</title>
       <link>https://incenger.github.io/post/2016-06-27-massp/</link>
       <pubDate>Mon, 27 Jun 2016 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/post/2016-06-27-massp/</guid>
       <description>Sáng nay tôi dậy muộn. Điều đó thật ra chẳng có gì đặc biệt ngoài chuyện tôi cảm thấy trống rỗng, lạ lẫm. Tôi nhận ra rằng không còn những giọng nói đánh thức mình dậy vào lúc 7h nữa. Hai tuần quá ngắn để người ta hình thành một thói quen mới, nhưng đã đủ dài để khiến ta hụt hẫng, nhớ nhung. Tôi chợt tự hỏi, hôm nay mình làm gì?</description>
     </item>
@@ -136,7 +135,7 @@ Tại sao lại là Android? Mình học Android vì … mình thích, vậy th�
       <title>Me and My blog</title>
       <link>https://incenger.github.io/page/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>dangtam.letan@gmail.com (InCenger)</author>
+      
       <guid>https://incenger.github.io/page/aboutme/</guid>
       <description>Một blog bình thường thì nên có gì?
 Tôi không biết. Đó cũng là lí do tại sao bạn có thể tìm được những cơn mưa bất chợt, một li coffee ấm nóng, một bài toán nào đó hay kể cả một vài dòng code.
