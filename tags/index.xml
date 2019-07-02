@@ -6,17 +6,26 @@
     <description>Recent content in Tags on Dang-Tam&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Aug 2018 16:04:32 +0700</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Android for Noob</title>
-      <link>https://incenger.github.io/tags/android-for-noob/</link>
-      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      <title>La La Land</title>
+      <link>https://incenger.github.io/tags/la-la-land/</link>
+      <pubDate>Wed, 15 Aug 2018 16:04:32 +0700</pubDate>
       
-      <guid>https://incenger.github.io/tags/android-for-noob/</guid>
+      <guid>https://incenger.github.io/tags/la-la-land/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Movies</title>
+      <link>https://incenger.github.io/tags/movies/</link>
+      <pubDate>Wed, 15 Aug 2018 16:04:32 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/tags/movies/</guid>
       <description></description>
     </item>
     
@@ -39,20 +48,11 @@
     </item>
     
     <item>
-      <title>La La Land</title>
-      <link>https://incenger.github.io/tags/la-la-land/</link>
-      <pubDate>Wed, 15 Aug 2018 16:04:32 +0700</pubDate>
+      <title>Android for Noob</title>
+      <link>https://incenger.github.io/tags/android-for-noob/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://incenger.github.io/tags/la-la-land/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Movies</title>
-      <link>https://incenger.github.io/tags/movies/</link>
-      <pubDate>Wed, 15 Aug 2018 16:04:32 +0700</pubDate>
-      
-      <guid>https://incenger.github.io/tags/movies/</guid>
+      <guid>https://incenger.github.io/tags/android-for-noob/</guid>
       <description></description>
     </item>
     
