@@ -3,8 +3,33 @@
   
   <url>
     <loc>https://incenger.github.io/</loc>
-    <lastmod>2018-08-15T16:04:32+07:00</lastmod>
+    <lastmod>2019-07-14T21:12:51+07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incenger.github.io/post/</loc>
+    <lastmod>2019-07-14T21:12:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incenger.github.io/tags/twil/</loc>
+    <lastmod>2019-07-14T21:12:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incenger.github.io/tags/</loc>
+    <lastmod>2019-07-14T21:12:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://incenger.github.io/post/2019-07-14/twil/</loc>
+    <lastmod>2019-07-14T21:12:51+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -22,18 +47,6 @@
   
   <url>
     <loc>https://incenger.github.io/tags/movies/</loc>
-    <lastmod>2018-08-15T16:04:32+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://incenger.github.io/post/</loc>
-    <lastmod>2018-08-15T16:04:32+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://incenger.github.io/tags/</loc>
     <lastmod>2018-08-15T16:04:32+07:00</lastmod>
     <priority>0</priority>
   </url>
