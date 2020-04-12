@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://incenger.github.io/post/first-course/" />
@@ -42,21 +42,17 @@
 <meta property="og:description" content="Trong bài viết hôm nay, mình sẽ chia sẻ trải nghiệm của mình về khóa học đầu tiên Android Basics: User Interface. Khóa học được ước tính học trong 2 tuần, nhưng mình nghĩ nếu có thời gian, các bạn có thể hoàn thành nó trong khoảng 1-3 ngày (mình học trong 1 buổi và làm project trong 1 buổi, còn thời gian cụ thể từng buổi thì mình không nhớ chính xác)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://incenger.github.io/post/first-course/" />
-<meta property="article:published_time" content="2018-05-22T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-05-22T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2018-05-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-05-22T00:00:00+00:00" />
 <meta itemprop="name" content="First Course">
 <meta itemprop="description" content="Trong bài viết hôm nay, mình sẽ chia sẻ trải nghiệm của mình về khóa học đầu tiên Android Basics: User Interface. Khóa học được ước tính học trong 2 tuần, nhưng mình nghĩ nếu có thời gian, các bạn có thể hoàn thành nó trong khoảng 1-3 ngày (mình học trong 1 buổi và làm project trong 1 buổi, còn thời gian cụ thể từng buổi thì mình không nhớ chính xác).">
-
-
 <meta itemprop="datePublished" content="2018-05-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-05-22T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="1002">
 
 
 
-<meta itemprop="keywords" content="Android for Noob," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Android for Noob," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="First Course"/>
 <meta name="twitter:description" content="Trong bài viết hôm nay, mình sẽ chia sẻ trải nghiệm của mình về khóa học đầu tiên Android Basics: User Interface. Khóa học được ước tính học trong 2 tuần, nhưng mình nghĩ nếu có thời gian, các bạn có thể hoàn thành nó trong khoảng 1-3 ngày (mình học trong 1 buổi và làm project trong 1 buổi, còn thời gian cụ thể từng buổi thì mình không nhớ chính xác)."/>
 
@@ -135,82 +131,54 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#view">View</a></li>
-<li><a href="#kết-quả">Kết quả</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p><img src="https://i.imgur.com/D8SfStr.jpg" alt="alt text" /></p>
-
+      <p><img src="https://i.imgur.com/D8SfStr.jpg" alt="alt text"></p>
 <p>Trong bài viết hôm nay, mình sẽ chia sẻ trải nghiệm của mình về khóa học đầu tiên <a href="https://www.udacity.com/course/android-basics-user-interface--ud834">Android Basics: User Interface</a>.
 Khóa học được ước tính học trong 2 tuần, nhưng mình nghĩ nếu có thời gian, các bạn có thể hoàn thành nó trong khoảng 1-3 ngày (mình học trong 1 buổi và làm project trong 1 buổi, còn thời gian cụ thể từng buổi thì mình không nhớ chính xác). Nội dung của khóa học chủ yếu là về những khái niệm cơ bản trong UI: Views, Layout và XML.</p>
-
 <h1 id="view">View</h1>
-
-<p><img src="https://i.imgur.com/kAHn90t.jpg" alt="alt text" title="Paper App Screenshot" /></p>
-
+<p><img src="https://i.imgur.com/kAHn90t.jpg" alt="alt text" title="Paper App Screenshot"></p>
 <p>Bên trên là ảnh chụp màn hình từ app Paper của Dropbox. Một Android app bao gồm nhiều “màn hình” tương tự như vậy - hay còn gọi là layout. Mỗi layout thường gắn liền với một chức năng của app, ví dụ như trong hình là màn hình hiển thị các files của app Paper. Layout chính là nơi xảy ra tương tác giữa người dùng với app của chúng ta thông qua các thao tác chạm, kéo thả, …. Mỗi Layout bao gồm nhiều View với các kích thước và vị trí khác nhau. Để sử dụng View trong Android Studio, chúng ta có 2 cách:</p>
-
 <ul>
-<li><p>Sử dụng công cụ Design trong Android Studio
-<img src="https://i.imgur.com/nyJZekT.jpg" alt="alt text" title="Design Mode" /></p></li>
-
-<li><p>Sử dụng code XML
-<img src="https://i.imgur.com/apYA4CW.jpg" alt="alt text" title="XML mode" /></p></li>
+<li>
+<p>Sử dụng công cụ Design trong Android Studio
+<img src="https://i.imgur.com/nyJZekT.jpg" alt="alt text" title="Design Mode"></p>
+</li>
+<li>
+<p>Sử dụng code XML
+<img src="https://i.imgur.com/apYA4CW.jpg" alt="alt text" title="XML mode"></p>
+</li>
 </ul>
-
 <p>Cả 2 cách này đều có những ưu điểm và nhược điểm riêng. Cá nhân mình thích sử dụng Design mode hơn vì nó trực quan hơn là dùng XML code. Tất nhiên, các bạn nên kết hợp cả 2 cách để có thể thiết kế UI một cách tối ưu.</p>
-
 <p>Mỗi View trong Android có nội dung đa dạng: TextView, ImageView, Button, … và có thể chứa thêm nhiều View khác bên trong nó. Đối với mỗi View, chúng ta có thể tùy chỉnh các đặc tính của nó như kích thước, màu sắc, …. Smartphone Android rất đa dạng, về cấu hình, kích thước, kiểu dáng, tính năng. Sự đa dạng đó cung cấp nhiều lựa chọn cho người dùng nhưng lại đặt ra một bài toán cho người phát triển làm sao để tối ưu cho các thiết bị mà không phải viết lại code. Sự khác biệt rõ ràng nhất giữa các điện thoại Android (và điện thoại với máy tính bảng) chính là kích thước của màn hình. Vậy khi thiết kế UI cho app, chúng ta phải làm sao để những kích thước, vị trí của những View trong đó không phải phụ thuộc vào kích thước cụ thể nào. Đó là lí do tại sao trong Android, chúng ta nên sử dụng dp (device-independent pixel) làm đơn vị đo kích thước  thay cho px (pixel).</p>
-
-<p><img src="https://i.imgur.com/KGoMUa1.jpg" alt="alt text" title="Pixel vs Device-Independent Pixel" /></p>
-
+<p><img src="https://i.imgur.com/KGoMUa1.jpg" alt="alt text" title="Pixel vs Device-Independent Pixel"></p>
 <p>#Layout</p>
-
 <p>Để xây dựng một UI hoàn thiện, ngoài View, chúng ta cần một Layout để chứa những View đó. Có 2 loại Layout được giới thiệu trong khóa học là LinearLayout và  RelativeLayout.</p>
-
 <ul>
 <li>LinearLayout: Đối với LinearLayout, vị trí của các View sẽ được đặt theo hàng hoặc theo cột.</li>
 </ul>
-
-<p><img src="https://i.imgur.com/7xnpbWU.jpg" alt="alt text" title="Vertical LinearLayout" /></p>
-
-<p><img src="https://i.imgur.com/Itaa3gN.jpg" alt="alt text" title="Horizontal LinearLayout" /></p>
-
+<p><img src="https://i.imgur.com/7xnpbWU.jpg" alt="alt text" title="Vertical LinearLayout"></p>
+<p><img src="https://i.imgur.com/Itaa3gN.jpg" alt="alt text" title="Horizontal LinearLayout"></p>
 <ul>
 <li>RelativeLayout: Các view sẽ được xác định vị trí dựa vào vị trí của các view khác hoặc vị trí của layout. Một số đặc tính của của nó là : toRightOf,  toLeftOf, above , below, &hellip;. Mỗi View sẽ có một ID do người dùng khai báo trong code XML. Thông qua ID đó, các View khác có thể xác định vị trí.</li>
 </ul>
-
-<p><img src="https://i.imgur.com/nkKW75D.jpg" alt="alt text" title="Relative Layout" /></p>
-
+<p><img src="https://i.imgur.com/nkKW75D.jpg" alt="alt text" title="Relative Layout"></p>
 <p>Ở phần này, mình khá tiếc vì trong khóa không có dạy về <a href="https://developer.android.com/reference/android/support/constraint/ConstraintLayout">ConstraintLayout</a> được Google giới thiệu lần đầu trong Google I/O 2016 (có lẽ vì vậy mà khóa học không có, khóa này bắt đầu từ 2015). ConstraintLayout giúp cải thiện về performance và quan trọng hơn, bạn có thể tạo một layout phức tạp mà không cần phải dùng nhiều LinearLayout và RelativeLayout lồng vào nhau. Nó cũng tận dụng tối ưu được Design Mode trong thiết kế UI. Mình sẽ có một bài viết riêng về ConstraintLayout và những ứng dụng của nó.</p>
-
 <h1 id="kết-quả">Kết quả</h1>
-
 <p>Sau khi kết thúc khóa học đầu tiên, thành quả của mình chính là 2 app: Cả 2 app rất đơn giản, chỉ bao gồm 1 layout, người dùng vẫn chưa có thể tương tác gì. Nhưng nó đã đáp ứng được mục đích của khóa là về User Interface.</p>
-
-<p><img src="https://i.imgur.com/CeD972P.jpg" alt="alt text" title="Happy Birthday App" /></p>
-
-<p><img src="https://i.imgur.com/Ro6y6fj.jpg" alt="alt text" title="Monkey In Black App" />
+<p><img src="https://i.imgur.com/CeD972P.jpg" alt="alt text" title="Happy Birthday App"></p>
+<p><img src="https://i.imgur.com/Ro6y6fj.jpg" alt="alt text" title="Monkey In Black App">
 Nếu các bạn có thể để ý thì ở app thứ 2 , màu sắc và bố cục chưa thật sự ổn lắm. Thật sự là vậy, mình khá tệ trong việc lựa chọn màu sắc, kiểu dáng cũng như là kích thước các view. Mỗi khi thiết kế một UI, mình muốn có một guideline để dựa vào, như vậy UI mình sẽ cân đối về màu sắc và bố cục hơn. Nếu các bạn cũng gặp vấn đề như mình thì có thể xem <a href="https://material.io/">Material Design</a> của Google. Ở đây, các bạn có thể tìm thấy các quy ước về màu sắc, kích cỡ, vị trí để app của bạn nhìn đơn giản nhưng đẹp mắt.
 Như vậy thì mình đã hoàn thành khóa học đầu tiên. Tóm lại, trong khóa này mình đã học thêm được:</p>
-
 <ul>
 <li>XML: syntax và attributes</li>
 <li>Một số loại Views: TextView, ImageView, Button,…</li>
 <li>Hai loại layout: LinearLayout và RelativeLayout</li>
 </ul>
-
 <p>và đã hoàn thành được 2 app. Mình sẽ dành riêng cho ConstraintLayout trong một bài viết khác vì ConstraintLayout đã thực sự thay đổi các mình thiết kế UI, thay vì code XML thì giờ mình chỉ cần kéo thả một cách rất trực quan. Như mọi lần, mình là một thằng Noob và sẵn sằng tiếp nhận những ý kiến của mọi người.</p>
-
-<hr />
-
+<hr>
 <p>Nếu các bạn thắc mắc tại sao mình lại chọn Monkey In Black để đưa vào trong app của mình thì MIB chính là quán cafe đầu tiên mà mình đi khi mới vào Sài Gòn học. Mình rất thích Monkey In Black vì những con người, nguồn năng lượng, chất điên mà quán gửi vào từng sản phẩm. Đơn giản vậy thôi :D (Mình không PR giúp quán đâu :D)</p>
 
     </div>
@@ -263,7 +231,7 @@ Như vậy thì mình đã hoàn thành khóa học đầu tiên. Tóm lại, tr
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  
+
   
 
   
@@ -295,7 +263,7 @@ Như vậy thì mình đã hoàn thành khóa học đầu tiên. Tóm lại, tr
   <span class="copyright-year">
     &copy; 
     2016 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

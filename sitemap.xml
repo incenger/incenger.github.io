@@ -4,25 +4,22 @@
   <url>
     <loc>https://incenger.github.io/</loc>
     <lastmod>2019-07-14T21:12:51+07:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://incenger.github.io/post/</loc>
     <lastmod>2019-07-14T21:12:51+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://incenger.github.io/tags/twil/</loc>
-    <lastmod>2019-07-14T21:12:51+07:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://incenger.github.io/tags/</loc>
     <lastmod>2019-07-14T21:12:51+07:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -33,9 +30,17 @@
   </url>
   
   <url>
+    <loc>https://incenger.github.io/tags/twil/</loc>
+    <lastmod>2019-07-14T21:12:51+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://incenger.github.io/tags/la-la-land/</loc>
     <lastmod>2018-08-15T16:04:32+07:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -48,7 +53,8 @@
   <url>
     <loc>https://incenger.github.io/tags/movies/</loc>
     <lastmod>2018-08-15T16:04:32+07:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -61,7 +67,8 @@
   <url>
     <loc>https://incenger.github.io/tags/code-story/</loc>
     <lastmod>2018-08-04T23:21:30+07:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -74,7 +81,8 @@
   <url>
     <loc>https://incenger.github.io/tags/kmshackathon/</loc>
     <lastmod>2018-08-04T23:21:30+07:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -94,7 +102,8 @@
   <url>
     <loc>https://incenger.github.io/tags/android-for-noob/</loc>
     <lastmod>2018-05-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -128,7 +137,8 @@
   <url>
     <loc>https://incenger.github.io/tags/my-story/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -161,7 +171,8 @@
   
   <url>
     <loc>https://incenger.github.io/categories/</loc>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -172,7 +183,8 @@
   
   <url>
     <loc>https://incenger.github.io/page/</loc>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

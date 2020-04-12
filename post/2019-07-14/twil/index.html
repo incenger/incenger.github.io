@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://incenger.github.io/post/2019-07-14/twil/" />
@@ -43,21 +43,17 @@
 <meta property="og:description" content="Linh tinh về những thứ tôi học được trong tuần này." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://incenger.github.io/post/2019-07-14/twil/" />
-<meta property="article:published_time" content="2019-07-14T21:12:51&#43;07:00"/>
-<meta property="article:modified_time" content="2019-07-14T21:12:51&#43;07:00"/>
-
+<meta property="article:published_time" content="2019-07-14T21:12:51+07:00" />
+<meta property="article:modified_time" content="2019-07-14T21:12:51+07:00" />
 <meta itemprop="name" content="This week I Learn: 2019-07-14">
 <meta itemprop="description" content="Linh tinh về những thứ tôi học được trong tuần này.">
-
-
 <meta itemprop="datePublished" content="2019-07-14T21:12:51&#43;07:00" />
 <meta itemprop="dateModified" content="2019-07-14T21:12:51&#43;07:00" />
 <meta itemprop="wordCount" content="1075">
 
 
 
-<meta itemprop="keywords" content="TWIL," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="TWIL," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="This week I Learn: 2019-07-14"/>
 <meta name="twitter:description" content="Linh tinh về những thứ tôi học được trong tuần này."/>
 
@@ -137,95 +133,65 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#twil">TWIL</a></li>
-<li><a href="#linear-algebra">Linear Algebra</a>
-<ul>
-<li><a href="#orthogonal-matrices">Orthogonal Matrices</a></li>
-<li><a href="#gram-schmidt">Gram-Schmidt</a></li>
-<li><a href="#properties-of-determinant">Properties of Determinant</a></li>
-<li><a href="#determinant-formula">Determinant Formula</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#orthogonal-matrices">Orthogonal Matrices</a></li>
+    <li><a href="#gram-schmidt">Gram-Schmidt</a></li>
+    <li><a href="#properties-of-determinant">Properties of Determinant</a></li>
+    <li><a href="#determinant-formula">Determinant Formula</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
       <p>Linh tinh về những thứ tôi học được trong tuần này.</p>
-
 <h1 id="twil">TWIL</h1>
-
 <p>Tôi dự định mỗi tuần sẽ viết về những thứ tôi học được trong tuần. Mục đích chủ yếu là để tự  mình review lại những nội dung đã học. Những post trong mục này vẫn đang trong giai đoạn thử nghiệm, do vậy nó sẽ không được thống nhất lắm.</p>
-
 <h1 id="linear-algebra">Linear Algebra</h1>
-
 <p>Tuần này tôi hoàn thành được 3 lecture trong khóa MIT 18.06</p>
-
 <ul>
 <li>Orthogonal Matrices and Gram-Schimdt</li>
 <li>Properites of Determinants</li>
 <li>Determinants formulas and cofactors</li>
 </ul>
-
 <h2 id="orthogonal-matrices">Orthogonal Matrices</h2>
-
 <p>Những vector $q_1$, $q_2$,&hellip;, $q_n$ được gọi là orthogonal nếu</p>
-
 <ul>
 <li>1 vector $q_i$ bất kì đều vuông góc với $n-1$ vectors còn lại</li>
 <li>$||q_i|| =  1 \forall i$</li>
 </ul>
-
 <p>Những vectors đó sẽ tạo thành 1 matrix $Q$. Dễ dàng, chúng ta thấy $Q$ gồm những những independant columns (hay nói cách khác Q chứa basis vectors). Tính chất quan trọng nhất của $Q$ chính là:</p>
-
 <p>$$Q^{T}Q = I (1)$$</p>
-
 <ul>
 <li>$(1) \Rightarrow  Q_{T} = Q^{-1}$</li>
 </ul>
-
 <p>Nếu $Q$ là một square matrix, khi đó chúng ta thấy rõ ràng $Q$ spans full scpace of $N$ dimension. Vì thế, projection on $Q$ is itself. (Projection Matrix: $P =  I$).</p>
-
 <p>Việc sử dụng $Q$ sẽ giúp chúng ta tính toán projection of a vector onto column spaces of matrix is much easier. Bởi vì</p>
-
 <p>$$Q^{T} Q \hat{x} = Q^{T} b$$</p>
-
 <p>sẽ trở thành</p>
-
 <p>$$ \hat{x} = Q^{T} b$$</p>
-
 <p>lúc này tính toán $x$ sẽ dễ hơn rất nhiều.</p>
-
 <h2 id="gram-schmidt">Gram-Schmidt</h2>
-
 <p>Câu hỏi đặt ra bây giờ là với một column space cho trước, làm sau chúng ta có thể tìm được một matrix chứa orthogonal columns which spans the same column space.</p>
-
 <p>Ý tưởng của Gram-Schmidt</p>
-
 <ul>
 <li>Với mỗi column, chúng ta sẽ lấy column đó trừ đi its projection on previous orthogonal columns.</li>
 </ul>
-
 <p>Thuật toán</p>
-
 <ul>
 <li>Vector đầu tiên chúng ta sẽ giữ nguyên, gọi nó là $A$. Orthogonal tương ứng sẽ là $q_a = \frac{A}{||A||}$</li>
 <li>Tiếp tục với second column, chúng ta lấy nó trừ đi projection của nó trên $A$ (hoặc $a$). Khi đó $B = b - \frac{A^T b}{A^T A}A$. Orthogonal tương ứng sẽ có được khi chúng ta lấy vector đơn vị bằng cách chia cho độ dài của vector.</li>
 </ul>
-
 <p>Khi đó, chúng ta sẽ có:
 $$A = QR$$
 Chúng ta có thể dễ dàng tính được $R = Q^T A$ và những giá trị trên đường chéo chính bằng độ dài của orthogonal vectors thứ $i$.</p>
-
 <p>Trong đó, $ R$ sẽ có dạng</p>
-
 <p>$$
 \begin{bmatrix}
- q_1^T a &amp; q_1^T b   &amp; q_1^T c \\ 0 &amp;  q_2^T b &amp; q_2^T c \\  0 &amp;  0 &amp; q_3^T c \end{bmatrix}
+q_1^T a &amp; q_1^T b   &amp; q_1^T c \\ 0 &amp;  q_2^T b &amp; q_2^T c \\  0 &amp;  0 &amp; q_3^T c \end{bmatrix}
 $$</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-pseudocode" data-lang="pseudocode"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -236,7 +202,7 @@ $$</p>
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-pseudocode" data-lang="pseudocode">for j = 1:n                             
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">for j = 1:n                             
     v = A(:, j);                        % column i of A
     for i = 1:j-1                       % previous (i-1) orthogonal q
         R(i, j) = Q(:,i)&#39;*v;            % Computing Rij
@@ -244,82 +210,80 @@ $$</p>
     end
     R(j, j) = norm(v);                  % diagonal of R is the length
     Q(:, j) = v/R(j, j);                % divide by length to get orthogonal
-end</code></pre></td></tr></table>
+end
+</code></pre></td></tr></table>
 </div>
-</div>
-<h2 id="properties-of-determinant">Properties of Determinant</h2>
-
+</div><h2 id="properties-of-determinant">Properties of Determinant</h2>
 <p>Determinant là một đại lượng đặc biệt dành cho square matrix. Có 3 tính chất cơ bản và quan trọng nhất của determinant:</p>
-
 <ul>
 <li>$(1)$ Determinat of Identity: $det(I) =  1$</li>
 <li>$(2)$ Exchange rows reverse the sign of determinant</li>
-
-<li><p>$(3)$ Linear on each row</p>
-
+<li>$(3)$ Linear on each row
 <ul>
-<li><p>$(3a)$  $$ \begin{bmatrix}
+<li>
+<p>$(3a)$  $$ \begin{bmatrix}
 ta &amp; tb  \\ c &amp; d
 \end{bmatrix}
-= t \begin{bmatrix} a &amp; b  \\ c &amp; d \end{bmatrix} $$</p></li>
-
-<li><p>$(3b)$  $$ \begin{bmatrix}
+= t \begin{bmatrix} a &amp; b  \\ c &amp; d \end{bmatrix} $$</p>
+</li>
+<li>
+<p>$(3b)$  $$ \begin{bmatrix}
 a + a&rsquo; &amp; b + b&rsquo;  \\ c &amp; d
 \end{bmatrix}
-= \begin{bmatrix} a &amp; b  \\ c &amp; d \end{bmatrix} + \begin{bmatrix} a&rsquo; &amp; b&rsquo;  \\ c &amp; d \end{bmatrix} $$</p></li>
-</ul></li>
+= \begin{bmatrix} a &amp; b  \\ c &amp; d \end{bmatrix} + \begin{bmatrix} a&rsquo; &amp; b&rsquo;  \\ c &amp; d \end{bmatrix} $$</p>
+</li>
 </ul>
-
+</li>
+</ul>
 <p>Từ những tính chất đó, chúng ta có thể suy ra một số tính chất sau:</p>
-
 <ul>
-<li><p>$(4)$  Nếu matrix chứa 2 row bằng nhau $\Rightarrow det(A) = 0$</p>
-
+<li>
+<p>$(4)$  Nếu matrix chứa 2 row bằng nhau $\Rightarrow det(A) = 0$</p>
 <ul>
 <li>Sử dụng tính chất 2, chúng ta sẽ exchange 2 equal rows, khi đó chúng ta sẽ có $det(A) = -det(A) \Rightarrow det(A) = 0$</li>
-</ul></li>
-
-<li><p>$(5)$  $row(i) = row(i) - t \times row(j)$ không làm thay đổi giá trị của determinant</p>
-
+</ul>
+</li>
+<li>
+<p>$(5)$  $row(i) = row(i) - t \times row(j)$ không làm thay đổi giá trị của determinant</p>
 <ul>
 <li>$$ \begin{bmatrix}
 a  &amp; b   \\ c - ta &amp; d -ta
 \end{bmatrix}
 = \begin{bmatrix} a &amp; b  \\ c &amp; d \end{bmatrix} - t \begin{bmatrix} a &amp; b  \\ a &amp; b \end{bmatrix} = \begin{bmatrix} a &amp; b  \\ c &amp; d \end{bmatrix} $$</li>
-</ul></li>
-
-<li><p>$(6)$  Nếu có 1 row bao gồm toàn $0$ thì $det(A) = 0$</p>
-
+</ul>
+</li>
+<li>
+<p>$(6)$  Nếu có 1 row bao gồm toàn $0$ thì $det(A) = 0$</p>
 <ul>
 <li>$$ \begin{bmatrix}
 0  &amp; 0   \\ c &amp; d
 \end{bmatrix}
 = \begin{bmatrix} t \times 0 &amp; t \times 0  \\ c &amp; d \end{bmatrix} \Rightarrow det(A) = t \times det(A) \Rightarrow det(A) = 0 $$</li>
-</ul></li>
-
-<li><p>$(7)$  Determinant of digonal matrix $=$ products of diagonal</p>
-
+</ul>
+</li>
+<li>
+<p>$(7)$  Determinant of digonal matrix $=$ products of diagonal</p>
 <ul>
 <li>Tính chất này có thể dễ dàng suy ra trực tiếp từ tính chất $(1)$ và $(3a)$</li>
 <li>Như vậy, chúng ta có thể dùng elimination để tìm determinant</li>
-</ul></li>
-
-<li><p>$(8)$  $det(A) = 0$ nếu $A$ là singular matrix, ngược lại $det(A) \neq 0$ nếu $A$ is invertible</p>
-
+</ul>
+</li>
+<li>
+<p>$(8)$  $det(A) = 0$ nếu $A$ là singular matrix, ngược lại $det(A) \neq 0$ nếu $A$ is invertible</p>
 <ul>
 <li>Nếu $A$ is singular, chúng ta có thể dùng elimination để có được 1 row có tất cả số bằng 0.</li>
 <li>Ngược lại, nếu $A$ is invertible, chúng ta có thể tìm được tất cả pivot columns và chúng khác $0$.</li>
-</ul></li>
-
-<li><p>$(9)$ $det(AB) = det(A)det(B)$</p></li>
-
-<li><p>$(10)$ $det(A^T)  = det(A)$</p></li>
 </ul>
-
+</li>
+<li>
+<p>$(9)$ $det(AB) = det(A)det(B)$</p>
+</li>
+<li>
+<p>$(10)$ $det(A^T)  = det(A)$</p>
+</li>
+</ul>
 <h2 id="determinant-formula">Determinant Formula</h2>
-
 <p><strong>Ý tưởng:</strong></p>
-
 <p>$$ \begin{bmatrix}
 a  &amp; b   \\ c &amp; d
 \end{bmatrix}
@@ -329,17 +293,12 @@ $$
 $$
 = ad -bc
 $$</p>
-
 <ul>
 <li>Chúng ta có thể lần lượt tách những giá trị của từng hàng ra để được những diagonal matrix. Đa số những matrix chúng ta nhận được sẽ bằng 0. Có chính xác $n!$ matrices có giá trị khác $0$.</li>
 </ul>
-
 <p>$$ det(A) = \sum_{n! \space terms} \pm  a_{1 \alpha} a_{2 \beta} a_{3 \gamma}&hellip; a_{n \omega}  $$</p>
-
 <p>with $(\alpha, \beta, \gamma, &hellip;, \omega) = Perm(1, 2, 3, &hellip;, n)$</p>
-
 <p>Từ công thức trên, nếu chúng ta nhóm để lấy nhân tử chung là một phần tử $a_{ij}$, chúng ta có được công thức cofactors:</p>
-
 <p>$$Cofactor(a_{ij}) = (-1)^{i+j} \times det(matrix \space erased \space row \space i \space and \space column \space j)$$</p>
     </div>
 
@@ -387,7 +346,7 @@ $$</p>
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  
+
   
 
   
@@ -419,7 +378,7 @@ $$</p>
   <span class="copyright-year">
     &copy; 
     2016 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

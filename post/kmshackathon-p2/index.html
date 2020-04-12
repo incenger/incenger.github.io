@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://incenger.github.io/post/kmshackathon-p2/" />
@@ -42,21 +42,17 @@
 <meta property="og:description" content="Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series Android for Noob của tôi)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://incenger.github.io/post/kmshackathon-p2/" />
-<meta property="article:published_time" content="2018-07-20T16:31:50&#43;07:00"/>
-<meta property="article:modified_time" content="2018-07-20T16:31:50&#43;07:00"/>
-
+<meta property="article:published_time" content="2018-07-20T16:31:50+07:00" />
+<meta property="article:modified_time" content="2018-07-20T16:31:50+07:00" />
 <meta itemprop="name" content="KMS Hackathon Part 2: Trouble comes">
 <meta itemprop="description" content="Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series Android for Noob của tôi).">
-
-
 <meta itemprop="datePublished" content="2018-07-20T16:31:50&#43;07:00" />
 <meta itemprop="dateModified" content="2018-07-20T16:31:50&#43;07:00" />
 <meta itemprop="wordCount" content="913">
 
 
 
-<meta itemprop="keywords" content="KMSHackathon,Code Story," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="KMSHackathon,Code Story," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="KMS Hackathon Part 2: Trouble comes"/>
 <meta name="twitter:description" content="Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series Android for Noob của tôi)."/>
 
@@ -135,32 +131,22 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
       <p>Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series <a href="https://incenger.github.io/tags/android-for-noob/">Android for Noob</a> của tôi). Tôi có biết thêm một ít về React Native (tôi chỉ mới học qua được 1, 2 ngày) nhưng vẫn chưa đủ để  áp dụng vào làm một application cơ bản. Vì vậy, việc được giao trách nhiệm làm mobile app thật sự là một thử thách vượt quá khả năng của tôi. Nhưng mà &hellip;, cứ làm thôi :D.</p>
-
 <p>Ăn trưa xong đã là 1h, còn tổng cộng 26 tiếng nữa, băt đầu vào code thôi. Đầu tiên phải thiết kế UI. May mắn cho tôi là trong trước đó vài ngày, tôi vừa hoàn thành Human Computer Interaction Summer School. Nhờ những chương trình này mà tôi biết được những điều cần làm trong quá trình thiết kế giao diện cho sản phẩm của mình. Tôi bắt đầu lấy giấy ra, sketch từng activity cho app của mình và đưa cho team tôi test để kiểm tra thiết kế đã tiện lợi cho người dùng chưa. Tôi mất gần 2 tiếng (và một đống snack và nước ngọt :D) để định hình được app của mình. Thật lòng mà nói, những gì tôi đã sketch trong prototype vượt xa khả năng hiện tại của tôi, vì vậy tôi thấy khá mông lung về khả năng hoàn thành được demo của mình. Tôi vẫn hay đùa với cả team là &ldquo;Nếu tối nay Bỉ thắng Anh thì mai tụi mày có demo, còn không thì tụi mày hiểu rồi đấy :D&rdquo;. Tiếp theo là những giờ liên tục vừa google, vừa xem code, vừa build thử ra app và cứ thế lặp lại.</p>
-
 <p>Quá trình build app đôi khi làm tôi nản vì lạc giữa một rừng thư viện UI nhưng lại không có cái nào vừa ý mình. Thêm cả team không có đứa nào biết phần này nên tôi cũng không thể tham khảo ý kiến của tụi nó. Vài giờ đồng hồ trôi qua, app của tôi vẫn chưa có được phiên bản đầu tiên. Tôi quyết định tắt máy, đi lên lầu 7 để đầu óc thư giãn một lúc. Thời gian cứ trôi, tôi không thể cứ đứng yên ở vị trí xuất phát được. Và chính lúc này tôi đã đưa ra một quyết định có ảnh hưởng quan trọng đến khả năng ra đời của cái demo sau này. Tôi quyết định bỏ đi những activity tôi muốn làm nhất, nhưng chưa làm được và tập trung vào những activity thể hiện rõ những tính năng của app.</p>
-
 <p>Trong khoảng thời gian tôi làm UI cho demo thì cả team của tôi cũng chật vật với những phần khác. Có 2 đứa xác định không thể giúp gì cho việc code nên đã quyết định tìm kiếm những thông tin cần thiết để giới thiệu ý tưởng và làm slide (team tôi bắt đầu làm slide ngay khi cái app còn chưa ra đời :D). Một đứa thử giúp tôi trong phần UI nhưng còn chật vật hơn tôi. Hai đứa còn lại thì một đứa đang chật vật với MongoDB, đứa còn lại thì có khả năng code BlockChain nhưng lại không biết deploy trên Android, và như vậy nghĩa là càng thêm việc để tôi phải tìm hiểu và làm.
 Tóm gọi là tình hình của team tôi lúc này là &ldquo;lực bất tòng tâm&rdquo;, khả năng không đủ để thực hiện trọn vẹn ý tưởng của mình.</p>
-
 <p>Bảy tiếng nữa lại trôi qua, team chúng tôi vẫn mới chỉ hoàn thành được 10% công việc. &ldquo;Đêm nay sẽ dài đây!&rdquo; -  Tôi nghĩ. Trong lúc rối ren đó thì đồ ăn là vị cứu tinh của tôi. Sau bữa trưa khá là hoành tráng, tôi đang trông chờ vào đồ ăn buổi tối. Và ban tổ chức thật sự không làm tôi thất vọng. Buôi tối có cơm và pizza.</p>
-
-<p><img src="https://i.imgur.com/3YF5g1W.jpg" alt="alt text" /></p>
-
+<p><img src="https://i.imgur.com/3YF5g1W.jpg" alt="alt text"></p>
 <p>Có mỗi điều trong KMS Hackathon mà tôi thích nhất chính là Code Detox - một tiếng phục vụ cocktail và đàn hát để giúp các team xả stress. Dù công việc chưa đến đâu, nhưng tôi cũng không muốn bỏ lỡ chương trình thú vị này :D. Tôi đã chọn một ly mocktail Sweet Down (tôi chưa dùng cocktail bao giờ nên khi nhìn vào menu, tôi chi chọn ngẫu nhiên cái nào có tên lạ lạ :D).
-<img src="https://i.imgur.com/gIowsWb.jpg" alt="alt text" /></p>
-
+<img src="https://i.imgur.com/gIowsWb.jpg" alt="alt text"></p>
 <p>Sau khi uống xong ly mocktail, tôi qua chỗ chơi PS4 để đá Pes một trận (lâu quá rồi không đá Pes nên tôi cứ chuyền với sút bấm loạn lên :D). Ngoài cocktail, ở quầy đồ uống cũng có sẵn Strongbow, xác định đem nay sẽ dài, tôi cầm vài chai để vừa uống vừa code. (Có lẽ quyết định này không sáng suốt lắm&hellip;)</p>
-
-<p><img src="https://i.imgur.com/JOqSQJQ.jpg" alt="alt text" /></p>
-
-<hr />
-
+<p><img src="https://i.imgur.com/JOqSQJQ.jpg" alt="alt text"></p>
+<hr>
 <p>Như vậy là đã hết ngày đầu tiên, tôi nhận thấy ngoài ăn uống thì mình vẫn chưa làm được gì nhiều. 13 tiếng còn lại sẽ là cuộc chạy đua với thời gian của tôi.</p>
 
     </div>
@@ -214,7 +200,7 @@ Tóm gọi là tình hình của team tôi lúc này là &ldquo;lực bất tòn
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  
+
   
 
   
@@ -246,7 +232,7 @@ Tóm gọi là tình hình của team tôi lúc này là &ldquo;lực bất tòn
   <span class="copyright-year">
     &copy; 
     2016 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
