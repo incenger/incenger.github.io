@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music on Dang-Tam&#39;s Blog</title>
+    <link>https://incenger.github.io/tags/music/</link>
+    <description>Recent content in Music on Dang-Tam&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Aug 2018 16:04:32 +0700</lastBuildDate>
+    
+	<atom:link href="https://incenger.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mia and Sebastian&#39;s Theme Song</title>
+      <link>https://incenger.github.io/post/random_thoughts/la-la-land-theme-song/</link>
+      <pubDate>Wed, 15 Aug 2018 16:04:32 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/post/random_thoughts/la-la-land-theme-song/</guid>
+      <description>&lt;p&gt;Viết linh tinh trong lúc bị delay ở sân bay&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
