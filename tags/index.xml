@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Dang-Tam&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Aug 2018 16:04:32 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Story</title>
+      <link>https://incenger.github.io/tags/my-story/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://incenger.github.io/tags/my-story/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Film</title>
@@ -53,15 +62,6 @@
       <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://incenger.github.io/tags/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My Story</title>
-      <link>https://incenger.github.io/tags/my-story/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://incenger.github.io/tags/my-story/</guid>
       <description></description>
     </item>
     
