@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code Story on Dang-Tam&#39;s Blog</title>
+    <title>Code Story on InCenger&#39;s Thoughts</title>
     <link>https://incenger.github.io/tags/code-story/</link>
-    <description>Recent content in Code Story on Dang-Tam&#39;s Blog</description>
+    <description>Recent content in Code Story on InCenger&#39;s Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Sat, 04 Aug 2018 23:21:30 +0700</lastBuildDate>
     
 	<atom:link href="https://incenger.github.io/tags/code-story/index.xml" rel="self" type="application/rss+xml" />
