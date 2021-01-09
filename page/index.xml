@@ -6,21 +6,6 @@
     <description>Recent content in Pages on InCenger&#39;s Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 27 Jun 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://incenger.github.io/page/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>My Blog</title>
-      <link>https://incenger.github.io/page/aboutme/</link>
-      <pubDate>Mon, 27 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://incenger.github.io/page/aboutme/</guid>
-      <description>Một blog bình thường thì nên có gì?
-Tôi không biết. Đó cũng là lí do tại sao bạn có thể tìm được ở đây những dòng tâm sự trong những ngày mưa bất chợt, bên ly cà phê nóng hay những dòng code vào lúc nửa đêm.
-Tôi đã nhen nhóm ý tưởng tạo cho mình một blog từ lâu. Nhưng sau khi cho ra đời blog đầu tiên của mình, tôi đã để nó mốc meo trong vòng 2 năm.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 27 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://incenger.github.io/page/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

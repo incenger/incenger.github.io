@@ -6,18 +6,32 @@
     <description>Recent content in Hackathon on InCenger&#39;s Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 04 Aug 2018 23:21:30 +0700</lastBuildDate>
-    
-	<atom:link href="https://incenger.github.io/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 04 Aug 2018 23:21:30 +0700</lastBuildDate><atom:link href="https://incenger.github.io/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KMS Hackathon Part 3: Curtain Call</title>
       <link>https://incenger.github.io/post/learn/kmshackathon-p3/</link>
       <pubDate>Sat, 04 Aug 2018 23:21:30 +0700</pubDate>
       
       <guid>https://incenger.github.io/post/learn/kmshackathon-p3/</guid>
-      <description>&lt;p&gt;Hạ Màn&amp;hellip;&lt;/p&gt;</description>
+      <description>
+        
+          &lt;p&gt;Hạ Màn&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p1/&#34;&gt;Phần 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p2/&#34;&gt;Phần 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phần 3&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Cuộc vui đã tàn, không gian đã bắt đầu yên ắn hơn. Cái hơi lạnh không phải của màn đêm ngoài kia mà của một dàn máy lạnh đang hoạt động hết công suât làm tôi rùng mình. Cả căn phòng rộng lớn chỉ còn nghe những tiếng lốc cốc trên bàn phím. Có người vẫn miệt mài tiếp tục công việc của mình, có người đã ngủ gục trên bàn, trên nền nhà, trên bất cứ đâu có thể ngủ được. Tôi biết mình vẫn chưa thể nghỉ ngơi bây giờ, mặc dù cơn bù ngủ đã bắt đầu hành hạ tôi. Tôi lại góc phòng lấy một gói snack ăn cho đỡ buồn ngủ. Đêm nay sẽ thú vị đây&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Tôi bắt tay vào làm demo cho App của mình. Tôi chưa tự build một Android App hoàn chỉnh nào từ trước đến giờ (tôi không tính những app build theo hướng dẫn của khóa học), nên mọi thứ khá rối rắm. Tôi bắt đầu từ Main Screen, cố tìm những thư viện phù hợp với chức năng mà tôi mong muốn. Có những thư viện có chức năng mà tôi cần, thì tôi không biết cách nào  để sử dụng, còn cái mà tôi  dùng được thì lại không cho tôi những gì tôi muốn. Cứ thế, google, mày mò, chạy thử rồi lại tiếp tục vòng lặp đó. Cuối cùng, tôi cũng tạo ra được một demo tạm chấp nhận được (đầy bug và không thẩm mỹ lắm). Tôi nhìn đồng hồ, lúc này đã là 3h30 sáng. Như vậy, tôi còn khoảng gần 12 tiếng nữa và tôi đã làm gần 20 tiếng liên tục. Lúc này, cơ thể và trí óc của tôi bắt đầu giảm năng suất rõ rệt. Tôi cần nghỉ ngơi để có thể tiếp tục.&lt;/p&gt;
+&lt;p&gt;Tôi sẽ rút kinh nghiệm ở những lần Hackathon sau, nếu có ở lại thì phải đêm theo chăn. Mặc dù đã mặc 2 áo nhưng tôi vẫn cảm thấy lạnh vì nhiệt độ máy lạnh thấp quá. Tôi đi quanh phòng, tìm một chỗ ngủ nào đó ấm áp vì sàn nhà giờ đã rất lạnh. Tất cả những đệm ngủ đã được dùng vậy nên tôi đành phải lên tầng trên để ngủ. Hóa ra, đó là một quyết định khá sáng suốt khi ở tầng này ấm hơn ở dưới nhiều. Mặc dù mùi đồ ăn hơi khó chịu nhưng nhìn chung vẫn ổn hơn là nằm trên sàn nhà lạnh nhiều. Tôi nằm gần chỗ ghế chơi PS4 (giờ này chẳng còn ai chơi nữa nên tôi xí luôn chỗ đấy), nhắm mắt với những tính năng demo vẫn lảng vãng trong đầu.
+Những gì diễn ra sáng và trưa hôm đó cũng không có gì để kể nhiều. Cả team vẫn làm và chuẩn bị cho buổi thuyết trình vào buổi chiều. Do vậy, tôi sẽ tua nhanh đến phần quyết định.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Pii2SnJ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;3 &amp;hellip; 2 &amp;hellip; 1! Hết giờ!&amp;rdquo;. Như vậy là 30 tiếng Hackathon đầu tiên của tôi đã hết. Lúc này, tôi đã bắt đầu thấy mệt và muốn tìm một chỗ để ngủ ngay lập tức. Nhưng trước mắt vẫn còn đó là một bài thuyết trình. Tôi sẽ không đi vào chi tiết của nó vì &amp;hellip; đó là một bài thuyết trình thất bải thảm hại. Thời gian giới hạn 5 phút và việc thiếu kinh nghiệm đã làm cho bài thuyết trình của chúng tôi về sản phầm rất tệ. Sau khi thuyết trình và nghe nhận xét xong, tôi lặng lẽ ra góc phòng, thả mình trên ghế, mắt nhìn ra những áng mây chiều phía cuối trời (ngắm mây trời ở thành phố chán hơn nhiều so với ở quê). Tôi không buồn, chính xác hơn, tôi đang tận hưởng những phút giây cuối cùng của cái Hackathon đầu tiên của mình. Tôi chợt khẽ cười, nhận ra rằng mình đã học được nhiều thứ hơn rất nhiều so với chính bản thân mình 30 tiếng trước. Có lẽ, như vậy là đủ cho lần đầu &amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Đây là kết thúc cho 3 phần của series KMS Hackathon, tôi không muốn viết quá sâu vào chi tiết, mà chỉ muốn kể về những điều tôi cảm thấy thú vị trong suốt cuộc thi. Nếu các bạn đã đọc đến dòng này, thì cảm ơn các bạn đã đồng hành với mình qua suốt 3 phần, mặc dù đôi chỗ hơi nhàm chán do mình viết khi buồn ngủ :D.&lt;/p&gt;
+        
+      </description>
     </item>
     
     <item>
@@ -26,7 +40,30 @@
       <pubDate>Fri, 20 Jul 2018 16:31:50 +0700</pubDate>
       
       <guid>https://incenger.github.io/post/learn/kmshackathon-p2/</guid>
-      <description>&lt;p&gt;Những khó khăn bắt đầu xuất hiện&lt;/p&gt;</description>
+      <description>
+        
+          &lt;p&gt;Những khó khăn bắt đầu xuất hiện&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p1/&#34;&gt;Phần 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phần 2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p3/&#34;&gt;Phần 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series &lt;a href=&#34;https://incenger.github.io/tags/android-for-noob/&#34;&gt;Android for Noob&lt;/a&gt; của tôi). Tôi có biết thêm một ít về React Native (tôi chỉ mới học qua được 1, 2 ngày) nhưng vẫn chưa đủ để  áp dụng vào làm một application cơ bản. Vì vậy, việc được giao trách nhiệm làm mobile app thật sự là một thử thách vượt quá khả năng của tôi. Nhưng mà &amp;hellip;, cứ làm thôi :D.&lt;/p&gt;
+&lt;p&gt;Ăn trưa xong đã là 1h, còn tổng cộng 26 tiếng nữa, băt đầu vào code thôi. Đầu tiên phải thiết kế UI. May mắn cho tôi là trong trước đó vài ngày, tôi vừa hoàn thành Human Computer Interaction Summer School. Nhờ những chương trình này mà tôi biết được những điều cần làm trong quá trình thiết kế giao diện cho sản phẩm của mình. Tôi bắt đầu lấy giấy ra, sketch từng activity cho app của mình và đưa cho team tôi test để kiểm tra thiết kế đã tiện lợi cho người dùng chưa. Tôi mất gần 2 tiếng (và một đống snack và nước ngọt :D) để định hình được app của mình. Thật lòng mà nói, những gì tôi đã sketch trong prototype vượt xa khả năng hiện tại của tôi, vì vậy tôi thấy khá mông lung về khả năng hoàn thành được demo của mình. Tôi vẫn hay đùa với cả team là &amp;ldquo;Nếu tối nay Bỉ thắng Anh thì mai tụi mày có demo, còn không thì tụi mày hiểu rồi đấy :D&amp;rdquo;. Tiếp theo là những giờ liên tục vừa google, vừa xem code, vừa build thử ra app và cứ thế lặp lại.&lt;/p&gt;
+&lt;p&gt;Quá trình build app đôi khi làm tôi nản vì lạc giữa một rừng thư viện UI nhưng lại không có cái nào vừa ý mình. Thêm cả team không có đứa nào biết phần này nên tôi cũng không thể tham khảo ý kiến của tụi nó. Vài giờ đồng hồ trôi qua, app của tôi vẫn chưa có được phiên bản đầu tiên. Tôi quyết định tắt máy, đi lên lầu 7 để đầu óc thư giãn một lúc. Thời gian cứ trôi, tôi không thể cứ đứng yên ở vị trí xuất phát được. Và chính lúc này tôi đã đưa ra một quyết định có ảnh hưởng quan trọng đến khả năng ra đời của cái demo sau này. Tôi quyết định bỏ đi những activity tôi muốn làm nhất, nhưng chưa làm được và tập trung vào những activity thể hiện rõ những tính năng của app.&lt;/p&gt;
+&lt;p&gt;Trong khoảng thời gian tôi làm UI cho demo thì cả team của tôi cũng chật vật với những phần khác. Có 2 đứa xác định không thể giúp gì cho việc code nên đã quyết định tìm kiếm những thông tin cần thiết để giới thiệu ý tưởng và làm slide (team tôi bắt đầu làm slide ngay khi cái app còn chưa ra đời :D). Một đứa thử giúp tôi trong phần UI nhưng còn chật vật hơn tôi. Hai đứa còn lại thì một đứa đang chật vật với MongoDB, đứa còn lại thì có khả năng code BlockChain nhưng lại không biết deploy trên Android, và như vậy nghĩa là càng thêm việc để tôi phải tìm hiểu và làm.
+Tóm gọi là tình hình của team tôi lúc này là &amp;ldquo;lực bất tòng tâm&amp;rdquo;, khả năng không đủ để thực hiện trọn vẹn ý tưởng của mình.&lt;/p&gt;
+&lt;p&gt;Bảy tiếng nữa lại trôi qua, team chúng tôi vẫn mới chỉ hoàn thành được 10% công việc. &amp;ldquo;Đêm nay sẽ dài đây!&amp;rdquo; -  Tôi nghĩ. Trong lúc rối ren đó thì đồ ăn là vị cứu tinh của tôi. Sau bữa trưa khá là hoành tráng, tôi đang trông chờ vào đồ ăn buổi tối. Và ban tổ chức thật sự không làm tôi thất vọng. Buôi tối có cơm và pizza.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/3YF5g1W.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Có mỗi điều trong KMS Hackathon mà tôi thích nhất chính là Code Detox - một tiếng phục vụ cocktail và đàn hát để giúp các team xả stress. Dù công việc chưa đến đâu, nhưng tôi cũng không muốn bỏ lỡ chương trình thú vị này :D. Tôi đã chọn một ly mocktail Sweet Down (tôi chưa dùng cocktail bao giờ nên khi nhìn vào menu, tôi chi chọn ngẫu nhiên cái nào có tên lạ lạ :D).
+&lt;img src=&#34;https://i.imgur.com/gIowsWb.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sau khi uống xong ly mocktail, tôi qua chỗ chơi PS4 để đá Pes một trận (lâu quá rồi không đá Pes nên tôi cứ chuyền với sút bấm loạn lên :D). Ngoài cocktail, ở quầy đồ uống cũng có sẵn Strongbow, xác định đem nay sẽ dài, tôi cầm vài chai để vừa uống vừa code. (Có lẽ quyết định này không sáng suốt lắm&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/JOqSQJQ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Như vậy là đã hết ngày đầu tiên, tôi nhận thấy ngoài ăn uống thì mình vẫn chưa làm được gì nhiều. 13 tiếng còn lại sẽ là cuộc chạy đua với thời gian của tôi.&lt;/p&gt;
+        
+      </description>
     </item>
     
     <item>
@@ -35,7 +72,34 @@
       <pubDate>Tue, 17 Jul 2018 23:40:59 +0700</pubDate>
       
       <guid>https://incenger.github.io/post/learn/kmshackathon-p1/</guid>
-      <description>&lt;p&gt;Với một thằng noob không chuẩn bị gì thì 30 tiếng hackathon sẽ như thế nào?&lt;/p&gt;</description>
+      <description>
+        
+          &lt;p&gt;Với một thằng noob không chuẩn bị gì thì 30 tiếng hackathon sẽ như thế nào?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Phần 1&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p2/&#34;&gt;Phần 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p3/&#34;&gt;Phần 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;Một trong những mục tiêu cần hoàn thành trong năm 2018 của tôi là tham gia ít nhất một cuộc thi Hackathon. Khi đặt ra mục tiêu đó, tôi cũng chưa biết chính xác mình cần phải chuẩn bị những gì cho một cuộc thi Hackathon. Tôi nghĩ mục đích chính của tôi chỉ là trải nghiệm cảm giác của một cuộc thi Hackathon mà thôi.&lt;/p&gt;
+&lt;p&gt;KMS Hackathon là cuộc thi Hackathon trong 30 tiếng với mục tiêu tạo ảnh hưởng đến xã hội do công ty KMS tổ chức. Chủ đề của cuộc thi là &amp;ldquo;Unemployment&amp;rdquo; được giữ kín cho đến khi bắt đầu Hackathon. Trước khi đến vòng onsite, mỗi team phải vượt qua vòng loại online. Tôi không biết các team khác thấy thế nào, nhưng tôi thấy đề của vòng loại khá dễ , chỉ là 2 bài tập khá đơn giản về đồ thị. Vì vậy, được tham gia Hackathon đối với tôi là một sự bất ngờ. Đó chính là bắt đầu cho những trải nghiệm thú vị của tôi ở cuộc thi Hackathon này.&lt;/p&gt;
+&lt;p&gt;Giờ checking của Hackathon là 8h sáng, ban tổ chức cũng tài trợ sẵn 1 code Grab 50k để tiện cho việc di chuyển đối với những team dự thi. Cuộc thi được tổ chức ở trụ sở của KMS ở Tản Viên, Tân Bình. Trụ sở khá hoành tráng nhưng không rộng lắm. Tôi đến vào lúc 7h45, sau khi check in và làm vài thủ tục, tôi được hướng dẫn lên tầng 7.&lt;/p&gt;
+&lt;p&gt;Tầng 7 là tầng để giải trí và ăn uống, nhưng có lẽ vì ban tổ chức không thông báo từ đầu, nhiều team đã nghĩ tầng này là tầng diễn ra hackathon nên đã lấy máy tính ra để sẵn rất khí thế =)). Ấn tượng đầu tiên của tôi ở tầng này là đồ ăn =)). Có bánh ngọt, bánh mặn, snack, sữa, nước trái cây, cafe và các loại đồ uống thông thường khác. Ngoài ra còn có một máy PS4, một bàn banh bàn để giải trí khi căng thẳng. Mặc dù đã ăn sáng rồi, nhưng tôi vẫn quyết định dùng thử xem bánh ở đây như thế nào. Tôi không thích bánh mặn lắm, nhưng bánh ngọt thì khá ngon (vì vậy trong suốt cuộc thi tôi đã ăn khá nhiều, không nhớ chính xác là tổng cộng bao nhiêu cái :D). Đây là những món tôi ăn vào lúc đó.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/dsdt9GM.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ăn xong, tôi đi quanh khám phá các ngóc ngách của tầng 7 trước khi ban tổ chức thông báo tập trung ở tầng 6 để bắt đầu cuộc thi.&lt;/p&gt;
+&lt;p&gt;Tầng 6 rất rộng rãi và sáng sủa. Có tổng cộng 27 team tham gia dự thi, mỗi team được được bố trị một bàn và một màn hình máy tính. Ngoài ra mỗi thành viên đều được phát một bộ Hack Kit có chứa 1 gối ngủ, 1 áo và 1 bình nước.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/zqYd5Zb.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/7KTycWo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Nói sơ qua một chút về team của tôi. Tên của team là &lt;strong&gt;DBT FC&lt;/strong&gt;. Ý nghĩa của tên thật ra là fan club của thầy Tiến :D. Tôi lập team với 5 thằng bạn trong lớp. Nếu xét về khả năng và trình độ thì team tôi thật sự khá hạn chế: có 1 đứa chuyên làm BlockChain, 1 thằng mới tập tành Android và 4 đứa còn lại thì chủ yếu là code &lt;code&gt;C++&lt;/code&gt; để làm bài tập chứ chưa code project lớn bao giờ. Vì vậy có lẽ nói mục tiêu của team là đi để kiếm áo thì cũng không sai =)). Nhưng đã thi rồi, thì dù sao cũng phải cố gắng hết sức.&lt;/p&gt;
+&lt;p&gt;9h, ban tổ chức công bố chủ đề và bắt đầu đếm ngược 30 tiếng của Hackathon. Okay, let the hack begin.&lt;/p&gt;
+&lt;p&gt;Sau khi nhận đề, cả team của tôi bắt di chuyển lên tầng 7 để bàn về ý tưởng. Sau hơn 2 tiếng vật lộn với một đống ý tưởng và &amp;hellip; một đống đồ ăn, chúng tôi cũng đã tìm được ý tưởng. Bản thân tôi thấy ý tưởng khá hay và khác biệt so với đa số các team. Nhưng với khả năng hiện tại của team, thực hiện được nó là một thử thách không hề nhỏ. Cơ mà cứ thử thôi, tới đâu thì tới :D.&lt;/p&gt;
+&lt;p&gt;Bàn ý tưởng xong thì cũng tới giờ ăn trưa. Tuy chỉ là cơm nhưng đồ ăn khá là chất lượng (Có lẽ đồ ăn là điều tôi thích nhất trong hackathon này :D).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Pn0QQ0V.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ăn xong, cả team bắt đầu bắt tay vào chia công việc và bắt đầu code.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Tôi sẽ dừng lại phần đầu ở đây vì khá buồn ngủ. Trông phần tiếp theo, tôi sẽ tiếp tục với quá trình code, những bi hài trong quá trình làm app và lần đầu uống cocktail của tôi :D&lt;/p&gt;
+        
+      </description>
     </item>
     
   </channel>
