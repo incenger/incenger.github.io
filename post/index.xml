@@ -6,7 +6,42 @@
     <description>Recent content in Posts on InCenger&#39;s Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 13 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://incenger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Apr 2021 23:42:14 +0700</lastBuildDate><atom:link href="https://incenger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://incenger.github.io/post/fellowship_optim/hello_world_0/</link>
+      <pubDate>Wed, 14 Apr 2021 23:42:14 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/post/fellowship_optim/hello_world_0/</guid>
+      <description>
+        
+          &lt;p&gt;Mình sẽ bắt đầu bằng cách cung cấp một số thông tin cơ bản nhất, để bạn có thể biết được mình là ai, và những bài viết này nhằm mục đích gì. Và cách bắt đầu hiệu quả nhất theo mình nghĩ là những câu hỏi.&lt;/p&gt;
+&lt;h3 id=&#34;tại-sao-lại-là-the-fellowship-of-the-optim&#34;&gt;Tại sao lại là The Fellowship of the Optim?&lt;/h3&gt;
+&lt;p&gt;Mình lấy ý tưởng từ The Lord of the Rings - một trong những tác phẩm mình rất yêu thích. Mình thấy một phần nào đó của mình trong Frodo, khi vốn là một người vô năng nhưng lại được giao cho trọng trách lớn nhất. Giống như cách Frodo luôn tự vấn về bản thân, mình cũng hay nghĩ tại sao mình lại có được những gì mình có hiên tại. Ngoài ra, mình thấy cuộc hành trình tiêu hủy chiếc nhẫn,chông gai và đầy cạm bẫy, như hành trình một optimizer đi tìm đến một điểm cực trị thích hợp vậy. Và mình cũng thích từ Fellowship, vì mình mong muốn tìm được những người đồng hành với mình trong những cuộc hành trình tiếp theo.&lt;/p&gt;
+&lt;h3 id=&#34;tại-sao-mình-lại-có-ý-tưởng-viết-những-bài-viết-này&#34;&gt;Tại sao mình lại có ý tưởng viết những bài viết này?&lt;/h3&gt;
+&lt;p&gt;Mình nghĩ mọi người thỉnh thoảng sẽ có cảm giác giống mình, là cảm giác nửa năm hay một năm trôi qua quá nhanh và khi nhìn lại thì nhận ra mình chưa làm được gì nhiều. Một cách để làm cảm giác đó trở nên ít tồi tệ đi là thêm vào dòng thời gian của mình những cột mốc cụ thể. Những bài viết này đối với mình chính là những cột mốc cho một giai đoạn đặc biệt mà mình nghĩ mình sẽ chỉ được trải nghiệm một lần trong đời&lt;/p&gt;
+&lt;h3 id=&#34;mình-là-ai-mình-đang-làm-gì-và-mình-sẽ-viết-những-gì&#34;&gt;Mình là ai, mình đang làm gì, và mình sẽ viết những gì?&lt;/h3&gt;
+&lt;p&gt;Các bạn có thể tìm đươc thông tin của mình thông qua những mạng xã hội đính kèm ở blog này. Vì blog này sẽ liên quan đến Deep Learning, nên mình sẽ chia sẻ một chút về hành trình của mình với Deep Learning.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mình bắt đầu chú ý đến Deep Learning vào khoảng giữa kì 2 của năm thứ nhất (2018), mình cũng bắt đầu bằng những khóa học trên Coursera giống mọi người. Nhưng lúc đó, mình cứ mãi theo đuổi việc hoàn thành những khóa học mà bỏ quên việc hiểu sâu vào bản chất của Machine Learning và Deep Learning, và điều đó để lại hậu quả xấu sau này.&lt;/li&gt;
+&lt;li&gt;Đầu năm 2 đại học, mình có cơ hội làm một project Deep Learning đầu tiên trong môn Nghiên cứu khoa học. Đó là bài toán về phát hiện xe bất thường trên cao tốc của NVIDIA AI City Challenge. Lúc đó mình rất phấn khởi, nhưng ngay lập tức sau đó ăn hành vì bị choáng ngợp trước việc cài đặt CUDA, cài đặt thư viện, chạy model,&amp;hellip;. Do lúc học những khóa học Deep Learning, mình chỉ tập trung vào việc hoàn thành bài tập mà không tìm hiểu sâu về bài toán, nên khi làm project này, sau khi clone được code của một paper có sẵn, thêm thắt chút đỉnh, mình không biết làm gì thêm nữa. Và sau khi kết thúc dự án này, mình cảm thấy chán Deep Learning, khi mình đã dành rất nhiều thời gian cho nó, nhưng lại luôn có cảm giác mình chẳng thật sự hiểu gì&lt;/li&gt;
+&lt;li&gt;Sau dự án này, mình apply vào phòng thí nghiệm AI Lab của trường với mục đích sẽ được học hỏi và củng cố lại kiến thức của mình, và cũng thử sức với một bài toán mới lạ hơn trong lĩnh vực Speech Processing. Nhưng trái với những gì mình trông đợi, mình không nhận được nhiều sự hướng dẫn, mà chủ yếu phải tự mày mò tìm hiểu. Mình cứ dần chìm trong biển kiến thức mênh mông đó. Mình làm được trong Lab khoảng 6 tháng, và những gì mình làm được chỉ là đi thu thập dữ liệu text một cách bất cẩn, sau đó viết một vài cái rule-based (chủ yếu là regex) để làm text normalization (cho Text-to-speech system). Cuối năm 2019, mình xin nghỉ Lab, thu về cho mình thêm một dự án thất bại và bị trầm cảm. (Trong lúc này mình cũng được phỏng vấn thực tập ở Google, nhưng rồi cũng tạch :))&lt;/li&gt;
+&lt;li&gt;Sau khi nghỉ ở Lab, mình định chuyển hướng sang học những kĩ năng Software Engineering để có thể tìm được vị trí thực tập ở năm 3. Mình vô tình thấy chương trình AI Bootcamp của CinnamonAI. Lúc đó mình đã cảm thấy quá chán nản với AI và Deep Learning, nên mình cũng không định đăng kí. Nhưng sau khi đọc qua thử chương trình, mình thấy trong bootcamp có vẻ chú trọng rất nhiều vào những kiến thức nền tảng - thứ mà mình luôn cảm thấy thiếu sót. Và mình quyết định cho AI thêm một cơ hội nữa. Và hóa ra đó là một quyết định làm thay đổi mình hoàn toàn. Mình may mắn thể hiện tốt trong Bootcamp và sau đó được offered internship và sau đó trở thành nhân viên chính thức. Có thể nói mình bắt đầu &amp;ldquo;học lại&amp;rdquo; mọi thứ về AI và Deep Learning từ Bootcamp của CinnamonAI&lt;/li&gt;
+&lt;li&gt;Về quá khứ như vậy là đủ rồi, nếu các bạn có hứng thú thì mình sẽ viết thêm về những bài học mình học được từ quá trình đau thương đó. Hiện tại, về Deep Learning, mình có những kinh nghiệm nhỏ trong một số bài toán sau
+&lt;ul&gt;
+&lt;li&gt;Ở Bootcamp của CinnamonAI, mình làm về bài toán Automatic Colorization, nhưng chỉ trong 2 tuần nên mình cũng không tự tin là mình hiểu nhiều lắm.&lt;/li&gt;
+&lt;li&gt;Trong quá trình làm việc ở CinnamonAI, mình làm chủ yếu về Deep Metric Learning và Graph Neural Network.&lt;/li&gt;
+&lt;li&gt;Công việc hiện tại của mình bao gồm bài toán Detection và Segmentation.&lt;/li&gt;
+&lt;li&gt;Mình đang làm luận văn về đề tài Video Super Resolution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Các bạn có thể thấy là mình thật sự không có một định hướng cụ thể nào cả, khi những bài toàn của mình thuộc khá nhiều chủ đề so với kĩ năng và kinh nghiệm hiện có của mình :))))&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
     <item>
       <title>30 Days Writing Challenge</title>
       <link>https://incenger.github.io/post/random_thoughts/2020-08-13-30-days-writing-challeng/</link>
