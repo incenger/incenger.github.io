@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on InCenger&#39;s Thoughts</title>
+    <title>Posts on </title>
     <link>https://incenger.github.io/post/</link>
-    <description>Recent content in Posts on InCenger&#39;s Thoughts</description>
+    <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Wed, 14 Apr 2021 23:42:14 +0700</lastBuildDate><atom:link href="https://incenger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +15,10 @@
       <guid>https://incenger.github.io/post/fellowship_optim/hello_world_0/</guid>
       <description>
         
-          &lt;p&gt;Mình sẽ bắt đầu bằng cách cung cấp một số thông tin cơ bản nhất, để bạn có thể biết được mình là ai, và những bài viết này nhằm mục đích gì. Và cách bắt đầu hiệu quả nhất theo mình nghĩ là những câu hỏi.&lt;/p&gt;
+          &lt;blockquote&gt;
+&lt;p&gt;Các bạn có thể tìm đọc tất cả bài viết của series này tại &lt;a href=&#34;https://incenger.github.io/categories/fellowship-optim/&#34;&gt;đây&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mình sẽ bắt đầu bằng cách cung cấp một số thông tin cơ bản nhất, để bạn có thể biết được mình là ai, và những bài viết này nhằm mục đích gì. Và cách bắt đầu hiệu quả nhất theo mình nghĩ là những câu hỏi.&lt;/p&gt;
 &lt;h3 id=&#34;tại-sao-lại-là-the-fellowship-of-the-optim&#34;&gt;Tại sao lại là The Fellowship of the Optim?&lt;/h3&gt;
 &lt;p&gt;Mình lấy ý tưởng từ The Lord of the Rings - một trong những tác phẩm mình rất yêu thích. Mình thấy một phần nào đó của mình trong Frodo, khi vốn là một người vô năng nhưng lại được giao cho trọng trách lớn nhất. Giống như cách Frodo luôn tự vấn về bản thân, mình cũng hay nghĩ tại sao mình lại có được những gì mình có hiên tại. Ngoài ra, mình thấy cuộc hành trình tiêu hủy chiếc nhẫn, chông gai và đầy cạm bẫy, giống như hành trình một Optimizer đi tìm đến một điểm cực trị thích hợp vậy. Và mình cũng thích từ Fellowship, vì mình mong muốn tìm được những người đồng hành với mình trong những cuộc hành trình tiếp theo.&lt;/p&gt;
 &lt;h3 id=&#34;tại-sao-mình-lại-có-ý-tưởng-viết-những-bài-viết-này&#34;&gt;Tại sao mình lại có ý tưởng viết những bài viết này?&lt;/h3&gt;
