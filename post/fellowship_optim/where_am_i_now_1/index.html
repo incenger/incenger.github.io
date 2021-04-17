@@ -203,16 +203,16 @@
 <p><img src="/img/2021/how_i_met_my_thesis_1/mood.jpg" alt="Thống kê cảm xúc của mình trong tháng 3/2021. Mình dùng app Daylio"></p>
 <p>Một bài học nữa (mình nghĩ chắc các bạn cũng nghe nhiều rồi) mà mình rút ra được là không nên để những nỗi sợ ban đầu làm bạn chùn bước. Mình đã lo sợ trước thesis proposal, cảm thấy hoang mang giữa một codebase mà mình nghĩ chắc mình sẽ không hiểu được. Nhưng từng bước một, mình dần dần vượt qua được những chướng ngại đó. Đây là bài học của một người bình thường (mình nghĩ đúng hơn là hơi &ldquo;phế&rdquo;) nên mình nghĩ có thể nó sẽ dễ đồng cảm với các bạn hơn một người thành công :)).</p>
 <p>Tóm lại, về thesis, hiện tại thì mình đã hoàn thành xong thesis proposal, đã hiểu code <code>MMEditing</code>, implement xong một baseline model và đang train để xem kết quả như thế nào =))). Đây là giai đoạn mình thích nhất: được thử nghiệm nhiều ý tưởng và cầu nguyện mỗi lần train model =))))</p>
-<p>Bài viết hôm nay sẽ dài hơn một tí, vì mình dự định mình sẽ viết mỗi tuần 1 bài (chắc là vào cuối tuần). Nếu mình rảnh thì mình có thể viết nhiều hơn, nhưng mình không hứa chắc được, phải làm mới có thứ mà chia sẻ chứ :)))). Những bài viết sau mình sẽ viết cụ thể mình đang làm gì, vấn đề mình gặp phải và mình giải quyết nó như thế nào. Đưới đây là một ví dụ (mà mình mới giải quyết xong hôm nay)</p>
-<p>Khi mình evalute kết quả super resolution bằng việc sử dụng thuật toán cực kì đơn giản là resize bằng bicubic interpolation, kết quả PSNR (Peak Signal to Noise Ratio) của mình khá là cao, khoảng 31 db, trong khi số liệu trong các papers cũng chỉ ở khoảng 26 db. Mình bắt đầu kiểm tra lại mọi thứ:</p>
+<p>Bài viết hôm nay sẽ hơi dài một tí, vì mình dự định sẽ viết mỗi tuần 1 bài (chắc là vào cuối tuần). Nếu mình rảnh thì mình có thể viết nhiều hơn, nhưng mình không hứa chắc được, phải làm mới có thứ mà chia sẻ chứ :))). Những bài viết sau mình sẽ viết cụ thể mình đang làm gì, vấn đề mình gặp phải và mình giải quyết nó như thế nào. Đưới đây là một ví dụ (mà mình mới giải quyết xong hôm nay).</p>
+<p>Khi mình evalute kết quả Super Resolution bằng việc sử dụng thuật toán cực kì đơn giản là resize bằng bicubic interpolation, kết quả PSNR (Peak Signal to Noise Ratio) của mình khá là cao, khoảng 31 db, trong khi số liệu trong các papers cũng chỉ ở khoảng 26 db. Mình bắt đầu kiểm tra lại mọi thứ:</p>
 <ul>
-<li>Code evaluation đã chính xác. Mình dùng hàm có sẵn trong <code>MMEditing</code> nên xác suất sai là khá thấp. Mình kiểm tra thêm trong phần issues của repo thử xem có cái nào liên quan đến PSNR luôn không cho chắc</li>
+<li>Code evaluation đã chính xác. Mình dùng hàm có sẵn trong <code>MMEditing</code> nên xác suất sai là khá thấp. Mình kiểm tra thêm trong phần issues của repo thử xem có cái nào liên quan đến PSNR luôn không cho chắc.</li>
 <li>Mình evaluate thêm kết quả của model hiện tại mình đang train, ra được PSNR khoảng 33 db, cao hơn khá nhiều so với model trong một số papers trong khi model của mình cũng chỉ là baseline. Lúc này mình bắt đầu nghĩ là có thể nằm ở data.</li>
-<li>Mình visualize kết quả high resolution ra và thấy kết quả cũng không quá tốt, và đạt PSNR cao như vậy thì rõ ràng là có vấn đề.</li>
-<li>Mình kiểm tra thêm metric khác là SSIM (Structural Similarity Index Measure) và thấy kết quả của metrics này khá tương đồng với các papers, điều này có nghĩa là cách mình dùng PSNR có vấn đề</li>
+<li>Mình visualize kết quả High Resolution và thấy kết quả cũng không quá tốt, và đạt PSNR cao như vậy thì rõ ràng là có vấn đề.</li>
+<li>Mình kiểm tra thêm metric khác là SSIM (Structural Similarity Index Measure) và thấy kết quả của metrics này khá tương đồng với các papers, điều này có nghĩa là cách mình dùng PSNR có vấn đề.</li>
 <li>Mình nhớ lại là một số papers evaluate PSNR trên Y channel trong định dạng YCbCr thay vì RGB như thông thường. Mình implement hàm để covert ảnh sang YCbCr và thử lại. Kết quả ra đúng như mình mong đợi -&gt; Problem solve :))).</li>
 </ul>
-<p>À còn một điều nữa mà mình cần làm, là tìm hiểu về định dạng màu YCbCr và tại sao PSNR lại không hoạt động tốt với định dạng RGB. Mình sẽ chia sẻ sau khi mình hiểu nhé :&quot;&gt;</p>
+<p>À còn một điều nữa mà mình cần làm, là tìm hiểu về định dạng màu YCbCr và tại sao PSNR lại không hoạt động tốt với định dạng RGB. Mình sẽ chia sẻ sau khi mình hiểu nhé :&quot;&gt;.</p>
 <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
