@@ -6,7 +6,94 @@
     <description>Recent content in Posts on InCenger Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 23 Apr 2021 19:20:42 +0700</lastBuildDate><atom:link href="https://incenger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 May 2021 12:54:23 +0700</lastBuildDate><atom:link href="https://incenger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Fellowship of the Optim: You don&#39;t know what you don&#39;t know</title>
+      <link>https://incenger.github.io/post/fellowship_optim/you_dont_know/</link>
+      <pubDate>Sun, 02 May 2021 12:54:23 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/post/fellowship_optim/you_dont_know/</guid>
+      <description>
+        
+          &lt;p&gt;Bỗng dưng mình có một suy nghĩ, là trong những bài viết này mình nên viết như thể mình đang kể một câu chuyện cho người đọc, hay là chỉ đơn thuần là viết để ghi lại cho bản thân mình thôi. Mình có suy nghĩ này vì với bài viết này, mình cảm giác mình muốn viết lại cho chính mình nhiều hơn là viết cho một người khác đọc. Nhưng ở hai câu vừa rồi thì mình đã chọn cách viết rồi mà nhỉ? Ừ, hơi mâu thuẫn thật, giống như trang giấy mà bạn sẽ thường hay thấy khi đọc sách này.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://incenger.github.io/img/2021/you_dont_know_3/left_blank.jpg&#34; alt=&#34;Is it blank?&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You don&amp;rsquo;t know what you don&amp;rsquo;t know&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mình thích câu này mặc dù nó luôn làm mình hơi rùng mình một tí.
+Thừa nhận với chính bản thân mình rằng mình đang không biết, không hiểu rõ một điều gì đó là bước đầu tiên để chúng ta có thể bắt đầu quá trình tìm hiểu và học hỏi.
+Mình không biết rất nhiều thứ, và điều đó có làm mình lo lắng một chút. Nhưng cảm giác đó, với mình, không đáng sợ bằng cảm giác nhận ra mình không biết là mình không biết về thứ gì đó.
+Nói một cách đơn giản, mình nghĩ điều này thường xảy ra dưới 2 dạng: Bạn không hề nhận thức được gì về điều bạn không biết, hoặc là bạn nghĩ rằng mình đã hiểu rõ về thứ đó, nhưng thật ra góc nhìn của bạn còn đang rất hạn hẹp và thiếu sót.
+Ở dạng thứ nhất, thông thường bạn sẽ nhận ra nó với một cảm giác ngạc nhiên: &amp;ldquo;Ồ, hóa ra những thứ thế này có tồn tại&amp;rdquo;.
+Ở dạng thứ hai, bạn sẽ nhận ra nó với cảm giác rùng mình: &amp;ldquo;Vậy hóa ra lâu nay mình đang hiểu sai sao?&amp;rdquo;
+Mình không thích dạng thứ hai, nhưng mình phải thừa nhận nó cho mình nhiều bài học hơn. Nó giống như là một lời cảnh tỉnh, để mình có thể nhìn lại tất cả những &amp;ldquo;nền móng&amp;rdquo; mà mình đang đứng trên, liệu nó đang kiên cố và vững chãi, hay đang sẵn sàng sụp đổ bất cứ lúc nào?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://incenger.github.io/img/2021/you_dont_know_3/dishes_falling.jpg&#34; alt=&#34;Thế này có được coi là vững chãi không?&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mình viết về câu nói này, vì gần đây mình vừa trải nghiệm nó. Để giải thích cho vấn đề này, thì mình sẽ phải nói về đề tài luận văn mình đang làm một tí. Mình làm về Video Super Resolution, nhưng để cho đơn giản, mình sẽ coi như là Single Image Super Resolution. Một khi đã hiểu được vấn đề thì các bạn có thể dễ dàng tổng quát hóa nó lên thôi.&lt;/p&gt;
+&lt;p&gt;Super Resolution có thể hiểu đơn giản là phóng to ảnh, ví dụ phóng to một bức ảnh có độ phân giải 640x360 (360p) thành 1280x720 (720p) (độ phóng to - scaling factor trong trường hợp này là \( \times 2 \) ). Bài toán Super Resolution được đặt ra như sau: cho trước một cặp ảnh low resolution và high resolution, tìm một thuật toán (có thể hiểu là model nếu bạn quen với Deep Learning nhiều hơn) nhận vào ảnh low resolution và trả về kết quả giống ảnh high resolution cho trước nhất. &amp;ldquo;Giống nhất&amp;rdquo; ở đây có thể được đo bằng nhiều metrics khác nhau, đơn giản nhất thì có thể dùng Mean Square Error giữa hai ảnh.
+Vấn đề đặt ra ở đây là ảnh low resolution được sinh ra từ ảnh high resolution như thế nào? Cách tiếp cận phổ biến nhất (qua những papers Super Resolution mà mình đã đọc) là sử dụng Gaussian Blur lên trên ảnh High Resolution, sau đó dùng bicubic interpolation để resize (thu nhỏ) lại và cuối cùng cộng với một Gaussian noise. Thông thường, quá trình đó được thể hiện thông qua công thức:&lt;/p&gt;
+&lt;p&gt;$$I^{LR} = {(I^{HR} \circledast k) \downarrow} + \mathcal{N} $$&lt;/p&gt;
+&lt;p&gt;Trong đó:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\( \circledast \) là convoluton operator&lt;/li&gt;
+&lt;li&gt;\( k \) là Guassian kernel dùng để blur (cái này quan trọng, nhớ nó nhé)&lt;/li&gt;
+&lt;li&gt;\(  \downarrow \) là bicubic interpolation&lt;/li&gt;
+&lt;li&gt;\(  \mathcal{N} \) là Gaussian noise&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nói một cách đơn giản, thì Super Resolution, đặc biệt nếu dùng cách tiếp cận bằng Deep Learning models, thì sẽ cố gắng đi tìm &amp;ldquo;hàm ngược&amp;rdquo; \( k&#39; \) của kernel \( k \).
+Mình đã &amp;ldquo;look over&amp;rdquo; chi tiết này, nhưng cũng nhờ vậy mà mình có được những bài học.&lt;/p&gt;
+&lt;p&gt;Deep Learning models thường được ưa chuộng vì khả năng generalization của nó nếu được trained properly và mình nghĩ Super Resolution models cũng vậy. Trong lúc làm thí nghiệm, mình có một xây dựng một vài models cơ bản. Cơ bản ở đây theo nghĩa là nó đơn giản để xây dựng dựa trên một số công trình ở trước, chứ không hẳn là nó đơn giản thật =))). Mình có thử 2 cái, mà mình đặt tên là SimpleBaseline và DumbNet (đúng rồi, cái DumbNet mà mình đã viết &lt;a href=&#34;https://incenger.github.io/post/fellowship_optim/random_things_2/&#34;&gt;ở đây&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.). Kết quả train của 2 models này, trên tập validation (gồm 4 videos) của dataset REDS khá là tốt, đạt được khoảng 30 PSNR score (ngang bằng với đa số papers trong khoảng vài năm trở lại đây, nhưng tất nhiên không phải cao nhất =))) ).&lt;/p&gt;
+&lt;p&gt;Với kết quả như vậy, thì việc tiếp theo mình sẽ làm là sẽ test thử kết quả trên một dataset khác. Dataset đó sẽ đóng vai trò là một out-of-scope test set (hoặc out-of-distribution, mình không nhớ chính xác tên khái niệm lắm) - một tập test mà data sẽ khác hoàn toàn với data mà model được train (khác ở đây theo nghĩ chúng có thể được sampled từ những distribution khác nhau, nếu muốn tìm hiểu thêm về phần này, mình recommend các bạn nên đọc quyển &lt;a href=&#34;https://www.manning.com/books/human-in-the-loop-machine-learning&#34;&gt;Human-in-the-Loop Machine Learning&lt;/a&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;). Mình sử dụng dataset Vid4 -  một dataset khác cũng được sử dụng khá phổ biến cho bài toán Video Super Resolution. Dataset này thì không có sẵn low resolution frame, nên mình viết code để tạo chúng từ high resolution frames. Sau khi test thử, kết quả mình nhận được rất &amp;hellip; tệ, tệ hơn hẳn việc sử dụng bicubic interpolation thông thường.  Và thế là quá trình debug của mình bắt đầu.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Để debug trong deep learning, các bạn không nên chỉ nhìn vào con số tổng quát mà hãy tập trung vào từng sample cụ thể. Mình xem kết quả super resoluton frame by frame và nhận ra là output của mình có rất nhiều artifact như thế này.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://incenger.github.io/img/2021/you_dont_know_3/vid4_artifact.png&#34; alt=&#34;Kết quả rất tệ&amp;hellip;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Mình không thể hiểu được kết quả. Đối với các bài toán như Classification, việc hiểu kết quả đưa ra bởi model sẽ trực quan hơn nhiều. Còn với Super Resolution, mình không thật sự hiểu được hoàn toàn mà mình chỉ biết là nó tệ hay tốt thôi. Dù vậy, mình có một giả thiết là việc generalization của model có vấn đề.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mình kiểm tra lại trong paper, thì không thấy paper nào nói về chuyện này cả, và những papers đó đều có sử dụng Vid4 dataset để evaluate và kết quả khá tốt, ít nhất là tốt hơn bicubic interpolation. Mình nghĩ có thể có 2 trường hợp xảy ra: một là model của mình overfit data và hai là model đơn giản quá nên underfit. Sau khi kiểm tra kết quả trên chính training set, mình khá chắc chắn đây không thể là overfitting vì kết quả không quá tốt, do vậy mình kết luận là underfitting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mình làm thí nghiệm để xác thực giả thuyết underfitting. Mình đo số parameters và đồng thời chỉnh lại hyperparameters của model để tăng complexity lên. Sau khi train lại và evaluate lại, mình nhận kết quả tương tự :(. Và thế là mình bị mắc kẹt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lúc này, mình đành phải kiểm chứng lại kết quả của những papers khác. Mình sử dụng code và pre-trained models của họ để chạy thử trên data Vid4 của mình. Và thật bất ngờ, kết quả cũng tệ tương tự.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tới lúc này, giả thuyết của mình chuyển từ underfitting sang việc generalization trong bài toán Super Resoluton có gì đó mà mình chưa biết (yeah, you don&amp;rsquo;t know what you don&amp;rsquo;t know :))) ). MÌnh bắt đầu đi tìm hiểu thử về vấn đề này. Mình bắt gặp một &lt;a href=&#34;https://github.com/open-mmlab/mmediting/issues/59&#34;&gt;Github issue&lt;/a&gt;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; và sau khi đọc nó mình đã hiểu ra vấn đề.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thật ra việc generalization của Super Resolution không có vấn đề gì cả, chỉ là mình hiểu sai nó. Với đa số cách tiếp cận hiên tại, với input chỉ gồm ảnh low resolution, models có thể generalize trên những image domain khác, nhưng không thể generalize trên những downsample kernel \(  k \) khác nhau tốt được. Và bằng việc tự mình generate low resolution frames cho Vid4 dataset, mình đã dùng một downsample kernel khác với downsample kernel mà model đã được optimized. Điều đó giải thích cho việc tại sao kết quả của mình không tốt. Ngoài ra, mình còn biết được thêm là có một nhánh nghiên cứu Super Resolution mà models có thể generalize với nhiều downsample kernels khác nhau,  gọi là Blind Super Resolution. Khi đó input cho model khi train sẽ cần thêm downsample kernel đã được dùng để sinh ra ảnh low resolution. Okay, vấn đề đã được giải quyết, mình tìm code mà đã được dùng cho dataset REDS và sử dụng nó cho dataset Vid4 và kết quả mình nhận được make sense hơn rất nhiều.&lt;/p&gt;
+&lt;p&gt;Bên cạnh việc hiểu được vấn đề, sự phát hiện này cũng làm mình hơi hoang mang một tí vì bất ngờ mình có thêm một hướng nghiên cứu cần phải để tâm. Nhưng đó sẽ là một câu chuyện khác và mình sẽ kể khi mình bớt hoang mang hơn :))). Thường sau khi giải quyết xong vấn đề, mình thường dành thời gian để reflection - nhìn lại và nghĩ xem mình có thể làm tốt hơn ở những bước nào.&lt;/p&gt;
+&lt;p&gt;Thật ra, trong quá trình mình giải quyết vấn đề ở trên, nếu mình bắt đầu từ bước 6 thì sẽ đỡ tốn thời gian hơn rất nhiều. Lúc mình đang phân vân giữa 2 giả thuyết overfitting và underfitting, mình cũng đã nghĩ đến generalization. Nhìn lại, mình nhận ra mình chọn 2 giả thuyết kia để thử vì việc xác thực tụi nó dễ với mình nhiều hơn là mình nghĩ chúng có thể là cốt lõi của vấn đề. Mình không tìm hiểu về generalization đầu tiên vì mình không có nhiều manh mối về nó và nó sẽ có thể làm lay chuyển những assumptions mà mình đang sử dụng trước giờ. Và đây là một bài học cho mình: trong những lựa chọn, không nên lúc nào cũng ưu tiên những lựa chọn trong &amp;ldquo;comfort zone&amp;rdquo; của mình.&lt;/p&gt;
+&lt;p&gt;Ngoài ra, trong lúc tìm hiểu về Blind Super Resolution, mình tìm thấy đươc một paper có show kết quả super resolution khi mà kernel được dùng để downsample và kernel mà model học được khác nhau. Điều này giúp mình hiểu rõ hơn về kết quả thí nghiệm của mình -  điều mà trước đây luôn làm mình bối rối. Mình cũng thấy khá thắc mắc, là hầu như trong những papers mình đọc qua, không có paper nào nhắc qua về những kết quả kiểu như thế này. Thật ra mình cũng không thấy bất ngờ lắm, vì mình nghĩ hầu như các papers cũng sẽ đều tập trung vào kết quả tốt và bỏ đi những kết quả &amp;ldquo;thất bại&amp;rdquo;. Mình cũng từng đọc qua điều này trong quyển &lt;a href=&#34;https://www.goodreads.com/book/show/18693884-how-not-to-be-wrong&#34;&gt;How Not to Be Wrong: The Power of Mathematical Thinking&lt;/a&gt;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;, trong đó tác giả đề xuất rằng những thí nghiệm thất bại nên được coi trọng hơn và được đưa vào trong những papers nhiều hơn. Mình nghĩ lúc mình viết thesis, mình cũng sẽ cố đưa những kết quả thí nghiệm dù thất bại nhưng vẫn có giá trị vào :)).&lt;/p&gt;
+&lt;p&gt;Vừa rồi là những suy nghĩ linh tinh của mình. Hẹn gặp lại các bạn trong những bài viết tiếp theo  \ (•◡•) /.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Các bạn có thể tìm đọc tất cả bài viết của series này tại &lt;a href=&#34;https://incenger.github.io/categories/fellowship-optim/&#34;&gt;đây&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://incenger.github.io/post/fellowship_optim/random_things_2/&#34;&gt;https://incenger.github.io/post/fellowship_optim/random_things_2/&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.manning.com/books/human-in-the-loop-machine-learning&#34;&gt;https://www.manning.com/books/human-in-the-loop-machine-learning&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/open-mmlab/mmediting/issues/59&#34;&gt;https://github.com/open-mmlab/mmediting/issues/59&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/18693884-how-not-to-be-wrong&#34;&gt;https://www.goodreads.com/book/show/18693884-how-not-to-be-wrong&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>The Fellowship of the Optim: Random things</title>
       <link>https://incenger.github.io/post/fellowship_optim/random_things_2/</link>
