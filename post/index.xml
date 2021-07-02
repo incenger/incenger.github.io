@@ -6,7 +6,63 @@
     <description>Recent content in Posts on InCenger Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 07 May 2021 13:52:06 +0700</lastBuildDate><atom:link href="https://incenger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jul 2021 23:14:34 +0700</lastBuildDate><atom:link href="https://incenger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Fellowship of the Optim: Writing Thesis</title>
+      <link>https://incenger.github.io/post/fellowship_optim/thesis_writing_5/</link>
+      <pubDate>Fri, 02 Jul 2021 23:14:34 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/post/fellowship_optim/thesis_writing_5/</guid>
+      <description>
+        
+          &lt;p&gt;Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis.&lt;/p&gt;
+&lt;p&gt;Gần đây mình có đọc quyển How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking và tìm hiểu về &lt;a href=&#34;https://notes.andymatuschak.org/About_these_notes&#34;&gt;Andy&amp;rsquo;s working note&lt;/a&gt;. Mình cảm thấy incremental writing rất phù hợp với phong cách viết của mình và những gì mình hướng đến. Cụ thể là, mình xem viết như là một cách để hiểu và suy nghĩ về một vấn đề và những note mình viết phải có giá trị tái sử dụng, tức là bản thân nó có chứa đầy đủ thông tin và liên kết để làm sáng tỏ một chủ đề nào đó. Đặt trong bối cảnh thesis của mình, thì mình muốn mỗi note của mình sẽ viết một chủ đề, một câu hỏi nào đó mà mình có thể xem lại sau này. Thật ra điều này nó cũng là một sự an ủi về mặt tinh thần cho mình. Thú thật, mình cảm thấy luận văn mình không có gì đặc sắc lắm, và việc viết một văn bản 50 trang không có nhiều giá trị cho người đọc làm mình cảm thấy thật sự rất chán chường. Vậy nên, để vượt qua điều đó, mình muốn viết thesis theo hướng ít nhất là sẽ có ích cho mình, và dù không có nhiều sự mới mẻ hay ý tưởng hay ho, thì cũng sẽ có ích cho người khác bằng cách giải thích những khái niệm, trả lời những câu hỏi mà hầu như các papers cho là hiển nhiên hoặc là bỏ qua.&lt;/p&gt;
+&lt;p&gt;Vòng vo như vậy đủ rồi, thật ra mình cũng muốn làm kiểu gì đó giống như livestream viết thesis. Nhưng mình nghĩ đó không phải là ý tưởng hay lắm. Một phần vì máy mình cũng không xịn lắm, không biết livestream có ảnh hưởng đến workflow của mình không. Một lý do nữa là khi tập trung thì mình muốn tập trung nên sẽ không có tương tác gì đâu (tóm lại là khi viết mình chán lắm, chả có gì để xem đâu =))) ). Vậy nên thay vì livestream, mình sẽ update tại đây tất cả những note sau khi mình viết xong. Mặc dù những note đó chưa được review cẩn thận và có thể chưa hoàn thiện 100%, nội dung cốt lõi của chúng vẫn được đảm bảo. Mình hi vọng chúng sẽ có ích với mọi người (À tất nhiên mấy notes sẽ được viết bằng tiếng Anh do chúng sẽ là một phần của thesis mình mà :)) )&lt;/p&gt;
+&lt;p&gt;Thesis evergreen notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/deformable_conv/&#34;&gt;Deformable Convolution&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Các bạn có thể tìm đọc tất cả bài viết của series này tại &lt;a href=&#34;https://incenger.github.io/categories/fellowship-optim/&#34;&gt;đây&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deformable Convolution</title>
+      <link>https://incenger.github.io/post/learn/deformable_conv/</link>
+      <pubDate>Fri, 02 Jul 2021 23:14:09 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/post/learn/deformable_conv/</guid>
+      <description>
+        
+          &lt;p&gt;In &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, the authors argue that the traditional CNNs are inherently limited to model geometric transformation due to the fixed geometric structures in its building components. Most of popular building blocks of a CNN such as convolution layer, max-pooling, and region of interest pooling all have fixed geometric structures. The convolution layer samples from the input feature map at fixed locations; the max pooling layer reduces the spatial resolution at a fixed rates; and the output feature map of the ROI pooling has fixed no matter the size of the input feature map. As a result, a CNN built on these layers inherently has similar limitation. For example, all activation units in one layer of a CNN could have the same receptive field, which is undesirable especially for high level convolution layer that captures semantic features. This limitation causes CNNs to be less effective in a few visual recognition tasks requiring fine localization such as semantic segmentation as these tasks necessitates the capacity to respond with different object scales and deformation with adaptive receptive fields.&lt;/p&gt;
+&lt;p&gt;The adaptiveness of deformable convolution lies in its augmenting offset grids. In specific, considering a traditional 2D convolution operation that can be broken down into two steps: 1 - sampling from the input feature map \( \mathcal{f_{in}} \)  using a rectangular grid \( \mathcal{R} \) and weighted summation of those sampled values using a learnable weight \( \mathcal{w} \). In plain  \( 3 \times 3  \) convolution with stride $1$, the sample grid \( \mathcal{G} \) is:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{G} = { (-1, -1), \dots, (0, 0), \dots, (1,1)}$$&lt;/p&gt;
+&lt;p&gt;Values in the output feature map \( \mathcal{f_{out}} \) at location \( p \) is defined by:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{f}&lt;em&gt;{out}(p) = \sum&lt;/em&gt;{\mathcal{g} \in \mathcal{G}} w(g) \cdot \mathcal{f}_{in}(p + g)$$&lt;/p&gt;
+&lt;p&gt;Deformable convolution augments the sampling grid  \( \mathcal{G} \) using an offset grid \( \mathcal{O} \) having the same size as \( \mathcal{G} \) , resulting in a sampling offset grid \( \mathcal{G&#39;} = \mathcal{G} + \mathcal{O} \).  In succeeding work, a modulated mask \( \mathcal{M} \) is integrated into deformable convolution to further strengthen its capacity. With values lie in the the range \( [0, 1] \), the modulated mask allows deformable convolution to suppress information from some particular position in input feature map. The deformable convolution with modulated mask can be expressed as:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{f_{out}}(p) = \sum_{i = 1}^{|\mathcal{G}|} w(\mathcal{G}_{i}) \cdot \mathcal{f}_{in}(p + \mathcal{G&#39;}_{i}) \cdot \mathcal{M_{i}} $$&lt;/p&gt;
+&lt;hr&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Deformable Convolutional Networks&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Deformable convnets v2: More deformable, better results&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+        
+      </description>
+    </item>
+    
     <item>
       <title>The OK Plateau</title>
       <link>https://incenger.github.io/post/fellowship_optim/ok_plateau_4/</link>
