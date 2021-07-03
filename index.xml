@@ -6,7 +6,52 @@
     <description>Recent content on InCenger Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 02 Jul 2021 23:14:34 +0700</lastBuildDate><atom:link href="https://incenger.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jul 2021 12:12:52 +0700</lastBuildDate><atom:link href="https://incenger.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deformable Alignment</title>
+      <link>https://incenger.github.io/post/learn/deformable_alignment/</link>
+      <pubDate>Sat, 03 Jul 2021 12:12:52 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/post/learn/deformable_alignment/</guid>
+      <description>
+        
+          &lt;p&gt;Motion is an intrinsic part of video. It poses a question about how to extract, exploit, and encode motion information when working with video data. When adapting methods for single image for video, it&amp;rsquo;s usually useful to leverage the prior knowledge that frames of the same scene can be approximated by a reference frame and motion information. The motion between frames can be expressed in many forms, but the most natural and intuitive choice is the optical flow - the displacement of pixels. When it comes to Video Super Resolution (VSR), the motion problem can be decomposed into two questions:how to use the temporal information to constrain the problem and how to effectively extract and exploit temporal correspondence. The former question originates from the ill-posed nature of the Video Super Resolution problem. The later question arises from the fact that adjacent frames of the target one are accessible. Developing alignment algorithms that can adaptive extract motion feature and have the capacity to respond with sudden and complex motions is one of the primary goal in VSR problems.&lt;/p&gt;
+&lt;p&gt;Early approaches&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;  &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; to exploit motion information in VSR problems can be decomposed into two stages: motion estimation and motion compensation. In the first stage, dense optical flow between reference and target frames are extracted using flow estimation algorithm. In the second stage, reference frames are warped using estimated flow from the first stage, resulting in compensated or aligned frames. Even though motion estimation and compensation are usually performed on frames, it&amp;rsquo;s possible to perform those on feature maps. Those compensated frames or feature maps should encode motion feature that succeeding algorithms in the VSR network can exploit.  Despite benefiting from the development of flow estimation algorithms, integrating state-of-the-art flow estimation algorithms into VSR network is not simply plug-and-play. If the flow estimation network is used offline - that is to generate the optical flow outside of the VSR network, the motion estimation quality is not good enough due to data limitation. On the other hand, it&amp;rsquo;s challenging to train the flow network and VSR network in the end-to-end manner since two network differs in training data and optimization process.&lt;/p&gt;
+&lt;p&gt;In order to overcome the limitations of flow-based alignment approach, recent studies have proposed an implicit alignment method using &lt;a href=&#34;https://incenger.github.io/post/learn/deformable_conv/&#34;&gt;Deformable Convolution&lt;/a&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.  The deformable alignment has the merit of being both effective and trainable in end-to-end manner. Given the reference and neighbor frame (or feature maps), deformable alignment applies deformable convolution on the neighboring frame to align it to the reference frame. The offset for the deformable convolution is learned from both the target and reference features, for example by applying a few convolution layers on the concatenation of the two features.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://incenger.github.io/img/2021/deformable_alignment/deformable_alignment.png&#34; alt=&#34;Deformable Alignment &#34;&gt;&lt;/p&gt;
+&lt;p&gt;How this method works is extensively studied in &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. In specific, let \(x\) be the input feature, \(y\) is the output of the deformable convolution on \(x\), \(p_k\) and \(\Delta_{k}\) is the \(k\)-the sampling position and its corresponding offset in the sampling grid \(G\) for output position \(p\), we have:&lt;/p&gt;
+&lt;p&gt;$$ y = \sum_{k=1}^{|G|} w(p_k) \cdot x \left(p + p_k + \Delta_{k}\right) $$&lt;/p&gt;
+&lt;p&gt;The part \(p + p_k + \Delta_{k}\) can be viewed as displacing or warping the pixel at location \(p\) by a displacement of \(p_k + \Delta_{k}\), which is equivalent to image warping in flow-based alignment. The deformable convolution with kernel size \(|G|\), therefore, are capable of generating \(|G|\) warped feature maps, which are later aggregated using a \(1 \times 1\) convolution via the kernel weight \(w\).
+In the special case where \(|G| = 1\), the deformable alignment is equivalent to a spatial warping followed by a \(1 \times 1\) convolution - similar to what we want achieve with flow-based alignment. This observation also points out the advantage of deformable alignment: offset diversity - the capacity to generate more than one potential displacement for each pixel. In other words, deformable alignment and flow-based alignment share their same underpinnings with small difference in the offset-diversity.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://incenger.github.io/img/2021/deformable_alignment/deformable_convolution_decompose.png&#34; alt=&#34;Decomposing Deformable Convolution &#34;&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Real-Time Video Super-Resolution with Spatio-Temporal Networks and Motion Compensation&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Frame Recurrent Video Super-Resolution&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Detail revealing Deep Video Super-resolution&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Temporally Deformable Alignment Network for Video Super-Resolution&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;EDVR: Video Restoration With Enhanced Deformable Convolutional Networks&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Understanding Deformable Alignment in Video Super-Resolution&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+        
+      </description>
+    </item>
+    
     <item>
       <title>The Fellowship of the Optim: Writing Thesis</title>
       <link>https://incenger.github.io/post/fellowship_optim/thesis_writing_5/</link>
