@@ -183,6 +183,7 @@
 <p>$$\mathcal{f_{out}}(p) = \sum_{\mathcal{g} \in \mathcal{G}} w(g) \cdot \mathcal{f}_{in}(p + g)$$</p>
 <p>Deformable convolution augments the sampling grid  \( \mathcal{G} \) using an offset grid \( \mathcal{O} \) having the same size as \( \mathcal{G} \) , resulting in a sampling offset grid \( \mathcal{G'} = \mathcal{G} + \mathcal{O} \).  In succeeding work, a modulated mask \( \mathcal{M} \) is integrated into deformable convolution to further strengthen its capacity. With values lie in the range \( [0, 1] \), the modulated mask allows deformable convolution to suppress information from some particular position in input feature map. The deformable convolution with modulated mask can be expressed as:</p>
 <p>$$\mathcal{f_{out}}(p) = \sum_{i = 1}^{|\mathcal{G}|} w(\mathcal{G}_{i}) \cdot \mathcal{f}_{in}(p + \mathcal{G'}_{i}) \cdot \mathcal{M_{i}} $$</p>
+<p><img src="/img/2021/deformable_convolution/deformable_conv.png" alt="Visual Explanation of Deformable Convolution"></p>
 <hr>
 <section class="footnotes" role="doc-endnotes">
 <hr>
