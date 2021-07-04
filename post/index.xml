@@ -135,31 +135,6 @@ In the special case where \(|G| = 1\), the deformable alignment is equivalent to
     </item>
     
     <item>
-      <title>The Fellowship of the Optim: Writing Thesis</title>
-      <link>https://incenger.github.io/post/fellowship_optim/thesis_writing_5/</link>
-      <pubDate>Fri, 02 Jul 2021 23:14:34 +0700</pubDate>
-      
-      <guid>https://incenger.github.io/post/fellowship_optim/thesis_writing_5/</guid>
-      <description>
-        
-          &lt;p&gt;Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis.&lt;/p&gt;
-&lt;p&gt;Gần đây mình có đọc quyển How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking và tìm hiểu về &lt;a href=&#34;https://notes.andymatuschak.org/About_these_notes&#34;&gt;Andy&amp;rsquo;s working note&lt;/a&gt;. Mình cảm thấy incremental writing rất phù hợp với phong cách viết của mình và những gì mình hướng đến. Cụ thể là, mình xem viết như là một cách để hiểu và suy nghĩ về một vấn đề và những note mình viết phải có giá trị tái sử dụng, tức là bản thân nó có chứa đầy đủ thông tin và liên kết để làm sáng tỏ một chủ đề nào đó. Đặt trong bối cảnh thesis của mình, thì mình muốn mỗi note của mình sẽ viết một chủ đề, một câu hỏi nào đó mà mình có thể xem lại sau này. Thật ra điều này nó cũng là một sự an ủi về mặt tinh thần cho mình. Thú thật, mình cảm thấy luận văn mình không có gì đặc sắc lắm, và việc viết một văn bản 50 trang không có nhiều giá trị cho người đọc làm mình cảm thấy thật sự rất chán chường. Vậy nên, để vượt qua điều đó, mình muốn viết thesis theo hướng ít nhất là sẽ có ích cho mình, và dù không có nhiều sự mới mẻ hay ý tưởng hay ho, thì cũng sẽ có ích cho người khác bằng cách giải thích những khái niệm, trả lời những câu hỏi mà hầu như các papers cho là hiển nhiên hoặc là bỏ qua.&lt;/p&gt;
-&lt;p&gt;Vòng vo như vậy đủ rồi, thật ra mình cũng muốn làm kiểu gì đó giống như livestream viết thesis. Nhưng mình nghĩ đó không phải là ý tưởng hay lắm. Một phần vì máy mình cũng không xịn lắm, không biết livestream có ảnh hưởng đến workflow của mình không. Một lý do nữa là khi tập trung thì mình muốn tập trung nên sẽ không có tương tác gì đâu (tóm lại là khi viết mình chán lắm, chả có gì để xem đâu =))) ). Vậy nên thay vì livestream, mình sẽ update tại đây tất cả những note sau khi mình viết xong. Mặc dù những note đó chưa được review cẩn thận và có thể chưa hoàn thiện 100%, nội dung cốt lõi của chúng vẫn được đảm bảo. Mình hi vọng chúng sẽ có ích với mọi người (À tất nhiên mấy notes sẽ được viết bằng tiếng Anh do chúng sẽ là một phần của thesis mình mà :)) )&lt;/p&gt;
-&lt;p&gt;Thesis evergreen notes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/deformable_conv/&#34;&gt;Deformable Convolution&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/deformable_alignment/&#34;&gt;Deformable Alignment&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Các bạn có thể tìm đọc tất cả bài viết của series này tại &lt;a href=&#34;https://incenger.github.io/categories/fellowship-optim/&#34;&gt;đây&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Deformable Convolution</title>
       <link>https://incenger.github.io/post/learn/deformable_conv/</link>
       <pubDate>Fri, 02 Jul 2021 23:14:09 +0700</pubDate>
@@ -188,6 +163,31 @@ In the special case where \(|G| = 1\), the deformable alignment is equivalent to
 &lt;/ol&gt;
 &lt;/section&gt;
 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>The Fellowship of the Optim: Writing Thesis</title>
+      <link>https://incenger.github.io/post/fellowship_optim/thesis_writing_5/</link>
+      <pubDate>Fri, 02 Jul 2021 23:13:34 +0700</pubDate>
+      
+      <guid>https://incenger.github.io/post/fellowship_optim/thesis_writing_5/</guid>
+      <description>
+        
+          &lt;p&gt;Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis.&lt;/p&gt;
+&lt;p&gt;Gần đây mình có đọc quyển How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking và tìm hiểu về &lt;a href=&#34;https://notes.andymatuschak.org/About_these_notes&#34;&gt;Andy&amp;rsquo;s working note&lt;/a&gt;. Mình cảm thấy incremental writing rất phù hợp với phong cách viết của mình và những gì mình hướng đến. Cụ thể là, mình xem viết như là một cách để hiểu và suy nghĩ về một vấn đề và những note mình viết phải có giá trị tái sử dụng, tức là bản thân nó có chứa đầy đủ thông tin và liên kết để làm sáng tỏ một chủ đề nào đó. Đặt trong bối cảnh thesis của mình, thì mình muốn mỗi note của mình sẽ viết một chủ đề, một câu hỏi nào đó mà mình có thể xem lại sau này. Thật ra điều này nó cũng là một sự an ủi về mặt tinh thần cho mình. Thú thật, mình cảm thấy luận văn mình không có gì đặc sắc lắm, và việc viết một văn bản 50 trang không có nhiều giá trị cho người đọc làm mình cảm thấy thật sự rất chán chường. Vậy nên, để vượt qua điều đó, mình muốn viết thesis theo hướng ít nhất là sẽ có ích cho mình, và dù không có nhiều sự mới mẻ hay ý tưởng hay ho, thì cũng sẽ có ích cho người khác bằng cách giải thích những khái niệm, trả lời những câu hỏi mà hầu như các papers cho là hiển nhiên hoặc là bỏ qua.&lt;/p&gt;
+&lt;p&gt;Vòng vo như vậy đủ rồi, thật ra mình cũng muốn làm kiểu gì đó giống như livestream viết thesis. Nhưng mình nghĩ đó không phải là ý tưởng hay lắm. Một phần vì máy mình cũng không xịn lắm, không biết livestream có ảnh hưởng đến workflow của mình không. Một lý do nữa là khi tập trung thì mình muốn tập trung nên sẽ không có tương tác gì đâu (tóm lại là khi viết mình chán lắm, chả có gì để xem đâu =))) ). Vậy nên thay vì livestream, mình sẽ update tại đây tất cả những note sau khi mình viết xong. Mặc dù những note đó chưa được review cẩn thận và có thể chưa hoàn thiện 100%, nội dung cốt lõi của chúng vẫn được đảm bảo. Mình hi vọng chúng sẽ có ích với mọi người (À tất nhiên mấy notes sẽ được viết bằng tiếng Anh do chúng sẽ là một phần của thesis mình mà :)) )&lt;/p&gt;
+&lt;p&gt;Thesis evergreen notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/deformable_conv/&#34;&gt;Deformable Convolution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/deformable_alignment/&#34;&gt;Deformable Alignment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Các bạn có thể tìm đọc tất cả bài viết của series này tại &lt;a href=&#34;https://incenger.github.io/categories/fellowship-optim/&#34;&gt;đây&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
         
       </description>
     </item>
