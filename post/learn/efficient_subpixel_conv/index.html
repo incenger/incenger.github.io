@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<html lang="en" data-figures="" data-mode="lit">
+<html lang="en" data-figures="true" class="page" data-mode="lit">
   <head>
-<title>learning | InCenger Blog</title>
+<title>Efficient sub-pixel convolution | InCenger Blog</title>
 <meta charset="utf-8">
 <meta name="generator" content="Hugo 0.83.1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -17,21 +17,20 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="The efficient sub-pixel convolution is proposed in 1 and explained in details in 2. IMHO, the explanation is 2 is very difficult to follow because the way …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@incenger1411">
-<meta name="twitter:title" content="learning" />
-<meta property="og:url" content="https://incenger.github.io/tags/learning/" />
-<meta property="og:title" content="learning" />
-<meta property="og:description" content="" />
+<meta name="twitter:title" content="Efficient sub-pixel convolution" />
+<meta property="og:url" content="https://incenger.github.io/post/learn/efficient_subpixel_conv/" />
+<meta property="og:title" content="Efficient sub-pixel convolution" />
+<meta property="og:description" content="The efficient sub-pixel convolution is proposed in 1 and explained in details in 2. IMHO, the explanation is 2 is very difficult to follow because the way …" />
 <meta property="og:image" content="https://incenger.github.io/thumbnails/quby.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://incenger.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://incenger.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://incenger.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://incenger.github.io/tags/learning/">
-<link rel="alternate" type="application/rss+xml" href="https://incenger.github.io/tags/learning/index.xml" title="InCenger Blog" />
+<link rel="canonical" href="https://incenger.github.io/post/learn/efficient_subpixel_conv/">
 
     
 
@@ -47,6 +46,7 @@
   </head>
   
   
+    
     
   
   <body data-code="10" data-lines="false" id="documentTop">
@@ -132,16 +132,10 @@
 </header>
 
     <main>
-
+  
 <div class="grid-inverse wrap content">
-  <ul class="posts" id="posts">
-      <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://incenger.github.io/post/learn/efficient_subpixel_conv/" title="Efficient sub-pixel convolution">Efficient sub-pixel convolution</a>
-      </h3>
-      <div class="post_meta">
+  <article class="post_content">
+    <h1 class="post_title">Efficient sub-pixel convolution</h1><div class="post_meta">
   
     <span><svg class="icon">
   <use xlink:href="#calendar"></use>
@@ -181,207 +175,53 @@
 </span>
 </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div>
-          <p class="pale">
-            
-              The efficient sub-pixel convolution is proposed in 1 and explained in details in 2. IMHO, the explanation is 2 is very difficult to follow because the way sub-pixel convolution (or Transpose Convolution) is performed in that paper is very confusing.
-In short, the efficient sub-pixel convolution is just a more efficient …
-            
-          </p>
-          <a href="https://incenger.github.io/post/learn/efficient_subpixel_conv/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    
+    <p>The efficient sub-pixel convolution is proposed in <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and explained in details in <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. IMHO, the explanation is <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> is very difficult to follow because the way sub-pixel convolution (or <a href="https://incenger.github.io/post/learn/transposed_conv/">Transpose Convolution</a>) is performed in that paper is very confusing.</p>
+<p>In short, the efficient sub-pixel convolution is just a more efficient way to do sub-pixel convolution. Its superiority lies in the <strong>efficiency</strong>, <strong>not the upsampling quality</strong>.</p>
+<p>In order to understand how this works, you need to have basic understanding of Transposed convolution. We will use an example of upsampling a \(4\times 4\) feature map to a \(8\times 8\) to see the equivalence between the normal transposed convolution and the efficient sub-pixel convolution  and how the latter method is more efficient.</p>
+<p>Considering a normal convolution with kernel size \(k = 4\), stride \(s = 2\) (stride \(2\) because we want to double the spatial size of the feature map) and padding \(1\). Applying this convolution on a \(8 \times 8\) input results in a \(4 \times 4\)  output feature map. Its corresponding transposed convolution has kernel size \(k' = 4\), stride \(s' = 1\) with padding \(p' = 2\) (The formulation of transposed convolution&rsquo;s output size can be found in <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>), producing \(8 \times 8\) from \(4 \times 4\) input.</p>
+<p>Since the stride \(s = 2\), in addition to padding values around the transposed convolution input, \(s - 1\) zero pixels are added between actual pixels. The transposed convolution&rsquo;s input, after inserting zeros, is: (Green circles are actual pixels, blue are zero padding)</p>
+<p><img src="/img/2021/efficient_subpixel/padded_input.jpg" alt=""></p>
+<p>Now we use a \(4 \times 4\) kernel and slide on this feature map to perform convolution. While doing that, noticing the set of weighs in the kernel that are activated at the same time, you can see the pattern. Weights at position at having the same number will be activated -  multiplying with actual pixels - at the same time (For some position at the corner of the feature map, it&rsquo;s possible that only 2 of 4 weight position are activated but it doesn&rsquo;t affect the generalization). While those weights are activated, weights at other position in the kernel receive zero values.</p>
+<p><img src="/img/2021/efficient_subpixel/pattern.png" alt=""></p>
+<p>This observation suggests that it&rsquo;s possible to break down the \(4 \times 4\) kernel into four \(2 \times 2\) kernel using the observed pattern. The transposed convolution, therefore, is equivalent to apply four \(2 \times 2\) convolution on the initial feature map (without zero values inserted between actual pixels), followed by rearranging pixels in result feature maps to create the \(8 \times 8\) output. This is exactly what the <strong>efficient sub-pixel convolution</strong> does. The efficiency comes from doing the convolution with feature map with smaller spatial size and avoiding inserting zeros between pixels.</p>
+<p><img src="/img/2021/efficient_subpixel/decompose.png" alt=""></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Is the deconvolution layer the same as a convolutional layer?&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>A guide to convolution arithmetic for deep learning&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "incenger-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-      <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://incenger.github.io/post/learn/transposed_conv/" title="Tranposed Convolution">Tranposed Convolution</a>
-      </h3>
-      <div class="post_meta">
-  
-    <span><svg class="icon">
-  <use xlink:href="#calendar"></use>
-</svg></span>
-    <span class="post_date">
-      Jul 4, 2021</span>
-  
-    <span class="post_time"> · 3 min read&nbsp;</span>
-  <span> · 
-         <a href='https://incenger.github.io/tags/learning' title="learning" class="post_tag button button_translucent">learning
-         </a>
-     </span>
-  <span class="page_only"> · 
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Tranposed%20Convolution&url=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2ftransposed_conv%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#twitter"></use>
-</svg>
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2ftransposed_conv%2f&t=Tranposed%20Convolution" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#facebook"></use>
-</svg>
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#linkedin"></use>
-</svg>
-    </a>
-    <a href="https://incenger.github.io/post/learn/transposed_conv/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <use xlink:href="#copy"></use>
-</svg>
-    </a>
-  </div>
-</span>
-</div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div>
-          <p class="pale">
-            
-              The transposed convolution is also called:
- Fractionally strided convolution Sub-pixel convolution Backward convolution Deconvolution (The worst name - it&rsquo;s confused and shouldn&rsquo;t be used at all)  If we unroll the input and output feature maps of a convolution operation into vectors from left to right, top …
-            
-          </p>
-          <a href="https://incenger.github.io/post/learn/transposed_conv/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-      <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://incenger.github.io/post/learn/deformable_alignment/" title="Deformable Alignment">Deformable Alignment</a>
-      </h3>
-      <div class="post_meta">
-  
-    <span><svg class="icon">
-  <use xlink:href="#calendar"></use>
-</svg></span>
-    <span class="post_date">
-      Jul 3, 2021</span>
-  
-    <span class="post_time"> · 4 min read&nbsp;</span>
-  <span> · 
-         <a href='https://incenger.github.io/tags/learning' title="learning" class="post_tag button button_translucent">learning
-         </a>
-     </span>
-  <span class="page_only"> · 
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Deformable%20Alignment&url=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2fdeformable_alignment%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#twitter"></use>
-</svg>
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2fdeformable_alignment%2f&t=Deformable%20Alignment" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#facebook"></use>
-</svg>
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#linkedin"></use>
-</svg>
-    </a>
-    <a href="https://incenger.github.io/post/learn/deformable_alignment/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <use xlink:href="#copy"></use>
-</svg>
-    </a>
-  </div>
-</span>
-</div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div>
-          <p class="pale">
-            
-              Motion is an intrinsic part of video. It poses a question about how to extract, exploit, and encode motion information when working with video data. When adapting methods for single image for video, it&rsquo;s usually useful to leverage the prior knowledge that frames of the same scene can be approximated by a …
-            
-          </p>
-          <a href="https://incenger.github.io/post/learn/deformable_alignment/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-      <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://incenger.github.io/post/learn/deformable_conv/" title="Deformable Convolution">Deformable Convolution</a>
-      </h3>
-      <div class="post_meta">
-  
-    <span><svg class="icon">
-  <use xlink:href="#calendar"></use>
-</svg></span>
-    <span class="post_date">
-      Jul 2, 2021</span>
-  
-    <span class="post_time"> · 2 min read&nbsp;</span>
-  <span> · 
-         <a href='https://incenger.github.io/tags/learning' title="learning" class="post_tag button button_translucent">learning
-         </a>
-     </span>
-  <span class="page_only"> · 
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=Deformable%20Convolution&url=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2fdeformable_conv%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#twitter"></use>
-</svg>
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2fdeformable_conv%2f&t=Deformable%20Convolution" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#facebook"></use>
-</svg>
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <use xlink:href="#linkedin"></use>
-</svg>
-    </a>
-    <a href="https://incenger.github.io/post/learn/deformable_conv/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <use xlink:href="#copy"></use>
-</svg>
-    </a>
-  </div>
-</span>
-</div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div>
-          <p class="pale">
-            
-              In 1 and 2, the authors argue that the traditional CNNs are inherently limited to model geometric transformation due to the fixed geometric structures in its building components. Most of popular building blocks of a CNN such as convolution layer, max-pooling, and region of interest pooling all have fixed geometric …
-            
-          </p>
-          <a href="https://incenger.github.io/post/learn/deformable_conv/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-    <li>
-
-
-    </li>
-  </ul>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     
@@ -393,9 +233,6 @@ In short, the efficient sub-pixel convolution is just a more efficient …
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
-        <a href="https://incenger.github.io/post/learn/efficient_subpixel_conv/" class="nav-link" title="Efficient sub-pixel convolution">Efficient sub-pixel convolution</a>
-      </li>
-      <li>
         <a href="https://incenger.github.io/post/learn/transposed_conv/" class="nav-link" title="Tranposed Convolution">Tranposed Convolution</a>
       </li>
       <li>
@@ -415,14 +252,14 @@ In short, the efficient sub-pixel convolution is just a more efficient …
       </li>
       <li>
         <a href="https://incenger.github.io/post/fellowship_optim/random_things_2/" class="nav-link" title="The Fellowship of the Optim: Random things">The Fellowship of the Optim: Random things</a>
+      </li>
+      <li>
+        <a href="https://incenger.github.io/post/fellowship_optim/where_am_i_now_1/" class="nav-link" title="The Fellowship of the Optim: How I met my thesis">The Fellowship of the Optim: How I met my thesis</a>
       </li>
     </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://incenger.github.io/post/learn/efficient_subpixel_conv/" class="nav-link" title="Efficient sub-pixel convolution">Efficient sub-pixel convolution</a>
-      </li>
-      <li>
         <a href="https://incenger.github.io/post/learn/transposed_conv/" class="nav-link" title="Tranposed Convolution">Tranposed Convolution</a>
       </li>
       <li>
@@ -442,6 +279,9 @@ In short, the efficient sub-pixel convolution is just a more efficient …
       </li>
       <li>
         <a href="https://incenger.github.io/post/fellowship_optim/random_things_2/" class="nav-link" title="The Fellowship of the Optim: Random things">The Fellowship of the Optim: Random things</a>
+      </li>
+      <li>
+        <a href="https://incenger.github.io/post/fellowship_optim/where_am_i_now_1/" class="nav-link" title="The Fellowship of the Optim: How I met my thesis">The Fellowship of the Optim: How I met my thesis</a>
       </li>
     </ul>
     <div>
@@ -509,9 +349,8 @@ In short, the efficient sub-pixel convolution is just a more efficient …
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
