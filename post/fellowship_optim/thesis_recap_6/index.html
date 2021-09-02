@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="true" class="page" data-mode="lit">
   <head>
-<title>Tranposed Convolution | InCenger Blog</title>
+<title>The Fellowship of the Optim: Reflection | InCenger Blog</title>
 <meta charset="utf-8">
 <meta name="generator" content="Hugo 0.87.0" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -17,22 +17,20 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="The transposed convolution is also called:
- Fractionally strided convolution Sub-pixel convolution Backward convolution Deconvolution (The worst name - …">
+<meta name="description" content="">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@incenger1411">
-<meta name="twitter:title" content="Tranposed Convolution" />
-<meta property="og:url" content="https://incenger.github.io/post/learn/transposed_conv/" />
-<meta property="og:title" content="Tranposed Convolution" />
-<meta property="og:description" content="The transposed convolution is also called:
- Fractionally strided convolution Sub-pixel convolution Backward convolution Deconvolution (The worst name - …" />
+<meta name="twitter:title" content="The Fellowship of the Optim: Reflection" />
+<meta property="og:url" content="https://incenger.github.io/post/fellowship_optim/thesis_recap_6/" />
+<meta property="og:title" content="The Fellowship of the Optim: Reflection" />
+<meta property="og:description" content="" />
 <meta property="og:image" content="https://incenger.github.io/thumbnails/quby.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://incenger.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://incenger.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://incenger.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://incenger.github.io/post/learn/transposed_conv/">
+<link rel="canonical" href="https://incenger.github.io/post/fellowship_optim/thesis_recap_6/">
 
     
 
@@ -137,25 +135,25 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Tranposed Convolution</h1><div class="post_meta">
+    <h1 class="post_title">The Fellowship of the Optim: Reflection</h1><div class="post_meta">
   
     <span><svg class="icon">
   <use xlink:href="#calendar"></use>
 </svg></span>
     <span class="post_date">
-      Jul 4, 2021</span>
+      Sep 2, 2021</span>
   
-    <span class="post_time"> · 3 min read&nbsp;</span>
+    <span class="post_time"> · 5 min read&nbsp;</span>
   
   <span class="page_only"> · 
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Tranposed%20Convolution&url=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2ftransposed_conv%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=The%20Fellowship%20of%20the%20Optim%3a%20Reflection&url=https%3a%2f%2fincenger.github.io%2fpost%2ffellowship_optim%2fthesis_recap_6%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#twitter"></use>
 </svg>
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fincenger.github.io%2fpost%2flearn%2ftransposed_conv%2f&t=Tranposed%20Convolution" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fincenger.github.io%2fpost%2ffellowship_optim%2fthesis_recap_6%2f&t=The%20Fellowship%20of%20the%20Optim%3a%20Reflection" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#facebook"></use>
 </svg>
@@ -165,7 +163,7 @@
   <use xlink:href="#linkedin"></use>
 </svg>
     </a>
-    <a href="https://incenger.github.io/post/learn/transposed_conv/" title="Copy Link" class="link link_yank">
+    <a href="https://incenger.github.io/post/fellowship_optim/thesis_recap_6/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <use xlink:href="#copy"></use>
 </svg>
@@ -175,39 +173,19 @@
 </div>
 
     
-    <p>The transposed convolution is also called:</p>
-<ul>
-<li>Fractionally strided convolution</li>
-<li>Sub-pixel convolution</li>
-<li>Backward convolution</li>
-<li>Deconvolution (The worst name -  it&rsquo;s confused and shouldn&rsquo;t be used at all)</li>
-</ul>
-<p>If we unroll the input and output feature maps of a convolution operation into vectors from left to right, top to bottom, the convolution could be represented by a matrix multiplication with a spare matrix \(C\). For example, below is a spare matrix for a convolution with kernel size \(3\), stride \(1\), padding \(0\) over a \(4 \times 4\) input, resulting in a \(2\times2\) output.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p><img src="/img/2021/transposed_conv/conv_matrix.png" alt="Matrix representation of convolution"></p>
-<p>The convolution above transformed the \(16\)-dimensional vector into \(4\)-dimensional vector. With this representation, it&rsquo;s easy that we can do the reverse transform, which is transforming a \(4\)-dimensional input to \(16\)-dimensional input while keeping the original connectivity pattern, with the help of the transposed matrix \(C^T\). This is the underlying principal of the transposed convolution -  swapping the forward and backward pass of the normal convolution.</p>
-<p>One way to think about transposed convolution is by multiplying the scalar in the input feature map with the kernel weights to create immediate results of the output feature map. The position of the immediate result depends on the position of the scale in the input feature map. The final output is the sum of all immediate results.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
-<p><img src="/img/2021/transposed_conv/transposed_conv_1.png" alt=""></p>
-<p>Another way to think about transposed convolution is to apply an equivalent - but much less efficient - direction convolution on input feature map. Imagining the input of transposed convolution being the result of a direction convolution applied on some initial feature map, the transposed convolution can be considered as the operation that recovers the shape of this initial feature map.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> This way of thinking is reasonable because the transposed convolution is the just backward pass of a direction convolution.</p>
-<p><img src="/img/2021/transposed_conv/transposed_conv_2.png" alt=""></p>
-<p>In addition, considering transposed convolution in its relation to a direction convolution gives rise to the relationship between two convolution operations. Given a direct convolution with kernel size \(k\), stride \(s\), padding \(p\), the transposed convolution has the same kernel size \(k' = k\), stride \(s' = 1\) (noted that the stride for convolution of transposed convolution always has stride \(1\)).</p>
-<ul>
-<li>When \(p = 0\) (no padding) and \(s = 1\), considering the top left pixel of input of normal convolution, it only contributes to the top left pixel to the output. Therefore, for transposed convolution to maintain this connectivity pattern, it&rsquo;s necessary to add zero padding around the input of transposed convolution. The padding for transposed convolution&rsquo;s input is \(p'=k-1\).</li>
-<li>When padding is used in the normal convolution, it&rsquo;s reasonable to see that we need to reduce the padding of the transposed convolution. This can be explained by the observation that the top-left pixel of the original input (before padded) now contributes to more pixels output. The new padding for transposed convolution&rsquo;s input is \(p' = k - 1 -p\)</li>
-<li>When stride \(s &gt; 1\) is used for normal convolution, the intuition for transposed convolution is to make the sliding window moves slower. This is made possible by adding zero pixels <strong>between</strong> actual pixel in the input. For normal convolution with stride \(s\), \(s-1\) zero pixels are added between actual in the input. This is where the name <em>fractionally strided convolution</em> comes from. Strided transposed convolution is commonly used to  increase the spatial size of feature map.</li>
-</ul>
-<p><img src="/img/2021/transposed_conv/transposed_conv_3.png" alt=""></p>
-<section class="footnotes" role="doc-endnotes">
+    <p>&ldquo;It&rsquo;s over.&rdquo; - Mình tự nhủ và cảm thấy trống rỗng. Mình đã dần cảm nhận được sự trống rỗng này từ tối hôm trước, khi mà mình đã chuẩn bị xong gần như mọi thứ cho việc bảo vệ. Lúc đó, mình tự hỏi: &ldquo;Làm gì tiếp đây?&rdquo;.</p>
+<p>Luận văn đối với mình giống như đi tàu lượn siêu tốc với quãng đường của một đường chạy marathon. Đây là một sự kết hợp kì quái, nhưng hãy nghe mình giải thích. Tàu lượn siêu tốc là hình ảnh ẩn dụ cho những thăng trầm của mình trong suốt cuộc hành trình. Và cuộc hành trình này giống như khi chạy marathon  - dài (hơn nửa năm) và bạn không thể về đích nếu cứ bung sức mà chạy. Mình đã có một hành trình không dễ chịu với luận văn, nhưng mình nghĩ mình đã học được nhiều điều, và cũng đã vượt qua giới hạn của bản thân ở nhiều khía cạnh.</p>
+<p>Luận văn của mình bắt đầu với sự hoang mang, tiếp đến là chuỗi những ngày mịt mù, và đến khi sắp kết thúc, lại cho mình cảm giác trống rỗng. Mình bắt đầu luận văn với nhiều số không. Mình chưa từng dự buổi bảo vệ luận án của những khóa trước, mình không biết một luận án thì mức độ đóng góp khoa học thông thường như thế nào. Và vì vậy, mình cũng không hề đặt một sự kì vọng nào cho luận án của mình. Mình đã nghĩ điều này sẽ giúp mình tránh những áp lực không cần thiết, ví dụ là về điểm số. Nhưng trớ trêu thay, những áp lực lại đến từ chính bản thân mình.</p>
+<p>Một tháng trước khi bảo vệ luận văn, mình không không hề có một chút sự tự tin nào về những gì mình làm. Mình không cảm thấy sự tự tin cần có để có thể trình bày cho người khác nghe. Nhưng mình không chỉ phải trình bày, mình còn phải viết về nó nữa. Viết một tài liệu tối thiểu 50 trang về một thứ mà đến chính bản thân còn không thấy có nhiều giá trị là một cực hình đối với mình. Mình không có một sự kì vọng nào, nhưng chính bản thân mình lúc đó đã coi đây là một sự thất vọng - thất vọng vì những gì mình đã làm không đạt được những tiêu chuẩn của bản thân. Lúc này, mình đã suy nghĩ đến chuyện hủy bảo vệ, nhưng thật may trách nhiêm đã giữ mình lại. Vì đây không phải là công sức của chỉ mình mình và mình có trách nhiệm phải hoàn thành nó. Tất cả những cảm xúc tiêu cực kia, nó chỉ đến từ bản thân mình, và để nó quyết định số phận của luận văn là điều ngu ngốc nhất mà mình có thể làm (Rất may là mình không ngu ngốc đến vậy =)) ).</p>
+<p>Trong thời gian làm luận văn, mình cảm thấy những gì mình đọc từ hai quyển &ldquo;A Guide to the Good Life: The Ancient Art of Stoic Joy&rdquo; và &ldquo;The Choice: Embrace the Possible&rdquo; thật có giá trị. Mình tập thôi không lo lắng về những gì mình không thể kiểm soát, và mình cũng tập đối mặt với những cảm xúc tiêu cực và tìm cách giải quyết chúng thay vì cứ làm ngơ chờ nó chúng lắng xuống. Mình nhận ra được mình làm một người leader tồi thế nào, và mình cần phải cải thiện thêm gì. Mình học cách chiêm nghiệm lại những gì mình đã làm, không tự trách bản thân mà tập trung vào những gì mình có thể làm tốt hơn. Đây cũng là những gì mình đã trả lời lúc được một thầy trong hội đồng hỏi về bài học lớn nhất mình học được từ luận văn.</p>
+<p>Mình từng nghĩ luận văn đến với mình không đúng thời điểm lắm, hoặc là do mình timing rất tệ. Nhưng khi nhìn lại, mình thấy như thế cũng có cái hay của nó. Dù không phải là trải nghiệm mình mong muốn, nhưng cuộc hành trình này đã giúp mình nhận ra và học được nhiều điều.</p>
+<p>&ldquo;It&rsquo;s not the hero we derseved, but the hero we needed&rdquo;</p>
+<p>P.S: Mình đạt điểm tối đa cho luận văn của mình, và nó cũng là cái kết mỹ mãn cho chặng đường học hành cày cuốc của mình ở trường đại học. Mình kết thúc chặng đường này với GPA 9.61/10.0 và 3.96/4.00 (Điểm này thì chưa tính điểm luận văn vào, nhưng mình nghĩ chắc nó cũng chẳng tăng lên bao nhiêu). Trong thời gian tới, mình dự định sẽ viết một vài bài để chia sẻ những suy nghĩ của mình về GPA -  GPA có quan trọng không? GPA cao có lợi gì không, phải đánh đối nhiều không? - và những phương pháp, công cụ giúp mình đạt được con số đó. Nếu mọi người có câu hỏi hay điều gì muốn mình chia sẻ, hãy comment bên dưới hoặc inbox cho mình (づ｡◕‿‿◕｡)づ</p>
 <hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>A guide to convolution arithmetic for deep learning&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p><a href="https://d2l.ai/chapter_computer-vision/transposed-conv.html">https://d2l.ai/chapter_computer-vision/transposed-conv.html</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
-<div id="disqus_thread"></div>
+<blockquote>
+<p>Các bạn có thể tìm đọc tất cả bài viết của series này tại <a href="https://incenger.github.io/categories/fellowship-optim/">đây</a>.</p>
+</blockquote>
+<hr><div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -240,9 +218,6 @@
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
-        <a href="https://incenger.github.io/post/fellowship_optim/thesis_recap_6/" class="nav-link" title="The Fellowship of the Optim: Reflection">The Fellowship of the Optim: Reflection</a>
-      </li>
-      <li>
         <a href="https://incenger.github.io/post/fellowship_optim/thesis_writing_5/" class="nav-link" title="The Fellowship of the Optim: Writing Thesis">The Fellowship of the Optim: Writing Thesis</a>
       </li>
       <li>
@@ -267,10 +242,10 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://incenger.github.io/post/fellowship_optim/thesis_recap_6/" class="nav-link" title="The Fellowship of the Optim: Reflection">The Fellowship of the Optim: Reflection</a>
+        <a href="https://incenger.github.io/post/learn/efficient_subpixel_conv/" class="nav-link" title="Efficient Sub-pixel Convolution">Efficient Sub-pixel Convolution</a>
       </li>
       <li>
-        <a href="https://incenger.github.io/post/learn/efficient_subpixel_conv/" class="nav-link" title="Efficient Sub-pixel Convolution">Efficient Sub-pixel Convolution</a>
+        <a href="https://incenger.github.io/post/learn/transposed_conv/" class="nav-link" title="Tranposed Convolution">Tranposed Convolution</a>
       </li>
       <li>
         <a href="https://incenger.github.io/post/learn/deformable_alignment/" class="nav-link" title="Deformable Alignment">Deformable Alignment</a>
