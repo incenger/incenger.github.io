@@ -4,7 +4,7 @@
   <head>
 <title>The Fellowship of the Optim: Random things | InCenger Blog</title>
 <meta charset="utf-8">
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.87.0" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM967KRZK6"></script>
@@ -181,7 +181,7 @@ Nhưng mà, mình từng bảo mình sẽ viết dù không có ai đọc mà, v
 <p>&ldquo;Neural network fails silently&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>  - mình đã trải nghiệm điều này khá nhiều lần, và tuần này mình vừa được trải nghiệm nó thêm một lần nữa =)))</p>
 <p>Trong quá trình phát triển segmentation model, mình có viết một đoạn code nhỏ để tính pixel-level accuracy giữa predicted mask và groundtruth mask. Thụât toán thì cũng không có gì phức tạp, chỉ cần đọc vào ảnh và groundtruth tương ứng, chuyển chúng thành numpy array và so sánh pixel-wise là được. Vì nó đơn giản nên mình cũng không nghĩ là nó sẽ có bug :((</p>
 <p>Đoạn code mình tính average accuracy như thế này:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>
 <span class="ln">2</span><span class="n">avg_acc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">seg_mask</span> <span class="o">==</span> <span class="n">gt_mask</span><span class="p">)</span>
 <span class="ln">3</span>
 </code></pre></div><p>Khi chạy code thì mình nhận được một warning như thế này</p>
@@ -194,10 +194,10 @@ Nhưng mà, mình từng bảo mình sẽ viết dù không có ai đọc mà, v
 <li>Ơ thế thì không lẽ model của mình có vấn đề &hellip;., cái này là ít khả năng nhất, và nếu debug thì sẽ tốn rất nhiều thời gian :(((</li>
 </ul>
 <p>Tới đây mình bắt đầu cảm thấy hơi hoang mang, và trong những lúc như vậy mình quyết định làm mọi thứ cực kì cẩn thận. Mình nhớ đến cái warning khi này, mặc dù biết là nó cũng không liên quan gì nhưng mình quyết định cứ refactor lại nó (vì mình cũng chưa biết làm gì tiếp). Thế là mình search document của numpy và viết lại nó thành như thế này</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>
 <span class="ln">2</span><span class="n">avg_acc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">seg_mask</span><span class="p">,</span> <span class="n">gt_mask</span><span class="p">))</span>
 </code></pre></div><p>Mình chạy lại code để đảm bảo cái warning đó đã mất đi. Đúng là nó mất đi thật, nhưng code của mình lại báo lỗi (•_•) (refactor xong xuất hiện thêm lỗi là có thật).</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>
 <span class="ln">2</span><span class="ne">ValueError</span><span class="p">:</span> <span class="n">operands</span> <span class="n">could</span> <span class="ow">not</span> <span class="n">be</span> <span class="n">broadcast</span> <span class="n">together</span> <span class="k">with</span> <span class="n">shapes</span> <span class="p">(</span><span class="mi">433</span><span class="p">,</span><span class="mi">577</span><span class="p">)</span> <span class="p">(</span><span class="mi">480</span><span class="p">,</span><span class="mi">640</span><span class="p">)</span>
 <span class="ln">3</span>
 </code></pre></div><p>Ồ&hellip; hóa ra là vậy :(((. Data mình có vấn đề - size của input image và groundtruth mask bị sai lệch vài pixel. Và với 2 numpy array có shape khác nhau, khi thực hiện element-wise comparision như trên thì nó sẽ không báo lỗi mà trả về giá trị <code>False</code>, và khi pass <code>False</code> vào <code>np.average()</code> thì giá trị nhận được sẽ là <code>0.0</code>. I&rsquo;m fine ಥ_ಥ.</p>
