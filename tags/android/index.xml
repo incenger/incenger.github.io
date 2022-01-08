@@ -14,7 +14,55 @@
       <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/learn/first-course/</guid>
-      <description></description>
+      <description>
+        
+          &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/D8SfStr.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Trong bài viết hôm nay, mình sẽ chia sẻ trải nghiệm của mình về khóa học đầu tiên &lt;a href=&#34;https://www.udacity.com/course/android-basics-user-interface--ud834&#34;&gt;Android Basics: User Interface&lt;/a&gt;.
+Khóa học được ước tính học trong 2 tuần, nhưng mình nghĩ nếu có thời gian, các bạn có thể hoàn thành nó trong khoảng 1-3 ngày (mình học trong 1 buổi và làm project trong 1 buổi, còn thời gian cụ thể từng buổi thì mình không nhớ chính xác). Nội dung của khóa học chủ yếu là về những khái niệm cơ bản trong UI: Views, Layout và XML.&lt;/p&gt;
+&lt;h1 id=&#34;view&#34;&gt;View&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/kAHn90t.jpg&#34; alt=&#34;&#34; title=&#34;Paper App Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Bên trên là ảnh chụp màn hình từ app Paper của Dropbox. Một Android app bao gồm nhiều “màn hình” tương tự như vậy - hay còn gọi là layout. Mỗi layout thường gắn liền với một chức năng của app, ví dụ như trong hình là màn hình hiển thị các files của app Paper. Layout chính là nơi xảy ra tương tác giữa người dùng với app của chúng ta thông qua các thao tác chạm, kéo thả, …. Mỗi Layout bao gồm nhiều View với các kích thước và vị trí khác nhau. Để sử dụng View trong Android Studio, chúng ta có 2 cách:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sử dụng công cụ Design trong Android Studio
+&lt;img src=&#34;https://i.imgur.com/nyJZekT.jpg&#34; alt=&#34;&#34; title=&#34;Design Mode&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sử dụng code XML
+&lt;img src=&#34;https://i.imgur.com/apYA4CW.jpg&#34; alt=&#34;&#34; title=&#34;XML mode&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cả 2 cách này đều có những ưu điểm và nhược điểm riêng. Cá nhân mình thích sử dụng Design mode hơn vì nó trực quan hơn là dùng XML code. Tất nhiên, các bạn nên kết hợp cả 2 cách để có thể thiết kế UI một cách tối ưu.&lt;/p&gt;
+&lt;p&gt;Mỗi View trong Android có nội dung đa dạng: TextView, ImageView, Button, … và có thể chứa thêm nhiều View khác bên trong nó. Đối với mỗi View, chúng ta có thể tùy chỉnh các đặc tính của nó như kích thước, màu sắc, …. Smartphone Android rất đa dạng, về cấu hình, kích thước, kiểu dáng, tính năng. Sự đa dạng đó cung cấp nhiều lựa chọn cho người dùng nhưng lại đặt ra một bài toán cho người phát triển làm sao để tối ưu cho các thiết bị mà không phải viết lại code. Sự khác biệt rõ ràng nhất giữa các điện thoại Android (và điện thoại với máy tính bảng) chính là kích thước của màn hình. Vậy khi thiết kế UI cho app, chúng ta phải làm sao để những kích thước, vị trí của những View trong đó không phải phụ thuộc vào kích thước cụ thể nào. Đó là lí do tại sao trong Android, chúng ta nên sử dụng dp (device-independent pixel) làm đơn vị đo kích thước  thay cho px (pixel).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KGoMUa1.jpg&#34; alt=&#34;&#34; title=&#34;Pixel vs Device-Independent Pixel&#34;&gt;&lt;/p&gt;
+&lt;p&gt;#Layout&lt;/p&gt;
+&lt;p&gt;Để xây dựng một UI hoàn thiện, ngoài View, chúng ta cần một Layout để chứa những View đó. Có 2 loại Layout được giới thiệu trong khóa học là LinearLayout và  RelativeLayout.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LinearLayout: Đối với LinearLayout, vị trí của các View sẽ được đặt theo hàng hoặc theo cột.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/7xnpbWU.jpg&#34; alt=&#34;&#34; title=&#34;Vertical LinearLayout&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Itaa3gN.jpg&#34; alt=&#34;&#34; title=&#34;Horizontal LinearLayout&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RelativeLayout: Các view sẽ được xác định vị trí dựa vào vị trí của các view khác hoặc vị trí của layout. Một số đặc tính của của nó là : toRightOf,  toLeftOf, above , below, &amp;hellip;. Mỗi View sẽ có một ID do người dùng khai báo trong code XML. Thông qua ID đó, các View khác có thể xác định vị trí.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/nkKW75D.jpg&#34; alt=&#34;&#34; title=&#34;Relative Layout&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ở phần này, mình khá tiếc vì trong khóa không có dạy về &lt;a href=&#34;https://developer.android.com/reference/android/support/constraint/ConstraintLayout&#34;&gt;ConstraintLayout&lt;/a&gt; được Google giới thiệu lần đầu trong Google I/O 2016 (có lẽ vì vậy mà khóa học không có, khóa này bắt đầu từ 2015). ConstraintLayout giúp cải thiện về performance và quan trọng hơn, bạn có thể tạo một layout phức tạp mà không cần phải dùng nhiều LinearLayout và RelativeLayout lồng vào nhau. Nó cũng tận dụng tối ưu được Design Mode trong thiết kế UI. Mình sẽ có một bài viết riêng về ConstraintLayout và những ứng dụng của nó.&lt;/p&gt;
+&lt;h1 id=&#34;kết-quả&#34;&gt;Kết quả&lt;/h1&gt;
+&lt;p&gt;Sau khi kết thúc khóa học đầu tiên, thành quả của mình chính là 2 app: Cả 2 app rất đơn giản, chỉ bao gồm 1 layout, người dùng vẫn chưa có thể tương tác gì. Nhưng nó đã đáp ứng được mục đích của khóa là về User Interface.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/CeD972P.jpg&#34; alt=&#34;&#34; title=&#34;Happy Birthday App&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Ro6y6fj.jpg&#34; alt=&#34;&#34; title=&#34;Monkey In Black App&#34;&gt;
+Nếu các bạn có thể để ý thì ở app thứ 2 , màu sắc và bố cục chưa thật sự ổn lắm. Thật sự là vậy, mình khá tệ trong việc lựa chọn màu sắc, kiểu dáng cũng như là kích thước các view. Mỗi khi thiết kế một UI, mình muốn có một guideline để dựa vào, như vậy UI mình sẽ cân đối về màu sắc và bố cục hơn. Nếu các bạn cũng gặp vấn đề như mình thì có thể xem &lt;a href=&#34;https://material.io/&#34;&gt;Material Design&lt;/a&gt; của Google. Ở đây, các bạn có thể tìm thấy các quy ước về màu sắc, kích cỡ, vị trí để app của bạn nhìn đơn giản nhưng đẹp mắt.
+Như vậy thì mình đã hoàn thành khóa học đầu tiên. Tóm lại, trong khóa này mình đã học thêm được:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;XML: syntax và attributes&lt;/li&gt;
+&lt;li&gt;Một số loại Views: TextView, ImageView, Button,…&lt;/li&gt;
+&lt;li&gt;Hai loại layout: LinearLayout và RelativeLayout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;và đã hoàn thành được 2 app. Mình sẽ dành riêng cho ConstraintLayout trong một bài viết khác vì ConstraintLayout đã thực sự thay đổi các mình thiết kế UI, thay vì code XML thì giờ mình chỉ cần kéo thả một cách rất trực quan. Như mọi lần, mình là một thằng Noob và sẵn sằng tiếp nhận những ý kiến của mọi người.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Nếu các bạn thắc mắc tại sao mình lại chọn Monkey In Black để đưa vào trong app của mình thì MIB chính là quán cafe đầu tiên mà mình đi khi mới vào Sài Gòn học. Mình rất thích Monkey In Black vì những con người, nguồn năng lượng, chất điên mà quán gửi vào từng sản phẩm. Đơn giản vậy thôi :D (Mình không PR giúp quán đâu :D)&lt;/p&gt;
+        
+      </description>
     </item>
     
     <item>
@@ -23,7 +71,36 @@
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/learn/2018-05-15-android-studio-and-udacity/</guid>
-      <description></description>
+      <description>
+        
+          &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/9dA7VyG.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;android-studio&#34;&gt;Android Studio&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/9QWugQs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Nhìn qua ảnh, có lẽ các bạn cũng biết mình sẽ nói đến vấn đề gì trong phần này. Android Studio là IDE do Google phát triển với nhiều tính năng hỗ trợ tối đa cho việc lập trình và phát triển app trên Android. Sẽ không có vấn đề gì để nói nếu như mình không đang chạy nó trên một con laptop core i3-5005u với 4Gb ram (Các bạn có thể xem thể về &lt;a href=&#34;https://developer.android.com/studio/&#34;&gt;System Requirements&lt;/a&gt; của Android Studio). Đây là tình trạng máy của mình khi chạy Android Studio và mở song song 1 tab Google Chorme (để học trên Udacity).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/SfyLGO5.jpg&#34; alt=&#34;&#34; title=&#34;Memory&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Với tình hình như vật thì lag và đứng màn hình là việc xảy ra thường xuyên, ảnh hưởng rất nhiều đến việc trải nghiệm và tăng sự ức chế mỗi khi code của mình lên khá nhiều. Nhưng rất may, mình không phải là người duy nhất ở trong tình trạng này. Mình đã tham khảo &lt;a href=&#34;https://stackoverflow.com/questions/27176353/android-studio-takes-too-much-memory&#34;&gt;ở đây&lt;/a&gt; để tìm cách giảm lượng ram sử dụng của Android Studio xuống nhưng không ảnh hưởng nhiều đến các tính năng ưu việt của nó. Trong đó có khá nhiều cách, mình đã thử qua nhiều các và thấy những cách sau đây khá hiệu quả:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Đầu tiên và quan trọng nhất: Đừng bao giờ chạy Android Virtual Device nếu bạn không muốn máy bạn bị đứng và phải hard reset. Hãy tìm một con smartphone android và chạy app trực tiếp trên đó.&lt;/li&gt;
+&lt;li&gt;Tắt bớt những Plugin không cần thiết: Mình tắt những Plugin hỗ trợ Version Control. Thay vì trực tiếp sử dụng trong Android Studio, mình sử dụng trên terminal (mình chủ yếu sử dụng Git).&lt;/li&gt;
+&lt;li&gt;Cài đặt lại kích thước tối đa cho Heap của Gradle: Việc này làm cho quá trình build của mình lâu hơn bình thường, nhưng bù lại thì nó đỡ tốn ram hơn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ở trong link mình đã để ở trên, còn nhiều cách nữa để giảm lượng ram của Android Studio xuống, nhưng thường sẽ đánh đổi một ít về tính năng (Ví dụ như bật chế độ tiết kiệm pin trong Android Studio sẽ làm mất đi một số tính năng hộ trợ việc code trên IDE). Kết quả sau khi tùy chỉnh khá ổn. Đây là tình trạng bộ nhớ của máy mình khi mình đang viết bài này (mở Android Studio và 5 tab Google Chorme)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/iHPWr2M.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Như vậy là vấn đề đầu tiên đã được giải quyết xong. Bây giờ mình có thể tiếp tục học mà không phải ức chế vì lag nữa rồi.&lt;/p&gt;
+&lt;p&gt;#Udacity&lt;/p&gt;
+&lt;p&gt;Như mình đã nói đến ở bài viết trước, mình sẽ học một chuỗi course về Android trên Udacity, bao gồm 5 course:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/android-basics-user-interface--ud834&#34;&gt;Android Basics: User Interface&lt;/a&gt; (2 tuần)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/android-basics-user-input--ud836&#34;&gt;Android Basics: User Input&lt;/a&gt; (4 tuần)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/android-basics-multiscreen-apps--ud839&#34;&gt;Android Basics: Multiple App Screens&lt;/a&gt; (2 tháng)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/android-basics-networking--ud843&#34;&gt;Android Basics: Networking&lt;/a&gt; (5 tuần)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/android-basics-data-storage--ud845&#34;&gt;Android Basics: Data Storage&lt;/a&gt; (8 tuần)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thời gian học ở trên là thời gian đề nghị trong mỗi course, mình nghĩ mình sẽ đẩy nhanh tốc độ hơn vì mình đã có kinh nghiệm về lập trình trước rồi. Mình khá thích những khóa này vì những video bài giảng khá ngắn (trung bình khoảng 4 - 5 phút, thỉnh thoảng mới có những video 9 - 10 phút, còn nhiều hơn thì mình chưa thấy), cách dạy trực quan và sáng tạo (mình đã ngủ gật khi học khóa Android trên Coursera vì giảng lý thuyết nhiều quá), sau mỗi video hay nội dung mới đều có những câu hỏi để các bạn check lại những điều vừa học. Ngoài ra, các ví dụ và code mẫu của khóa đều có trên Github và được cập nhật thường xuyên, tránh được trường hợp ức chế vì nội dung khóa quá cũ. Udacity cũng có một forum để các bạn tiện đặt câu hỏi, chia sẻ app của mình và nhận những đánh giá từ những người học khác. Ngoài những khóa này, ngoài ra còn có chương trình Nanodegree  (đây là chương trình bao quát và chi tiết về Android của Google), tuy nhiên học phí khá đắt (200$ mỗi tháng, thời gian học dự kiến 1 năm).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Mình sẽ dừng bài viết ở đây. Trong bài tiếp theo, mình sẽ chia sẻ về những gì mình đã học và làm được trong khóa đầu tiên Android Basics: User Interface. Về tình hình hiện tại thì mình đã học Android được 3 tuần. Mình đã hoàn thành 3 kh đầu tiên và đang tiếp tục học khóa thứ 4 Android Basics: Networking.  Như mọi lần, vì là một thằng Noob, mình rất mong nhận được những ý kiến đóng góp của các bạn ^_^.&lt;/p&gt;
+        
+      </description>
     </item>
     
     <item>
@@ -32,7 +109,27 @@
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/learn/android-for-noob/</guid>
-      <description></description>
+      <description>
+        
+          &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/WryYTJY.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Đây không phải là một bài viết chuyên sâu về Android. Tuy tiêu đề là “Android for noob”, đây cũng không phải là một bài hướng dẫn Android cho những người bắt đầu. Đây đơn thuần chỉ là những chia sẻ và trải nghiệm của một thằng noob (mình) khi học lập trình Android.&lt;/p&gt;
+&lt;h1 id=&#34;tại-sao-lại-là-android&#34;&gt;Tại sao lại là Android?&lt;/h1&gt;
+&lt;p&gt;Mình học Android vì … mình thích, vậy thôi. À ngoài ra mình cũng đang xài một con smartphone chạy hệ điều hành Android nên mình tranh thủ tận dụng luôn.&lt;/p&gt;
+&lt;h1 id=&#34;mình-đã-có-gì&#34;&gt;Mình đã có gì?&lt;/h1&gt;
+&lt;p&gt;Như tiêu đề, mình là một thằng noob. Vì vậy các bạn có lẽ cũng không nên bất ngờ quá nếu phần này ngắn quá.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ngôn ngữ lập trình: Hiện tại thì mình đang học và sử dụng chủ yếu C++. Ngoài ra mình cũng biết một ít về Java và Python. Java thì mình chỉ biết đủ để làm bài tập ở course &lt;a href=&#34;https://www.coursera.org/learn/algorithms-part1&#34;&gt;Algorithm&lt;/a&gt; trên Coursera. Python thì mình có biết qua khi học khóa &lt;a href=&#34;https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x&#34;&gt;CS50&lt;/a&gt; trên EdX.&lt;/li&gt;
+&lt;li&gt;Về Android: Ngoài chuyện mình biết dùng một con smartphone chạy Android và lúc trước thỉnh thoảng có nghịch root máy và up rom các kiểu thì ngoài ra mình chưa biết gì về Android.&lt;/li&gt;
+&lt;li&gt;OOP: Mình có tìm hiểu qua và biết một số khái niệm cơ bản.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tóm lại, như đã nói, mình là một thằng noob.&lt;/p&gt;
+&lt;h1 id=&#34;mình-bắt-đầu-như-thế-nào&#34;&gt;Mình bắt đầu như thế nào?&lt;/h1&gt;
+&lt;p&gt;Ban đầu mình chọn khóa &lt;a href=&#34;https://www.coursera.org/learn/android-programming&#34;&gt;Programming Mobile Applications for Android Handheld Systems&lt;/a&gt; trên Coursera. Tuy nhiên, sau khi học tuần đầu tiên, mình thấy khóa này đã khá cũ và cách tiếp cận không phù hợp với mình. Vì vậy mình quyết định không học khóa này nữa mà tìm những khóa khác phù hợp hơn.&lt;/p&gt;
+&lt;p&gt;Khóa học tiếp theo mình tìm đến là &lt;a href=&#34;https://in.udacity.com/interview-skill-certification/android-basics-user-interface--ud834&#34;&gt;Android Basics&lt;/a&gt; trên Udacity. Khóa này được đánh giá là cho những học viên chưa hề có kinh nghiệm lập trình trước đó, vì vậy mình nghĩ đây có thể là cách tiếp cận tốt hơn cho mình. Mình enroll khóa đầu tiên trong chuỗi những khóa của Android Basics là Android Basics: User Interface. Sau khi xem vài video đầu tiên, mình cảm thấy đây chính là khóa học phù hợp với mình. Ngay sau đó mình đã enroll luôn cả 4 khóa còn lại. Và như vậy hành trình Android của mình đã bắt đầu&amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Mình sẽ dừng ở đây vì mục đích của bài này chỉ là giới thiệu về những gì mình định viết. Trong những bài tiếp theo, mình sẽ chia sẻ những kiến thức, trải nghiệm mình có được cũng như những app mà mình đã làm được trong quá trình học. Vì là một thằng noob, mình luôn sẵn sàng đón nhận những ý kiến đóng góp cho bài viết của mình.&lt;/p&gt;
+        
+      </description>
     </item>
     
   </channel>
