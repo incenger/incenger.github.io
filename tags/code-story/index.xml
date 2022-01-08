@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code Story on InCenger Blog</title>
-    <link>https://incenger.github.io/tags/code-story/</link>
-    <description>Recent content in Code Story on InCenger Blog</description>
+    <title>Code Story on Hi! I&#39;m Tam Le</title>
+    <link>/tags/code-story/</link>
+    <description>Recent content in Code Story on Hi! I&#39;m Tam Le</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 04 Aug 2018 23:21:30 +0700</lastBuildDate><atom:link href="https://incenger.github.io/tags/code-story/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 04 Aug 2018 23:21:30 +0700</lastBuildDate><atom:link href="/tags/code-story/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KMS Hackathon Part 3: Curtain Call</title>
-      <link>https://incenger.github.io/post/learn/kmshackathon-p3/</link>
+      <link>/post/learn/kmshackathon-p3/</link>
       <pubDate>Sat, 04 Aug 2018 23:21:30 +0700</pubDate>
       
-      <guid>https://incenger.github.io/post/learn/kmshackathon-p3/</guid>
+      <guid>/post/learn/kmshackathon-p3/</guid>
       <description>
         
           &lt;p&gt;Hạ Màn&amp;hellip;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p1/&#34;&gt;Phần 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p2/&#34;&gt;Phần 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/post/learn/kmshackathon-p1/&#34;&gt;Phần 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/post/learn/kmshackathon-p2/&#34;&gt;Phần 2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Phần 3&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
@@ -36,17 +37,17 @@ Những gì diễn ra sáng và trưa hôm đó cũng không có gì để kể 
     
     <item>
       <title>KMS Hackathon Part 2: Trouble comes</title>
-      <link>https://incenger.github.io/post/learn/kmshackathon-p2/</link>
+      <link>/post/learn/kmshackathon-p2/</link>
       <pubDate>Fri, 20 Jul 2018 16:31:50 +0700</pubDate>
       
-      <guid>https://incenger.github.io/post/learn/kmshackathon-p2/</guid>
+      <guid>/post/learn/kmshackathon-p2/</guid>
       <description>
         
           &lt;p&gt;Những khó khăn bắt đầu xuất hiện&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p1/&#34;&gt;Phần 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/post/learn/kmshackathon-p1/&#34;&gt;Phần 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Phần 2&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p3/&#34;&gt;Phần 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/post/learn/kmshackathon-p3/&#34;&gt;Phần 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Ý tưởng đã có, phần quan trong nhất bây giờ là biến nó thành sản phẩm (ít nhất là demo được). Cả team quyết định làm demo bằng mobile app. Trớ trêu thay, trong cả team, chỉ có mình tôi là đã có kinh nghiệm làm về Android Application. Nói là đã có kinh nghiệm, nhưng thật ra tôi mới chỉ bắt đầu nghịch Android được hơn 1 tháng, và cũng chỉ là học những course của Udacity (các bạn có thể thấy thông qua series &lt;a href=&#34;https://incenger.github.io/tags/android-for-noob/&#34;&gt;Android for Noob&lt;/a&gt; của tôi). Tôi có biết thêm một ít về React Native (tôi chỉ mới học qua được 1, 2 ngày) nhưng vẫn chưa đủ để  áp dụng vào làm một application cơ bản. Vì vậy, việc được giao trách nhiệm làm mobile app thật sự là một thử thách vượt quá khả năng của tôi. Nhưng mà &amp;hellip;, cứ làm thôi :D.&lt;/p&gt;
@@ -68,17 +69,17 @@ Tóm gọi là tình hình của team tôi lúc này là &amp;ldquo;lực bất 
     
     <item>
       <title>KMS Hackathon Part 1: The First Hackathon</title>
-      <link>https://incenger.github.io/post/learn/kmshackathon-p1/</link>
+      <link>/post/learn/kmshackathon-p1/</link>
       <pubDate>Tue, 17 Jul 2018 23:40:59 +0700</pubDate>
       
-      <guid>https://incenger.github.io/post/learn/kmshackathon-p1/</guid>
+      <guid>/post/learn/kmshackathon-p1/</guid>
       <description>
         
           &lt;p&gt;Với một thằng noob không chuẩn bị gì thì 30 tiếng hackathon sẽ như thế nào?&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Phần 1&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p2/&#34;&gt;Phần 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://incenger.github.io/post/learn/kmshackathon-p3/&#34;&gt;Phần 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/post/learn/kmshackathon-p2/&#34;&gt;Phần 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/post/learn/kmshackathon-p3/&#34;&gt;Phần 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Một trong những mục tiêu cần hoàn thành trong năm 2018 của tôi là tham gia ít nhất một cuộc thi Hackathon. Khi đặt ra mục tiêu đó, tôi cũng chưa biết chính xác mình cần phải chuẩn bị những gì cho một cuộc thi Hackathon. Tôi nghĩ mục đích chính của tôi chỉ là trải nghiệm cảm giác của một cuộc thi Hackathon mà thôi.&lt;/p&gt;

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on InCenger Blog</title>
-    <link>https://incenger.github.io/tags/android/</link>
-    <description>Recent content in Android on InCenger Blog</description>
+    <title>Android on Hi! I&#39;m Tam Le</title>
+    <link>/tags/android/</link>
+    <description>Recent content in Android on Hi! I&#39;m Tam Le</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 22 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://incenger.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 22 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Course</title>
-      <link>https://incenger.github.io/post/learn/first-course/</link>
+      <link>/post/learn/first-course/</link>
       <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://incenger.github.io/post/learn/first-course/</guid>
+      <guid>/post/learn/first-course/</guid>
       <description>
         
           &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/D8SfStr.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -66,10 +67,10 @@ Như vậy thì mình đã hoàn thành khóa học đầu tiên. Tóm lại, tr
     
     <item>
       <title>Android Studio and Udacity</title>
-      <link>https://incenger.github.io/post/learn/2018-05-15-android-studio-and-udacity/</link>
+      <link>/post/learn/2018-05-15-android-studio-and-udacity/</link>
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://incenger.github.io/post/learn/2018-05-15-android-studio-and-udacity/</guid>
+      <guid>/post/learn/2018-05-15-android-studio-and-udacity/</guid>
       <description>
         
           &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/9dA7VyG.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -104,10 +105,10 @@ Như vậy thì mình đã hoàn thành khóa học đầu tiên. Tóm lại, tr
     
     <item>
       <title>Android for Noob</title>
-      <link>https://incenger.github.io/post/learn/android-for-noob/</link>
+      <link>/post/learn/android-for-noob/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://incenger.github.io/post/learn/android-for-noob/</guid>
+      <guid>/post/learn/android-for-noob/</guid>
       <description>
         
           &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/WryYTJY.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
