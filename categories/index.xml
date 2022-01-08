@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hi! I&#39;m Tam Le</title>
-    <link>/categories/</link>
+    <link>https://incenger.github.io/categories/</link>
     <description>Recent content in Categories on Hi! I&#39;m Tam Le</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 30 Oct 2021 21:21:33 +0700</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Oct 2021 21:21:33 +0700</lastBuildDate><atom:link href="https://incenger.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning</title>
-      <link>/categories/learning/</link>
+      <link>https://incenger.github.io/categories/learning/</link>
       <pubDate>Sat, 30 Oct 2021 21:21:33 +0700</pubDate>
       
-      <guid>/categories/learning/</guid>
+      <guid>https://incenger.github.io/categories/learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Random Thoughts</title>
-      <link>/categories/random-thoughts/</link>
+      <link>https://incenger.github.io/categories/random-thoughts/</link>
       <pubDate>Sat, 30 Oct 2021 21:21:33 +0700</pubDate>
       
-      <guid>/categories/random-thoughts/</guid>
+      <guid>https://incenger.github.io/categories/random-thoughts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fellowship-Optim</title>
-      <link>/categories/fellowship-optim/</link>
+      <link>https://incenger.github.io/categories/fellowship-optim/</link>
       <pubDate>Thu, 02 Sep 2021 20:08:54 +0700</pubDate>
       
-      <guid>/categories/fellowship-optim/</guid>
+      <guid>https://incenger.github.io/categories/fellowship-optim/</guid>
       <description></description>
     </item>
     
