@@ -29,14 +29,29 @@
     <loc>https://incenger.github.io/posts/2021/10/ielts_1/</loc>
     <lastmod>2021-10-23T21:37:44+07:00</lastmod>
   </url><url>
-    <loc>https://incenger.github.io/categories/fellowship-optim/</loc>
+    <loc>https://incenger.github.io/tags/machine-learning/</loc>
+    <lastmod>2021-09-02T20:08:54+07:00</lastmod>
+  </url><url>
+    <loc>https://incenger.github.io/tags/my-story/</loc>
+    <lastmod>2021-09-02T20:08:54+07:00</lastmod>
+  </url><url>
+    <loc>https://incenger.github.io/series/</loc>
+    <lastmod>2021-09-02T20:08:54+07:00</lastmod>
+  </url><url>
+    <loc>https://incenger.github.io/series/the-fellowship-of-the-optim/</loc>
     <lastmod>2021-09-02T20:08:54+07:00</lastmod>
   </url><url>
     <loc>https://incenger.github.io/posts/2021/09/thesis_recap_6/</loc>
     <lastmod>2021-09-02T20:08:54+07:00</lastmod>
   </url><url>
+    <loc>https://incenger.github.io/tags/thesis/</loc>
+    <lastmod>2021-09-02T20:08:54+07:00</lastmod>
+  </url><url>
     <loc>https://incenger.github.io/posts/2021/07/thesis_writing_5/</loc>
     <lastmod>2021-07-02T23:13:34+07:00</lastmod>
+  </url><url>
+    <loc>https://incenger.github.io/tags/learning/</loc>
+    <lastmod>2021-05-07T13:52:06+07:00</lastmod>
   </url><url>
     <loc>https://incenger.github.io/posts/2021/05/ok_plateau_4/</loc>
     <lastmod>2021-05-07T13:52:06+07:00</lastmod>
@@ -56,7 +71,7 @@
     <loc>https://incenger.github.io/posts/2020/09/thanh-pho-ve-dem/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://incenger.github.io/tags/my-story/</loc>
+    <loc>https://incenger.github.io/tags/random-thoughts/</loc>
     <lastmod>2020-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://incenger.github.io/posts/2020/08/2020-08-13-30-days-writing-challeng/</loc>
@@ -74,10 +89,13 @@
     <loc>https://incenger.github.io/posts/2018/08/mi6-fallout/</loc>
     <lastmod>2018-08-10T21:03:02+07:00</lastmod>
   </url><url>
-    <loc>https://incenger.github.io/tags/code-story/</loc>
+    <loc>https://incenger.github.io/tags/code/</loc>
     <lastmod>2018-08-04T23:21:30+07:00</lastmod>
   </url><url>
     <loc>https://incenger.github.io/tags/hackathon/</loc>
+    <lastmod>2018-08-04T23:21:30+07:00</lastmod>
+  </url><url>
+    <loc>https://incenger.github.io/series/kms-hackathon/</loc>
     <lastmod>2018-08-04T23:21:30+07:00</lastmod>
   </url><url>
     <loc>https://incenger.github.io/posts/2018/08/kmshackathon-p3/</loc>
@@ -113,10 +131,10 @@
     <loc>https://incenger.github.io/posts/2017/08/2017-08-28-ki-uc-ngay-mua/</loc>
     <lastmod>2017-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://incenger.github.io/posts/2016/06/2016-06-27-massp/</loc>
+    <loc>https://incenger.github.io/page/aboutme/</loc>
     <lastmod>2016-06-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://incenger.github.io/page/aboutme/</loc>
+    <loc>https://incenger.github.io/posts/2016/06/2016-06-27-massp/</loc>
     <lastmod>2016-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://incenger.github.io/page/</loc>
@@ -124,7 +142,5 @@
   </url><url>
     <loc>https://incenger.github.io/page/now/</loc>
     <lastmod>2016-06-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://incenger.github.io/series/</loc>
   </url>
 </urlset>
