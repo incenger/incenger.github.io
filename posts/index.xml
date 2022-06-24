@@ -1,4 +1,80 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Hi! I'm Tam Le</title><link>https://incenger.github.io/posts/</link><description>Recent content in Posts on Hi! I'm Tam Le</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sat, 30 Oct 2021 21:21:33 +0700</lastBuildDate><atom:link href="https://incenger.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Mình học IELTS</title><link>https://incenger.github.io/posts/2021/10/ielts_2/</link><pubDate>Sat, 30 Oct 2021 21:21:33 +0700</pubDate><guid>https://incenger.github.io/posts/2021/10/ielts_2/</guid><description>&lt;p>Tiếp nối &lt;a href="https://incenger.github.io/posts/learn/ielts_1/">chuyện mình thi IELTS&lt;/a>, đây là chuyện mình học tiếng Anh và IELTS. Bài viết sẽ được chia làm hai phần, phần đầu nói về việc mình học tiếng Anh nói chung và phần hai là một số kinh nghiệm của mình trong việc học IELTS.&lt;/p></description><content type="html"><![CDATA[<p>Tiếp nối <a href="https://incenger.github.io/posts/learn/ielts_1/">chuyện mình thi IELTS</a>, đây là chuyện mình học tiếng Anh và IELTS. Bài viết sẽ được chia làm hai phần, phần đầu nói về việc mình học tiếng Anh nói chung và phần hai là một số kinh nghiệm của mình trong việc học IELTS.</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Hi! I'm Tam Le</title><link>https://incenger.github.io/posts/</link><description>Recent content in Posts on Hi! I'm Tam Le</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Tue, 21 Jun 2022 21:37:28 +0700</lastBuildDate><atom:link href="https://incenger.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>APCS Thesis Surivial Guide</title><link>https://incenger.github.io/posts/2022/06/apcs_thesis_survival_guide/</link><pubDate>Tue, 21 Jun 2022 21:37:28 +0700</pubDate><guid>https://incenger.github.io/posts/2022/06/apcs_thesis_survival_guide/</guid><description>Chuyện là năm nay mình có cơ hội được đồng hành với một số bạn khóa dưới trong quá trình làm luận văn. Gọi là đồng hành chứ thật ra mình chỉ giúp giải đáp những thắc mắc và cho các bạn một vài lời khuyên dựa trên kinh nghiệm của mình chứ không có đóng góp gì đáng kể vào công trình của các bạn. Trong quá trình làm luận văn, giai đoạn cuối là một trong những giai đoạn mà mình cảm thấy hoang mang và căng thẳng nhất vì có rất nhiều mục tiêu quan trọng cần phải hoàn thành, và chúng không hề dễ dàng với những người ít kinh nghiệm nghiên cứu (như mình): tổng hợp kết quả, viết luận văn, viết bài báo, trình bày trước giáo viên phản biện và hội đồng.</description><content type="html"><![CDATA[<p>Chuyện là năm nay mình có cơ hội được đồng hành với một số bạn khóa dưới trong quá trình làm luận văn.
+Gọi là đồng hành chứ thật ra mình chỉ giúp giải đáp những thắc mắc và cho các bạn một vài lời khuyên dựa trên kinh nghiệm của mình chứ không có đóng góp gì đáng kể vào công trình của các bạn.
+Trong quá trình làm luận văn, giai đoạn cuối là một trong những giai đoạn mà mình cảm thấy hoang mang và căng thẳng nhất vì có rất nhiều mục tiêu quan trọng cần phải hoàn thành, và chúng không hề dễ dàng với những người ít kinh nghiệm nghiên cứu (như mình): tổng hợp kết quả, viết luận văn, viết bài báo, trình bày trước giáo viên phản biện và hội đồng.
+Trong lúc nói chuyện với một bạn khóa dưới về luận án, mình chợt nảy ra ý tưởng tổng hợp lại tất cả những tips đã giúp mình &ldquo;sống sót&rdquo; qua giai đoạn đó.</p>
+<p><strong>Disclaimer:</strong> Những tips của mình không đảm bảo giúp công trình của các bạn sẽ đạt điểm cao, vì thật sự mình cũng không biết làm sao để đạt được điều đó.</p>
+<p>Những tips của mình sẽ được viết dựa trên kinh nghiệm của mình với quá trình bảo vệ luận án của APCS, nhưng mình nghĩ nó có thể được áp dụng cho nhiều trường hợp khác nữa. Anyway, please take it with a grain of salt.</p>
+<h2 id="checklist">Checklist</h2>
+<p>Nếu các bạn trả lời có cho phần lớn các điều kiện bên dưới thì mình nghĩ những tips của mình sẽ có giá trị với bạn</p>
+<ul>
+<li><input disabled="" type="checkbox"> Bạn cảm thấy đề tài của mình không tốt và bạn không chắc chắn là liệu nó có thể đạt đủ tiêu chuẩn của một luận án đại học không. Thậm chí bạn đã nghĩ đến chuyện xin hoãn bảo vệ.</li>
+<li><input disabled="" type="checkbox"> Bạn không có bài báo khoa học nào, trước đây và từ luận án của bạn.</li>
+<li><input disabled="" type="checkbox"> Bạn không tự tin về khả năng viết của mình và cảm thấy luận văn dường như là một thử thách quá sức đối với bạn.</li>
+<li><input disabled="" type="checkbox"> Bạn không có nhiều kinh nghiệm nghiên cứu khoa học một cách nghiêm túc hoặc có thể bạn đã thử trước đó nhưng không thành công.</li>
+<li><input disabled="" type="checkbox"> Bạn cảm thấy hoang mang và không biết nên làm gì.</li>
+</ul>
+<h2 id="in-the-loop">In the loop</h2>
+<p>Dù muốn hay không, bạn sẽ phải đưa ra quyết định quan trọng cho số phận của luận án: hoàn thành hay xin hoãn.
+Mình không thể đưa ra lời khuyên gì để giúp bạn trong chuyện này, nhưng cho dù quyết định của bạn là gì, hãy &ldquo;keep everyone in the loop&rdquo; bằng cách cập nhật tiến độ của luận án và kết quả thường xuyên cho teammate và giáo viên hướng dẫn.
+Hãy chủ động hẹn lịch và trao đổi một cách thật lòng với giáo viên hướng dẫn về những suy nghĩ của bạn về những kết quả mà bạn đã đạt được và lắng nghe ý kiến của thầy cô.
+Hãy thảo luận với thầy cô về nội dung của luận án, những kết quả nào nên được đưa vào và nên trình bày như thế nào.
+Giáo viên hướng dẫn sẽ là người chịu trách nhiệm về công trình của bạn trước hội đồng, vì vậy, nhiêm vụ của bạn là làm sao để cho thầy cô hiểu tường tận và nắm rõ những gì bạn đã làm.
+Điều đó là thiết yếu để thầy cô có thể &ldquo;bảo vệ&rdquo; bạn và công trình của bạn trước giáo viên phản biện và hội đồng.</p>
+<h2 id="show-your-work">Show your work</h2>
+<blockquote>
+<p>&ldquo;Your success in life will be determined largely by your ability to speak, your ability to write, and the quality of your ideas, in that order.&rdquo; - Patrick Winston</p>
+</blockquote>
+<p>Công trình của bạn có được đánh giá cao hay không phụ thuộc phần lớn vào hai yếu tố: luận văn (khả năng viết) và trình bày công trình (khả năng nói).
+Chất lượng của ý tưởng của các bạn chỉ có thể được thể hiện thông qua hai phương tiện đó.
+Vì vậy, dù luận án của bạn có ý tưởng tốt hay không, thì việc đầu tư cho việc viết luận văn và tìm cách trình bày nó là điều bắt buộc bạn phải làm, đặc biệt là trong giai đoạn cuối này.
+Hãy cố gắng dành phần lớn thời gian cho hai việc đó thay vì thử nghiệm những ý tưởng mới, trừ khi chúng cực kì thiết yếu.</p>
+<h3 id="viết-luận-văn">Viết luận văn</h3>
+<p>Đây là một số kinh nghiệm của mình khi viết luận văn:</p>
+<ul>
+<li>
+<p>Viết là một việc phức tạp và tốn nhiều công sức, trí não, đặc biệt là với những văn bản có hàm lượng tri thức cao. Bạn sẽ phải làm nhiều hơn chỉ đơn giản là viết những dòng chữ: tổng hợp thông tin, làm dàn ý, viết (gõ), biên tập, chỉnh sửa. Hãy chuẩn bị nhiều thời gian cho việc viết.</p>
+</li>
+<li>
+<p>Một trong những trở ngại lớn nhất của việc viết nói chung chính là bắt đầu viết. Một khi đã bắt đầu và vào guồng rồi, mọi thứ sẽ dễ chịu hơn. Trong trường hợp lý tưởng, bạn đã nên bắt đầu viết luận văn từ khá lâu rồi, nhưng nếu bạn đã bỏ lỡ thời điểm vàng đó thì hãy nhớ rằng thời điểm tốt nhất để bạn bắt đầu viết luận văn chính là <strong>NGAY BÂY GIỜ</strong>.</p>
+</li>
+<li>
+<p>Luận văn có yêu cầu số trang tối thiểu, gấp vài lần độ dài trung bình của các báo cáo hay bài luận mà các bạn từng viết trong thời gian ở đại học. Khi đối mặt với yêu cầu về độ dài như vậy, mình thấy đa phần các bạn sẽ cố gắng tìm cách để tăng độ dài của văn bản. Đó là một giải pháp, nhưng mình nghĩ cách tiếp cận tích cực và hiệu quả hơn là tìm cách để tăng nội dung của văn bản. Hãy nghĩ và viết một cách sâu và rộng hơn, khi đó độ dài văn bản sẽ tăng theo như một điều tất yếu. Hãy dùng hình ảnh, sơ đồ để giúp người đọc dễ hiểu ý tưởng của bạn hơn, thay vì chỉ đưa vào để trám vào những chỗ còn trống. Để viết sâu và rộng, các bạn sẽ phải đặt câu hỏi tại sao cho những kết luận mà bạn đưa ra và những giả định mà bạn đang sử dụng. Hãy nhớ rằng người đọc không trải qua vài tháng nghiên cứu như bạn, vậy nên, hãy cố gắng cho họ tất cả những gì cần thiết để có thể hiểu được góc nhìn của bạn. Hãy viết một cách thông minh hơn, độ dài sẽ không phải là vấn đề của bạn nữa.</p>
+</li>
+<li>
+<p>Hãy viết một cách đều đặn. Bạn có thể viết một một văn bản với độ dài vài trang trong một vài giờ, nhưng để viết một văn bản với hơn 50 trang thì các bạn cần sự kiên trì. Mỗi khi viết, các bạn sẽ mất thời gian và công sức để khởi tạo &ldquo;bối cảnh&rdquo; cho việc viết. Nó bao gồm: những gì bạn đã viết, thông tin mới bạn muốn thêm vào, bạn muốn nhấn mạnh, thả &ldquo;punchline&rdquo; vào những chỗ nào, &hellip;. Bạn viết càng thường xuyên thì việc khởi tạo sẽ càng mất ít công sức và bạn sẽ có nhiều năng lượng trí não hơn cho việc cho ra những câu chữ. Bên cạnh việc viết, bạn cũng nên đọc lại những gì mình viết thường xuyên vì bạn có thể bất ngờ với việc bạn muốn bỏ đi viết lại tất cả những gì bạn vừa cố gắng hoàn thành vào đêm hôm trước.</p>
+</li>
+<li>
+<p>Luận văn là để trình bày ý tưởng, công trình, và kết quả của bạn, không phải là bài kiểm tra ngôn ngữ. Hãy viết một cách đơn giản, dễ hiểu và đi thẳng vào trọng tâm. Bạn không phải quá lo về việc sử dụng nhiều cấu trúc ngữ pháp, từ vựng phức tạp. Hãy chỉ dùng chúng khi bạn thật sự cần diễn đạt một suy nghĩ phức tạp. Hãy dùng tất cả công cụ hỗ trợ mà bạn có để viết: Google Translate, Grammarly, v.v&hellip;.</p>
+</li>
+<li>
+<p>Hãy dùng công cụ quản lý trích dẫn và trình soạn thảo có hỗ trợ cho việc hai người cùng soạn 1 văn bản một lúc như Overleaf hay Word trong shared Onedrive folder. Để viết tốt thì công cụ mà bạn sử dụng cũng phải cho bạn trải nghiệm dễ chịu.</p>
+</li>
+</ul>
+<h3 id="trình-bày-luận-án">Trình bày luận án</h3>
+<p>Về cơ bản, bạn sẽ phải trình bày luận án của mình cho nhiều người nghe với mục đích khác nhau: trình bày cho bạn bè để nhờ họ góp ý, trình bày với giáo viên phản biện, trình bày trước hội đồng, và rộng hơn là trình bày nó cho những người có quan tâm. Trình bày không chỉ đơn giản là gửi luận văn cho người ta đọc hay chuẩn bị một slide rồi thuyết trình cho người khác nghe. Để trình bày tốt, trước tiên bạn cần xây dựng cho luận án của mình một câu chuyện. Giống như một câu chuyện bình thường sẽ có bắt đầu, kết thúc, cao trào thì công trình của bạn cũng phải có lý do tại sao bạn lại chọn bài toán đó, bạn tiếp cận bài toán đó như thế nào, kết quả ra sao, kết luận là gì. Câu chuyện này nên được xây dựng mà không cần một slide minh họa nào cả, giống như một kịch bản phim cũng không cần phải có hình ảnh đính kèm minh họa. Sau khi đã có câu chuyện rồi, hãy bắt đầu làm slides để minh họa cho câu chuyện đó. Hãy nhớ kĩ rằng slides chỉ đóng vai trò phụ họa, nhân vật chính vẫn là câu chuyện của bạn.</p>
+<p>Bên cạnh việc xây dựng câu chuyện, mình nghĩ bạn cũng nên làm một số điều sau:</p>
+<ul>
+<li>
+<p>Chuẩn bị một bản tóm tắt dài 1-2 trang (1 trang là tốt nhất) cho công trình của bạn. Hãy gửi nó kèm với luận văn khi bạn phải gửi luận văn cho giáo viên phản biện hay bất cứ ai đó. Đọc một luận văn không phải là việc đơn giản và dễ dàng, vậy nên hãy làm trải nghiệm của người đọc tốt hơn.</p>
+</li>
+<li>
+<p>Bạn không chỉ cần chuẩn bị mỗi slides để thuyết trình. Một phần quan trọng không thể thiếu chính là chuẩn bị cho những câu hỏi mà bạn có thể sẽ được hỏi. Hãy tổng hợp tất cả các câu hỏi mà bạn nghĩ là người đọc sẽ thắc mắc, sau đó suy nghĩ câu trả lời và chuẩn bị các tài liệu liên quan, đảm bảo bạn có thể mở những tài liệu đó ngay lập tức khi được hỏi. Slides mình đã dùng cho thuyết trình dài đến gần 90 trang vì mình để phần lớn những thông tin, kết quả hỗ trợ vào trong đó. Mình không trình bày chúng, nhưng mình muốn đảm bảo là khi mình được hỏi thì mình có thể đưa ra thông tin ngay lập tức.</p>
+</li>
+<li>
+<p>Khi làm slides, hãy lựa chọn những thiết kế đơn giản, không quá nhiều màu sắc và tươi sáng. Nếu có thể, bạn có thể tìm hiểu một số nguyên lý về màu sắc để xem những màu nào sẽ đem lại cảm giác dễ chịu cho người nhìn hay những font chữ nào sẽ dễ đọc. Hãy nhớ rằng, slides được thiết kế hiệu quả nhất là khi người xem không phải chú ý vào thiết kế mà tập trung hoàn toàn vào nội dung.</p>
+</li>
+<li>
+<p>Hãy chuẩn bị sẵn script và luyện tập nói thật trôi chảy, đặc biệt với những bạn không tự tin vào khả năng nói tiếng Anh của mình. Việc luyện nói trước nhiều cũng giúp bạn kiểm soát thời gian nói khi bảo vệ tốt hơn. Hãy lựa chọn tốc độ nói vừa phải và có nhấn mạnh lên xuống rõ ràng . <em>&ldquo;Rap chậm thôi.&quot;</em></p>
+</li>
+<li>
+<p>Khi được hỏi, hãy lắng nghe câu hỏi một cách từ tốn sau đó suy nghĩ thật kĩ rồi hãy trả lời. Nếu gặp câu hỏi khó, hãy thừa nhận và đưa ra những ý tưởng hiện có trong đầu. Nếu các bạn làm luận án hai người, sau khi trả lời câu hỏi xong, hãy hỏi bạn còn lại có ý kiến gì không. Hãy nhớ, đây không phải là show diễn một người.</p>
+</li>
+</ul>
+<h2 id="curtain-call">Curtain call</h2>
+<p>Nếu bạn đã đến được đây, mình xin chúc mừng, các bạn đã vượt qua phần khó nhất. Nhiệm vụ còn lại của các bạn chỉ còn là cập nhật, chỉnh sửa luận văn theo những góp ý đã nhận và hoàn thành những thủ tục còn lại. Có một điều các bạn nên làm ngay sau khi có kết quả là gửi lời cảm ơn đến giáo viên hướng dẫn, giáo viên phản biện và bất cứ ai đã giúp đỡ các bạn trong quá trình làm luận văn. Nếu được hãy thêm họ vào phần Acknowledgement trong luận văn :').</p>
+<p>Bạn đã hoàn thành một công trình lớn, và nó sẽ là một cột mốc quan trọng đối với sự phát triển của các bạn. Dù bạn có tiếp tục theo đuổi lĩnh vực bạn đã nghiên cứu sau khi hoàn thành luận án hay không thì mình tin các bạn cũng đã học được nhiều điều từ quá trình này.</p>
+<p>Chúc các bạn bảo vệ luận án một cách suôn sẻ.</p>
+]]></content></item><item><title>Mình học IELTS</title><link>https://incenger.github.io/posts/2021/10/ielts_2/</link><pubDate>Sat, 30 Oct 2021 21:21:33 +0700</pubDate><guid>https://incenger.github.io/posts/2021/10/ielts_2/</guid><description>&lt;p>Tiếp nối &lt;a href="https://incenger.github.io/posts/learn/ielts_1/">chuyện mình thi IELTS&lt;/a>, đây là chuyện mình học tiếng Anh và IELTS. Bài viết sẽ được chia làm hai phần, phần đầu nói về việc mình học tiếng Anh nói chung và phần hai là một số kinh nghiệm của mình trong việc học IELTS.&lt;/p></description><content type="html"><![CDATA[<p>Tiếp nối <a href="https://incenger.github.io/posts/learn/ielts_1/">chuyện mình thi IELTS</a>, đây là chuyện mình học tiếng Anh và IELTS. Bài viết sẽ được chia làm hai phần, phần đầu nói về việc mình học tiếng Anh nói chung và phần hai là một số kinh nghiệm của mình trong việc học IELTS.</p>
 <hr>
 <p>5S QUẢNG CÁO ༼ つ ◕_◕ ༽つ: Nếu các bạn có thời gian rảnh và muốn nghe mình nói luyên thuyên về chuyện IELTS, các bạn có thể nghe một podcast mà mình được mời tham gia tại:</p>
 <ul>
