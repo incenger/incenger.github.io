@@ -4,14 +4,14 @@
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=author content="Tam Le ">
-<meta name=description content="Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis.
-">
-<meta name=keywords content=",My Story,Machine Learning,Thesis">
+<meta name=description content="The transposed convolution is also called:
+ Fractionally strided convolution Sub-pixel convolution Backward convolution Deconvolution (The worst name - it&amp;rsquo;s confused and shouldn&amp;rsquo;t be used at all)  If we unroll the input and output feature maps of a convolution operation into vectors from left to right, top to bottom, the convolution could be represented by a matrix multiplication with a spare matrix \(C\). For example, below is a spare matrix for a convolution with kernel size \(3\), stride \(1\), padding \(0\) over a \(4 \times 4\) input, resulting in a \(2\times2\) output.">
+<meta name=keywords content>
 <meta name=robots content="noodp">
 <meta name=theme-color content>
-<link rel=canonical href=https://incenger.github.io/posts/2021/07/thesis_writing_5/>
+<link rel=canonical href=https://incenger.github.io/posts/2021/07/transposed_conv/>
 <title>
-The Fellowship of the Optim: Writing Thesis :: Hi! I'm Tam Le
+Tranposed Convolution :: Hi! I'm Tam Le
 </title>
 <link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css>
 <link rel=stylesheet href=https://incenger.github.io/main.17863a81d979b637a02cd7632a4d86e9d80563ef460fd6af1a56962efcaa066b.css>
@@ -23,23 +23,31 @@ The Fellowship of the Optim: Writing Thesis :: Hi! I'm Tam Le
 <link rel="shortcut icon" href=https://incenger.github.io/favicon.ico>
 <meta name=msapplication-TileColor content>
 <meta name=theme-color content>
-<meta itemprop=name content="The Fellowship of the Optim: Writing Thesis">
-<meta itemprop=description content="Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis."><meta itemprop=datePublished content="2021-07-02T23:13:34+07:00">
-<meta itemprop=dateModified content="2021-07-02T23:13:34+07:00">
-<meta itemprop=wordCount content="600"><meta itemprop=image content="https://incenger.github.io/">
-<meta itemprop=keywords content="My Story,Machine Learning,Thesis,">
+<meta itemprop=name content="Tranposed Convolution">
+<meta itemprop=description content="The transposed convolution is also called:
+ Fractionally strided convolution Sub-pixel convolution Backward convolution Deconvolution (The worst name - it&rsquo;s confused and shouldn&rsquo;t be used at all)  If we unroll the input and output feature maps of a convolution operation into vectors from left to right, top to bottom, the convolution could be represented by a matrix multiplication with a spare matrix \(C\). For example, below is a spare matrix for a convolution with kernel size \(3\), stride \(1\), padding \(0\) over a \(4 \times 4\) input, resulting in a \(2\times2\) output."><meta itemprop=datePublished content="2021-07-04T11:34:13+07:00">
+<meta itemprop=dateModified content="2021-07-04T11:34:13+07:00">
+<meta itemprop=wordCount content="561"><meta itemprop=image content="https://incenger.github.io/">
+<meta itemprop=keywords content>
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://incenger.github.io/">
-<meta name=twitter:title content="The Fellowship of the Optim: Writing Thesis">
-<meta name=twitter:description content="Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis.">
-<meta property="og:title" content="The Fellowship of the Optim: Writing Thesis">
-<meta property="og:description" content="Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis.">
+<meta name=twitter:title content="Tranposed Convolution">
+<meta name=twitter:description content="The transposed convolution is also called:
+ Fractionally strided convolution Sub-pixel convolution Backward convolution Deconvolution (The worst name - it&rsquo;s confused and shouldn&rsquo;t be used at all)  If we unroll the input and output feature maps of a convolution operation into vectors from left to right, top to bottom, the convolution could be represented by a matrix multiplication with a spare matrix \(C\). For example, below is a spare matrix for a convolution with kernel size \(3\), stride \(1\), padding \(0\) over a \(4 \times 4\) input, resulting in a \(2\times2\) output.">
+<meta property="og:title" content="Tranposed Convolution">
+<meta property="og:description" content="The transposed convolution is also called:
+ Fractionally strided convolution Sub-pixel convolution Backward convolution Deconvolution (The worst name - it&rsquo;s confused and shouldn&rsquo;t be used at all)  If we unroll the input and output feature maps of a convolution operation into vectors from left to right, top to bottom, the convolution could be represented by a matrix multiplication with a spare matrix \(C\). For example, below is a spare matrix for a convolution with kernel size \(3\), stride \(1\), padding \(0\) over a \(4 \times 4\) input, resulting in a \(2\times2\) output.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://incenger.github.io/posts/2021/07/thesis_writing_5/"><meta property="og:image" content="https://incenger.github.io/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-07-02T23:13:34+07:00">
-<meta property="article:modified_time" content="2021-07-02T23:13:34+07:00">
-<meta property="og:see_also" content="https://incenger.github.io/posts/2021/09/thesis_recap_6/"><meta property="og:see_also" content="https://incenger.github.io/posts/2021/05/ok_plateau_4/"><meta property="og:see_also" content="https://incenger.github.io/posts/2021/05/you_dont_know_3/"><meta property="og:see_also" content="https://incenger.github.io/posts/2021/04/random_things_2/"><meta property="og:see_also" content="https://incenger.github.io/posts/2021/04/where_am_i_now_1/">
-<meta property="article:published_time" content="2021-07-02 23:13:34 +0700 +0700">
+<meta property="og:url" content="https://incenger.github.io/posts/2021/07/transposed_conv/"><meta property="og:image" content="https://incenger.github.io/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-07-04T11:34:13+07:00">
+<meta property="article:modified_time" content="2021-07-04T11:34:13+07:00">
+<meta property="article:section" content="learning">
+<meta property="article:section" content="CNN">
+<meta property="article:published_time" content="2021-07-04 11:34:13 +0700 +0700">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM967KRZK6"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-CM967KRZK6',{anonymize_ip:!1})}</script>
 </head>
@@ -75,95 +83,111 @@ The Fellowship of the Optim: Writing Thesis :: Hi! I'm Tam Le
 </div>
 <article>
 <h1 class=post-title>
-<a href=https://incenger.github.io/posts/2021/07/thesis_writing_5/>The Fellowship of the Optim: Writing Thesis</a>
+<a href=https://incenger.github.io/posts/2021/07/transposed_conv/>Tranposed Convolution</a>
 </h1>
 <div class=post-content>
-<p>Vào thời điểm mình viết những dòng này, mình chỉ còn khoảng một tháng cho thesis của mình. Thật sự thì mình chưa bao giờ viết một văn bản khoa học nào bằng tiếng Anh dài như thesis sắp đến của mình (yêu cầu tối thiểu là 50 trang) nên mình có hơi chút lo sợ. Mình nghĩ cảm thấy lo sợ cũng là điều bình thường thôi nhỉ, vì viết một cái gì đó 50 trang thì vốn đã không phải là chuyện đơn giản, mà đây còn là viết về nghiên cứu khoa học nữa chứ. Viết blog này cũng cho mình một bài học thú vị, là trở ngại đầu tiên khi bạn muốn viết một cái gì đó nghiêm túc chính là bắt đầu. Đó là lý do tại sao mình quyết định bắt tay vào viết khi mình còn tận một tháng nữa cho thesis.</p>
-<p>Gần đây mình có đọc quyển How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking và tìm hiểu về <a href=https://notes.andymatuschak.org/About_these_notes>Andy&rsquo;s working note</a>. Mình cảm thấy incremental writing rất phù hợp với phong cách viết của mình và những gì mình hướng đến. Cụ thể là, mình xem viết như là một cách để hiểu và suy nghĩ về một vấn đề và những note mình viết phải có giá trị tái sử dụng, tức là bản thân nó có chứa đầy đủ thông tin và liên kết để làm sáng tỏ một chủ đề nào đó. Đặt trong bối cảnh thesis của mình, thì mình muốn mỗi note của mình sẽ viết một chủ đề, một câu hỏi nào đó mà mình có thể xem lại sau này. Thật ra điều này nó cũng là một sự an ủi về mặt tinh thần cho mình. Thú thật, mình cảm thấy luận văn mình không có gì đặc sắc lắm, và việc viết một văn bản 50 trang không có nhiều giá trị cho người đọc làm mình cảm thấy thật sự rất chán chường. Vậy nên, để vượt qua điều đó, mình muốn viết thesis theo hướng ít nhất là sẽ có ích cho mình, và dù không có nhiều sự mới mẻ hay ý tưởng hay ho, thì cũng sẽ có ích cho người khác bằng cách giải thích những khái niệm, trả lời những câu hỏi mà hầu như các papers cho là hiển nhiên hoặc là bỏ qua.</p>
-<p>Vòng vo như vậy đủ rồi, thật ra mình cũng muốn làm kiểu gì đó giống như livestream viết thesis. Nhưng mình nghĩ đó không phải là ý tưởng hay lắm. Một phần vì máy mình cũng không xịn lắm, không biết livestream có ảnh hưởng đến workflow của mình không. Một lý do nữa là khi tập trung thì mình muốn tập trung nên sẽ không có tương tác gì đâu (tóm lại là khi viết mình chán lắm, chả có gì để xem đâu =))) ). Vậy nên thay vì livestream, mình sẽ update tại đây tất cả những note sau khi mình viết xong. Mặc dù những note đó chưa được review cẩn thận và có thể chưa hoàn thiện 100%, nội dung cốt lõi của chúng vẫn được đảm bảo. Mình hi vọng chúng sẽ có ích với mọi người (À tất nhiên mấy notes sẽ được viết bằng tiếng Anh do chúng sẽ là một phần của thesis mình mà :)) )</p>
-<p>Thesis evergreen notes:</p>
+<p>The transposed convolution is also called:</p>
 <ul>
-<li><a href=https://incenger.github.io/post/learn/deformable_conv/>Deformable Convolution</a></li>
-<li><a href=https://incenger.github.io/post/learn/deformable_alignment/>Deformable Alignment</a></li>
-<li><a href=https://incenger.github.io/post/learn/transposed_conv/>Transposed Convolution</a></li>
-<li><a href=https://incenger.github.io/post/learn/efficient_subpixel_conv/>Efficient Sub-pixel Convolution</a></li>
+<li>Fractionally strided convolution</li>
+<li>Sub-pixel convolution</li>
+<li>Backward convolution</li>
+<li>Deconvolution (The worst name - it&rsquo;s confused and shouldn&rsquo;t be used at all)</li>
 </ul>
+<p>If we unroll the input and output feature maps of a convolution operation into vectors from left to right, top to bottom, the convolution could be represented by a matrix multiplication with a spare matrix \(C\). For example, below is a spare matrix for a convolution with kernel size \(3\), stride \(1\), padding \(0\) over a \(4 \times 4\) input, resulting in a \(2\times2\) output.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<p><img src=https://incenger.github.io/img/2021/transposed_conv/conv_matrix.png alt="Matrix representation of convolution"></p>
+<p>The convolution above transformed the \(16\)-dimensional vector into \(4\)-dimensional vector. With this representation, it&rsquo;s easy that we can do the reverse transform, which is transforming a \(4\)-dimensional input to \(16\)-dimensional input while keeping the original connectivity pattern, with the help of the transposed matrix \(C^T\). This is the underlying principal of the transposed convolution - swapping the forward and backward pass of the normal convolution.</p>
+<p>One way to think about transposed convolution is by multiplying the scalar in the input feature map with the kernel weights to create immediate results of the output feature map. The position of the immediate result depends on the position of the scale in the input feature map. The final output is the sum of all immediate results.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>.</p>
+<p><img src=https://incenger.github.io/img/2021/transposed_conv/transposed_conv_1.png alt></p>
+<p>Another way to think about transposed convolution is to apply an equivalent - but much less efficient - direction convolution on input feature map. Imagining the input of transposed convolution being the result of a direction convolution applied on some initial feature map, the transposed convolution can be considered as the operation that recovers the shape of this initial feature map.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> This way of thinking is reasonable because the transposed convolution is the just backward pass of a direction convolution.</p>
+<p><img src=https://incenger.github.io/img/2021/transposed_conv/transposed_conv_2.png alt></p>
+<p>In addition, considering transposed convolution in its relation to a direction convolution gives rise to the relationship between two convolution operations. Given a direct convolution with kernel size \(k\), stride \(s\), padding \(p\), the transposed convolution has the same kernel size \(k' = k\), stride \(s' = 1\) (noted that the stride for convolution of transposed convolution always has stride \(1\)).</p>
+<ul>
+<li>When \(p = 0\) (no padding) and \(s = 1\), considering the top left pixel of input of normal convolution, it only contributes to the top left pixel to the output. Therefore, for transposed convolution to maintain this connectivity pattern, it&rsquo;s necessary to add zero padding around the input of transposed convolution. The padding for transposed convolution&rsquo;s input is \(p'=k-1\).</li>
+<li>When padding is used in the normal convolution, it&rsquo;s reasonable to see that we need to reduce the padding of the transposed convolution. This can be explained by the observation that the top-left pixel of the original input (before padded) now contributes to more pixels output. The new padding for transposed convolution&rsquo;s input is \(p' = k - 1 -p\)</li>
+<li>When stride \(s > 1\) is used for normal convolution, the intuition for transposed convolution is to make the sliding window moves slower. This is made possible by adding zero pixels <strong>between</strong> actual pixel in the input. For normal convolution with stride \(s\), \(s-1\) zero pixels are added between actual in the input. This is where the name <em>fractionally strided convolution</em> comes from. Strided transposed convolution is commonly used to increase the spatial size of feature map.</li>
+</ul>
+<p><img src=https://incenger.github.io/img/2021/transposed_conv/transposed_conv_3.png alt></p>
+<section class=footnotes role=doc-endnotes>
 <hr>
-<blockquote>
-<p>Các bạn có thể tìm đọc tất cả bài viết của series này tại <a href=https://incenger.github.io/series/the-fellowship-of-the-optim/>đây</a>.</p>
-</blockquote>
-<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>A guide to convolution arithmetic for deep learning&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p><a href=https://d2l.ai/chapter_computer-vision/transposed-conv.html>https://d2l.ai/chapter_computer-vision/transposed-conv.html</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 </div>
 </article>
 <hr>
 <div class=post-info>
-<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=https://incenger.github.io/tags/my-story/>My Story</a></span>
-<span class=tag><a href=https://incenger.github.io/tags/machine-learning/>Machine Learning</a></span>
-<span class=tag><a href=https://incenger.github.io/tags/thesis/>Thesis</a></span>
+<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+<span class=tag><a href=https://incenger.github.io/categories/learning/>learning</a></span>
+<span class=tag><a href=https://incenger.github.io/categories/cnn/>CNN</a></span>
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-600 Words
+561 Words
 </p>
 <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-02-07-2021 16:13
+04-07-2021 04:34
 </p>
 </div>
 <hr>
 <div class=sharing-buttons>
-<a class=resp-sharing-button__link href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f" target=_blank rel=noopener aria-label title="Share on facebook">
+<a class=resp-sharing-button__link href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f" target=_blank rel=noopener aria-label title="Share on facebook">
 <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f" target=_blank rel=noopener aria-label title="Share on twitter">
+<a class=resp-sharing-button__link href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f" target=_blank rel=noopener aria-label title="Share on twitter">
 <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
 <div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9.0 01-3.14 1.53 4.48 4.48.0 00-7.86 3v1A10.66 10.66.0 013 4s-4 9 5 13a11.64 11.64.0 01-7 2c9 5 20 0 20-11.5a4.5 4.5.0 00-.08-.83A7.72 7.72.0 0023 3z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://www.tumblr.com/widgets/share/tool?posttype=link&title=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis&caption=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis&canonicalUrl=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f" target=_blank rel=noopener aria-label title="Share on tumblr">
+<a class=resp-sharing-button__link href="https://www.tumblr.com/widgets/share/tool?posttype=link&title=Tranposed%20Convolution&caption=Tranposed%20Convolution&canonicalUrl=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f" target=_blank rel=noopener aria-label title="Share on tumblr">
 <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
 <div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093.0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941.0 9.999.0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="mailto:?subject=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis&body=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f" target=_self rel=noopener aria-label title="Share via email">
+<a class=resp-sharing-button__link href="mailto:?subject=Tranposed%20Convolution&body=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f" target=_self rel=noopener aria-label title="Share via email">
 <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f&media=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f;description=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis" target=_blank rel=noopener aria-label title="Share on pinterest">
+<a class=resp-sharing-button__link href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f&media=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f;description=Tranposed%20Convolution" target=_blank rel=noopener aria-label title="Share on pinterest">
 <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M12.017.0C5.396.0.029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024.0 1.518.769 1.518 1.688.0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128.0 3.768-2.245 3.768-5.487.0-2.861-2.063-4.869-5.008-4.869-3.41.0-5.409 2.562-5.409 5.199.0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646.0-3.776 2.748-7.252 7.92-7.252 4.158.0 7.392 2.967 7.392 6.923.0 4.135-2.607 7.462-6.233 7.462-1.214.0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607.0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017.0z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f&title=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis&summary=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis&source=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f" target=_blank rel=noopener aria-label title="Share on linkedin">
+<a class=resp-sharing-button__link href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f&title=Tranposed%20Convolution&summary=Tranposed%20Convolution&source=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f" target=_blank rel=noopener aria-label title="Share on linkedin">
 <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://reddit.com/submit/?url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f&resubmit=true&title=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis" target=_blank rel=noopener aria-label title="Share on reddit">
+<a class=resp-sharing-button__link href="https://reddit.com/submit/?url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f&resubmit=true&title=Tranposed%20Convolution" target=_blank rel=noopener aria-label title="Share on reddit">
 <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm5.01 4.744c.688.0 1.25.561 1.25 1.249a1.25 1.25.0 01-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968.0 1.754.786 1.754 1.754.0.716-.435 1.333-1.01 1.614a3.111 3.111.0 01.042.52c0 2.694-3.13 4.87-7.004 4.87s-7.004-2.176-7.004-4.87c0-.183.015-.366.043-.534A1.748 1.748.0 014.028 12c0-.968.786-1.754 1.754-1.754.463.0.898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342.0 01.14-.197.35.35.0 01.238-.042l2.906.617a1.214 1.214.0 011.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687.0 1.248-.561 1.248-1.249S9.937 12 9.249 12zm5.5.0c-.687.0-1.248.561-1.248 1.25.0.687.561 1.248 1.249 1.248S16 13.937 16 13.249c0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327.0 00-.231.094.33.33.0 000 .463c.842.842 2.484.913 2.961.913s2.105-.056 2.961-.913a.361.361.0 00.029-.463.33.33.0 00-.464.0c-.547.533-1.684.73-2.512.73-.828.0-1.979-.196-2.512-.73a.326.326.0 00-.232-.095z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f;title=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis" target=_blank rel=noopener aria-label title="Share on xing">
+<a class=resp-sharing-button__link href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f;title=Tranposed%20Convolution" target=_blank rel=noopener aria-label title="Share on xing">
 <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M18.188.0c-.517.0-.741.325-.927.66.0.0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211.0.375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016.0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894.0 21.686.0h-3.498zM3.648 4.74c-.211.0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016.0.021L1.86 16.051c-.099.188-.093.381.0.529.085.142.239.234.45.234h3.461c.518.0.766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="whatsapp://send?text=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis%20https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f" target=_blank rel=noopener aria-label title="Share on whatsapp">
+<a class=resp-sharing-button__link href="whatsapp://send?text=Tranposed%20Convolution%20https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f" target=_blank rel=noopener aria-label title="Share on whatsapp">
 <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198.0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479.0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87.0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86.0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64.0 5.122 1.03 6.988 2.898a9.825 9.825.0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815.0 0012.05.0C5.495.0.16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882.0 005.683 1.448h.005c6.554.0 11.89-5.335 11.893-11.893a11.821 11.821.0 00-3.48-8.413z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f&t=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis" target=_blank rel=noopener aria-label title="Share on hacker news">
+<a class=resp-sharing-button__link href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f&t=Tranposed%20Convolution" target=_blank rel=noopener aria-label title="Share on hacker news">
 <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
 </div>
 </div>
 </a>
-<a class=resp-sharing-button__link href="https://telegram.me/share/url?text=The%20Fellowship%20of%20the%20Optim%3a%20Writing%20Thesis&url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2fthesis_writing_5%2f" target=_blank rel=noopener aria-label title="Share on telegram">
+<a class=resp-sharing-button__link href="https://telegram.me/share/url?text=Tranposed%20Convolution&url=https%3a%2f%2fincenger.github.io%2fposts%2f2021%2f07%2ftransposed_conv%2f" target=_blank rel=noopener aria-label title="Share on telegram">
 <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden=true class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
 </div>
 </div>
@@ -176,14 +200,14 @@ The Fellowship of the Optim: Writing Thesis :: Hi! I'm Tam Le
 </div>
 <div class=pagination__buttons>
 <span class="button previous">
-<a href=https://incenger.github.io/posts/2021/07/transposed_conv/>
+<a href=https://incenger.github.io/posts/2021/07/efficient_subpixel_conv/>
 <span class=button__icon>←</span>
-<span class=button__text>Tranposed Convolution</span>
+<span class=button__text>Efficient Sub-pixel Convolution</span>
 </a>
 </span>
 <span class="button next">
-<a href=https://incenger.github.io/posts/2021/05/ok_plateau_4/>
-<span class=button__text>The OK Plateau</span>
+<a href=https://incenger.github.io/posts/2021/07/thesis_writing_5/>
+<span class=button__text>The Fellowship of the Optim: Writing Thesis</span>
 <span class=button__icon>→</span>
 </a>
 </span>
